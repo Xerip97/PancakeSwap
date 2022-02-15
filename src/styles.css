@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color-violet: #7645d9;
+    --primary-color-cyan: #1fc7d4;
+    --primary-color-black: #000000;
+    --primary-color-white: #ffffff;
+    --secondary-color-violet1: #7a6eaa;
+    --secondary-color-blue: #280d5f;
+    --secondary-color-orange: #ffb237;
+    --secondary-color-pink: #ed4b9e;
+    --secondary-color-white1: #eeeaf4;
+    --secondary-color-white2: #f4eeff;
+    --secondary-color-white3: #eeeeee;
+    --secondary-color-gray: #bdc2c4;
+    --secondary-color-white-nuanced: linear-gradient(
+      to bottom right,
+      #e6fcff,
+      #f1f0ff
+    );
+    --secondary-color-violet-nuanced: linear-gradient(#7645d9, #5121b1);
+    --secondary-color-white-nuanced-right-bottom: linear-gradient(
+      to bottom right,
+      #e5fdff,
+      #f1f0ff
+    );
+  }
+  
+  /*---------------TYPOGRAPHY------------------*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  
+  .h2-40 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  
+  .h2-24 {
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  
+  .h2-20 {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+  
+  a,
+  a:link,
+  a:visited {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 968px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  
+  /*------SCROLLBAR------*/
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--primary-color-white);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color-violet1);
+    border-radius: 100px;
+  }
+  
