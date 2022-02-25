@@ -1,0 +1,221 @@
+/* ------------NAVBAR---------- */
+
+/* DA SISTEMARE IL FLEX */
+header,
+.navbar_menu_list,
+.navbar_dropdown-link,
+.navbar_link_finance,
+.navbar_link_finance div,
+.navbar_container_button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pancake-navbar {
+  width: 100%;
+  height: 54px;
+  margin: 0;
+  padding: 0 16px;
+  background-color: var(--primary-color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e7e3eb;
+}
+
+.pancake-navbar * {
+  height: 100%;
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.navbar_menu {
+  margin-left: 24px;
+}
+
+.navbar_menu_list {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.navbar_dropdown-link {
+  text-decoration: none;
+  padding: 0 15.2px;
+  color: var(--secondary-color-violet1);
+}
+
+.navbar_dropdown-link:hover {
+  background-color: var(--secondary-color-white1);
+  border-radius: 16px;
+}
+
+.navbar_dropdown-ul {
+  display: none;
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  position: absolute;
+  width: 280px;
+}
+
+.navbar_dropdown-li:first-child {
+  border-top: 1px solid #e7e3eb;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.navbar_dropdown-li:last-child {
+  border-bottom: 1px solid #e7e3eb;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.navbar_dropdown-leaderboard {
+  border: 1px solid #e7e3eb;
+}
+
+.navbar_dropdown-li {
+  padding-left: 15.2px;
+  border-left: 1px solid #e7e3eb;
+  border-right: 1px solid #e7e3eb;
+  background-color: var(--primary-color-white);
+}
+
+.navbar_dropdown:hover .navbar_dropdown-ul {
+  display: block;
+  margin-top: 108px;
+  padding: 0;
+}
+
+.navbar_dropdown-li:hover {
+  background-color: var(--secondary-color-white1);
+}
+
+.navbar_dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15.2px;
+  color: var(--secondary-color-violet1);
+}
+
+.navbar_link_finance {
+  text-decoration: none;
+  margin-right: 12px;
+  color: var(--secondary-color-violet1);
+}
+
+.navbar_link_finance img {
+  margin-right: 8px;
+  width: 24px;
+}
+
+.navbar_logo1 {
+  display: none;
+  width: 160px;
+}
+
+.navbar_logo2 {
+  width: 32px;
+  height: 32px;
+}
+
+.navbar_container_icon_lang {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  margin: 0 8px 0 0;
+  height: 24px;
+  width: 24px;
+}
+
+.navbar_container_icon_lang img,
+.navbar_container_icon_sett img {
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  color: var(--secondary-color-violet1);
+}
+
+.navbar_container_icon_lang img:hover,
+.navbar_container_icon_sett img:hover {
+  opacity: 0.65;
+}
+
+.navbar_container_icon_lang img:active,
+.navbar_container_icon_sett img:active {
+  opacity: 0.85;
+}
+
+.navbar_button_lang_container {
+  transform: translate(-50%, 0);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 160px;
+  background-color: var(--primary-color-white);
+  overflow-y: scroll;
+}
+
+.navbar_button_lang {
+  text-decoration: none;
+  background-color: var(--primary-color-white);
+  border: none;
+  color: var(--secondary-color-blue);
+  margin: 0;
+  min-height: 32px;
+  padding: 0 8px;
+  height: auto;
+  opacity: 1;
+}
+
+.navbar_button_lang:hover {
+  opacity: 0.65;
+}
+
+.navbar_button_lang:active {
+  opacity: 0.85;
+  transform: translateY(4%);
+}
+
+.navbar_container_icon_lang:hover .navbar_button_lang_container,
+.navbar_button_lang_container:hover {
+  display: flex;
+  margin-top: 0px;
+}
+
+.navbar_container_icon_sett {
+  max-height: 24px;
+  margin-right: 8px;
+}
+
+.navbar_container_button1 .button1 {
+  padding: 0 16px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 968px) {
+  .navbar_logo1 {
+    display: block;
+  }
+  .navbar_logo2 {
+    display: none;
+  }
+}
