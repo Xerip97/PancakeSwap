@@ -62,6 +62,10 @@ header,
   border-radius: 16px;
 }
 
+.navbar-three-dots-img {
+  width: 24px;
+}
+
 .navbar_dropdown-ul {
   display: none;
   list-style: none;
@@ -141,6 +145,11 @@ header,
   margin: 0 8px 0 0;
   height: 24px;
   width: 24px;
+}
+
+#navbar_icon_lang {
+  height: 24px;
+  padding-top: 15px;
 }
 
 .navbar_container_icon_lang img,
