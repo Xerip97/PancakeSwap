@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'pancakeswap-form-text',
-  templateUrl: './form-text.component.html',
-  styleUrls: ['./form-text.component.css']
+  selector: 'pancakeswap-form-text-search',
+  templateUrl: './form-text-search.component.html',
+  styleUrls: ['./form-text-search.component.css']
 })
-export class FormTextComponent implements OnInit {
+export class FormTextSearchComponent implements OnInit {
 
   constructor() { }
 
