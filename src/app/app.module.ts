@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './designsystem/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
-import { FormTextComponent } from './designsystem/forms-container/form-text/form-text.component';
+import { FormTextComponent } from './designsystem/forms-container/form-text-search/form-text-search.component';
 import { FormPollComponent } from './designsystem/forms-container/form-poll/form-poll.component';
 import { FormSliderComponent } from './designsystem/forms-container/form-slider/form-slider.component';
+import { FormTextTradeComponent } from './forms-container/form-text-trade/form-text-trade.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormSliderComponent } from './designsystem/forms-container/form-slider/
     FormTextComponent,
     FormPollComponent,
     FormSliderComponent,
+    FormTextTradeComponent,
   ],
   imports: [
     BrowserModule

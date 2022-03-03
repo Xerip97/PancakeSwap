@@ -11,7 +11,7 @@
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        Dropdown link
+        {{ _dropdown.title }}
       </a>
       <ul
         class="dropdown-menu dropdown-list_dropdown-list"
@@ -21,19 +21,26 @@
           <a
             class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item1"
             href="#"
-            >Action</a
+            >{{ _dropdown.label_1 }}</a
           >
         </li>
         <li>
           <a class="dropdown-item dropdown-list_dropdown-item" href="#"
-            >Another action</a
+            >{{ _dropdown.label_2 }}</a
           >
         </li>
         <li>
           <a
             class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
             href="#"
-            >Something else</a
+            >{{ _dropdown.label_3 }}</a
+          >
+        </li>
+         <li>
+          <a
+            class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
+            href="#"
+            >{{ _dropdown.label_4 }}</a
           >
         </li>
       </ul>
