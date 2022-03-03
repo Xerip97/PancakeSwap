@@ -3,11 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './designsystem/footer/footer.component';
+import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
+import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
+import { FormTextComponent } from './designsystem/forms-container/form-text/form-text.component';
+import { FormPollComponent } from './designsystem/forms-container/form-poll/form-poll.component';
+import { FormSliderComponent } from './designsystem/forms-container/form-slider/form-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
+    FooterComponent,
+    FormsContainerComponent,
+    FormDropdownComponent,
+    FormTextComponent,
+    FormPollComponent,
+    FormSliderComponent,
   ],
   imports: [
     BrowserModule
