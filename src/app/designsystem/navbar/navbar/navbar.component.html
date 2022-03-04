@@ -70,9 +70,9 @@
           <li class="navbar_dropdown">
             <a class="navbar_dropdown-link" href="#">
               <img
+                class="navbar-three-dots-img"
                 src="/assets/icons/three-dots.svg"
                 alt="three-dots"
-                style="width: 20px"
               />
             </a>
             <ul class="navbar_dropdown-ul">
@@ -125,10 +125,7 @@
     </div>
     <div class="navbar_container">
       <div>
-        <a
-          class="navbar_link_finance"
-          href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
-        >
+        <a class="navbar_link_finance" href="#">
           <div>
             <img
               src="/assets/svg/pancake_icon_colored.svg"
@@ -138,8 +135,12 @@
           <div class="cake_value"></div>
         </a>
       </div>
-      <div class="navbar_container_icon_lang" style="height: 24px">
-        <img src="/assets/svg/language_icon_violet.svg" alt="language_icon" />
+      <div class="navbar_container_icon_lang">
+        <img
+          id="navbar_icon_lang"
+          src="/assets/svg/language_icon_violet.svg"
+          alt="language_icon"
+        />
         <div class="navbar_button_lang_container">
           <button class="navbar_button_lang">العربية</button
           ><button class="navbar_button_lang">বাংলা</button
