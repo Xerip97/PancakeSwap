@@ -117,6 +117,10 @@ header,
   color: var(--secondary-color-violet1);
 }
 
+.navbar_dropdown-li-img {
+  width: 20px;
+}
+
 .navbar_link_finance {
   text-decoration: none;
   margin-right: 12px;
