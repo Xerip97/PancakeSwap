@@ -130,7 +130,11 @@
               alt="pancake_icon_colored"
             />
           </div>
-          <div class="cake_value"></div>
+          <div class="cake_value">
+            <b class="cake_value">{{
+              tempValue | currency: "USD":"symbol":"1.0-0"
+            }}</b>
+          </div>
         </a>
       </div>
       <div class="navbar_container_icon_lang">
