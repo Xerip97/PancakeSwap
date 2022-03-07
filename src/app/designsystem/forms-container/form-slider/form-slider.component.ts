@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+interface TypeSlider {
+  type: 'forms' | 'footer';
+}
 
 @Component({
   selector: 'pancakeswap-form-slider',
@@ -7,7 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormSliderComponent implements OnInit {
 
+  _typeslider: TypeSlider =  {type: 'forms'}
+
   constructor() { }
+
+ @Input() set typeslider(value: Partial<TypeSlider>) {
+    this._typeslider = {...this._typeslider, ...value} 
+  }
 
   ngOnInit(): void {
   }
