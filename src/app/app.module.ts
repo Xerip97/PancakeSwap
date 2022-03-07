@@ -9,6 +9,7 @@ import { FormTextSearchComponent } from './designsystem/forms-container/form-tex
 import { FormPollComponent } from './designsystem/forms-container/form-poll/form-poll.component';
 import { FormSliderComponent } from './designsystem/forms-container/form-slider/form-slider.component';
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
+import { NavbarComponent } from './designsystem/navbar/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormTextTradeComponent } from './designsystem/forms-container/form-text
     FormPollComponent,
     FormSliderComponent,
     FormTextTradeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
