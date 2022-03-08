@@ -1,8 +1,8 @@
 <!---FORM FABIO---->
 
-<div class="dropdown-list" [style.width.px]="_dropdown.width">
+<div class="dropdown-list" [style.width.px]="_dropdown.width" (click)="addClass()">
   <div class="dropdown-list_label"><p>SORT BY</p></div>
-  <div class="dropdown dropdown-list_dropdown">
+  <div class="dropdown dropdown-list_dropdown" >
     <a
       class="btn dropdown-toggle dropdown-list_dropdown_a"
       href="#"
@@ -10,8 +10,9 @@
       id="dropdownMenuLink"
       data-bs-toggle="dropdown"
       aria-expanded="false"
+      
     >
-      {{ _dropdown.title }}
+    {{ firstKey }}
     </a>
     <ul
       class="dropdown-menu dropdown-list_dropdown-list"

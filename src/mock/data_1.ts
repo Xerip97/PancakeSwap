@@ -1,4 +1,4 @@
-export const data = [
+export const data_1 = [
 	{
 		"name": "Kai Rocha",
 		"phone": "(325) 414-1482",

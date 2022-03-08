@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .dropdown-list_label,
   .dropdown-list_label > p {
     font-size: 12px;
@@ -54,14 +54,18 @@
     border: 1px solid var(rgb(215, 202, 236));
     box-shadow: rgb(74 74 104 / 10%) 0 2px 2px -1px inset;
     color: var(--secondary-color-blue);
+    transition: 200ms;
   }
   
-  /*
-  Bisogna inserire questa proprietà quando si esegue il dropdown(onclick)
-   .dropdown-list_dropdown_a {
+   .border-change {
     border-radius: 16px 16px 0 0;
   } 
-  */
+
+  
+  .dropdown-menu.dropdown-list_dropdown-list.show {
+    margin-top:  -3px !important; 
+  }
+ 
   
   @media screen and (min-width: 576px) {
     .dropdown-list_dropdown,
