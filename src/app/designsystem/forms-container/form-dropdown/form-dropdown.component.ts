@@ -1,12 +1,10 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { DropdownService } from '../../../shared/services/dropdown.service'
 
 interface Dropdown {
   title: string;
-  label_1: string;
-  label_2: string;
-  label_3: string;
-  label_4: string;
   width: number;
+  link: string;
 }
 
 @Component({
@@ -15,18 +13,23 @@ interface Dropdown {
   styleUrls: ['./form-dropdown.component.css'],
 })
 export class FormDropdownComponent implements OnInit {
+  @Input() data: any
+  @Output() takenKey = new EventEmitter
+
   _dropdown: Dropdown = {
     title: '',
-    label_1: '',
-    label_2: '',
-    label_3: '',
-    label_4: '',
     width: 200,
+    link: ''
   };
-  constructor() {}
+
+  constructor(private dropdownService: DropdownService) {}
   @Input() set dropdown(value: Partial<Dropdown>) {
     this._dropdown = { ...this._dropdown, ...value };
   }
 
   ngOnInit(): void {}
+
+  takeKey(key: any) {
+    this.takenKey.emit(key)
+  }
 }

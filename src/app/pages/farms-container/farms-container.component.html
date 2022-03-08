@@ -1,12 +1,19 @@
 <pancakeswap-form-dropdown
   [dropdown]="{
     title: 'Titolo',
-    label_1: 'postalZip',
-    label_2: 'Label_2',
-    label_3: 'Label_3',
-    label_4: 'Label_4',
-    width: 100
+    width: 100,
+    link: '/farms'
   }"
->
+  [data]="data"
+  
+  (takenKey)="calltakeKey($event)"
+  >
+
 </pancakeswap-form-dropdown>
-<div *ngFor="let item of data"></div>
+<ul *ngFor="let item of callSortBy(keyToUse)">
+  <li>
+    {{ item.name }} ---- {{ item.phone }} ---- {{ item.email }} ----
+    {{ item.address }} ---- {{ item.postalZip }} ---- {{ item.region }} ----
+    {{ item.country }}
+  </li>
+</ul>
