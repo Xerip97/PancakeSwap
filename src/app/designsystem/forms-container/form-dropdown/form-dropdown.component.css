@@ -9,7 +9,6 @@
     color: var(--secondary-color-violet1);
     margin-bottom: 0;
     font-weight: 600;
-    width: 100%;
     min-width: 55px;
   }
   .dropdown-list_dropdown-list,
@@ -17,7 +16,6 @@
   .dropdown-list_dropdown_a {
     border-radius: 16px;
     background-color: var(--secondary-color-white1);
-    width: 75%;
   }
   .dropdown-list_dropdown-list {
     padding: 0;

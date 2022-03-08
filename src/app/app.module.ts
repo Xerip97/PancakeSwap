@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './designsystem/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
@@ -10,6 +10,7 @@ import { FormPollComponent } from './designsystem/forms-container/form-poll/form
 import { FormSliderComponent } from './designsystem/forms-container/form-slider/form-slider.component';
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
 import { NavbarComponent } from './designsystem/navbar/navbar/navbar.component';
+import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,12 @@ import { NavbarComponent } from './designsystem/navbar/navbar/navbar.component';
     FormPollComponent,
     FormSliderComponent,
     FormTextTradeComponent,
-    NavbarComponent
+    NavbarComponent,
+    FarmsContainerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
