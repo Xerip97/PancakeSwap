@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DropdownService } from './dropdown.service';
+import { DropdownService } from '../dropdown/dropdown.service';
 
 describe('DropdownService', () => {
   let service: DropdownService;

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core'
-import { DropdownService } from '../../../shared/services/dropdown.service';
+import { DropdownService } from '../../../shared/services/dropdown/dropdown.service';
 
 interface Dropdown {
   width: number;
@@ -30,7 +30,7 @@ export class FormDropdownComponent implements OnInit {
 
   takeKey(key: any) {
     this.firstKey = key
-    this.takenKey.emit(key);
+    return this.dropdownService.takeKey(key)
   }
 
   

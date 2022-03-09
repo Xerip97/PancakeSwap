@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { data_1 } from '../../../mock/data_1';
 import { data_2 } from '../../../mock/data_2'
-import { DropdownService } from 'src/app/shared/services/dropdown.service';
+import { DropdownService } from 'src/app/shared/services/dropdown/dropdown.service';
+import { SearchTextService } from 'src/app/shared/services/search-text/search-text.service';
 
 @Component({
   selector: 'pancakeswap-farms-container',
@@ -9,19 +10,18 @@ import { DropdownService } from 'src/app/shared/services/dropdown.service';
   styleUrls: ['./farms-container.component.css'],
 })
 export class FarmsContainerComponent implements OnInit {
-  data_1 = data_1;
-  data_2 = data_2;
+  data = data_1;
   keyToUse: string = this.dropdownService.keyToUse
-  constructor(private dropdownService: DropdownService) { }
+  constructor(private dropdownService: DropdownService, private searchTextService: SearchTextService) { }
 
   ngOnInit(): void { }
-
-  calltakeKey(key: any) {
-    return this.dropdownService.takeKey(key)
-  }
 
   callSortBy(array: any,key: any) {
     return this.dropdownService.callArray(array, key)
 
+  }
+
+  callgetResult (array: any, key: any) {
+   return this.searchTextService.getResult(array, key)
   }
 }

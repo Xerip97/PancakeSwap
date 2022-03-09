@@ -3,17 +3,15 @@
     width: 100,
     link: '/farms'
   }"
-  [data]="data_1"
-  (takenKey)="calltakeKey($event)"
-  [firstKey] = "'address'"
-  
+  [data]="data"
+  [firstKey]="'address'"
 >
 </pancakeswap-form-dropdown>
-<ul *ngFor="let item of callSortBy(data_1,keyToUse)">
+<pancakeswap-form-text-search></pancakeswap-form-text-search>
+<ul *ngFor="let item of callgetResult(callSortBy(data, keyToUse), 'name')">
   <li>
     {{ item.name }} ---- {{ item.phone }} ---- {{ item.email }} ----
     {{ item.address }} ---- {{ item.postalZip }} ---- {{ item.region }} ----
     {{ item.country }}
   </li>
- <!-- <li> {{ item.text }}  ----  {{ item.numberrange}} ---- {{item.currency}}</li> -->
 </ul>
