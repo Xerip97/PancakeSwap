@@ -1,62 +1,57 @@
-.form-check-input{
-    background-color:rgb(238,234,244);
-   cursor:pointer;
-   
-  
-  }
-  
-  
-  
-  .form-check-input:checked {
-    background-color: rgb(49,208,170);
-    cursor: pointer;
-    pointer-events: none;
-    border:0.5px rgb(49,208,170);
-    
-  }
-  
-  .form-check-input:checked {
-    background-color: rgb(49,208,170);
-    cursor: pointer;
-    pointer-events: none;
-    
-  }
-  
-  
-  .form-check-input:focus {
-  
-   background-color: rgb(49,208,170);
-    border:0.5px  rgb(87, 5, 87);
-    cursor: pointer;
-    box-shadow:rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
-  }
-  
-  
-  
-  .form-check-input:visited {
-     background-color: rgb(49,208,170);
-    border:0.5px  rgb(87, 5, 87);
-    cursor: pointer;
-    box-shadow:rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
-    
-  }
-  
-  .form-check-input:hover{
-    background-color:rgb(238,234,244);
-    cursor:pointer;
-    border:0.5px  rgb(87, 5, 87);
-    box-shadow:rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
-  
-  }
-  
-  
-  
-  .form-check-label{
-    color:rgb(117,99,152);
-    cursor:pointer;
-  }
-  * {
-    font-family: Kanit, sans-serif;
-    
-  }
-  
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-check-input {
+  background-color: rgb(238, 234, 244);
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.form-check-input:checked {
+  background-color: rgb(49, 208, 170);
+  cursor: pointer;
+  pointer-events: none;
+  border: 0.5px rgb(49, 208, 170);
+}
+
+.form-check-input:checked {
+  background-color: rgb(49, 208, 170);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.form-check-input:focus {
+  background-color: rgb(49, 208, 170);
+  border: 0.5px rgb(87, 5, 87);
+  cursor: pointer;
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.form-check-input:visited {
+  background-color: rgb(49, 208, 170);
+  border: 0.5px rgb(87, 5, 87);
+  cursor: pointer;
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.form-check-input:hover {
+  background-color: rgb(238, 234, 244);
+  cursor: pointer;
+  border: 0.5px rgb(87, 5, 87);
+  box-shadow: rgb(118 69 217) 0px 0px 0px 1px,
+    rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+}
+
+.form-check-label {
+  color: rgb(117, 99, 152);
+  cursor: pointer;
+}
+* {
+  font-family: Kanit, sans-serif;
+}

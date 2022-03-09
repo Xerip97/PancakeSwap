@@ -19,8 +19,8 @@ export class SearchTextService {
     let search = this.value
     let keyUse = key
     return arr.filter(function(obj: any) {
-      return Object.keys(obj).some(function(key) {
-        return obj[keyUse].includes(search);
+      return Object.keys(obj).some(function(key = keyUse) {
+        return obj[key].toLowerCase().includes(search);
       })
     });
   }
