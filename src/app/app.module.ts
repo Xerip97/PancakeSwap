@@ -11,6 +11,7 @@ import { FormSliderComponent } from './designsystem/forms-container/form-slider/
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
 import { NavbarComponent } from './designsystem/navbar/navbar/navbar.component';
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FarmsContainerComponent } from './pages/farms-container/farms-container
     FormSliderComponent,
     FormTextTradeComponent,
     NavbarComponent,
-    FarmsContainerComponent
+    FarmsContainerComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
