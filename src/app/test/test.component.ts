@@ -51,27 +51,29 @@ export class TestComponent implements OnInit {
     return this.pollService.openProposal(array);
   }
 
-
- //TEXT TRADE SERVICE
-
-  callPassNumber(event: any){
-    return this.tradeTextService.passNumber(event)
-  }
-
- 
-  callCheck(arr: any){
-    return this.tradeTextService.checkOptions(arr)
-  }
-
-   callCalculateNumber() {
-    return this.tradeTextService.calculateNumber().toString()
-
-   }
-
-   //SLIDER SERVICE
+  //SLIDER SERVICE
 
    callIfCheck(){
      return this.sliderService.checked
    }
+
+   
+ //TEXT TRADE SERVICE -- WORKING PROGRESS
+
+  // callPassNumber(event: any){
+  //   return this.tradeTextService.passNumber(event)
+  // }
+
+ 
+  // callCheck(arr: any){
+  //   return this.tradeTextService.checkOptions(arr)
+  // }
+
+  //  callCalculateNumber() {
+  //   return this.tradeTextService.calculateNumber().toString()
+
+  //  }
+
+ 
 
 }

@@ -2,7 +2,7 @@
   <pancakeswap-form-dropdown
     [dropdown]="{
       width: 100,
-      link: '/farms'
+      link: '/test'
     }"
     [data]="data"
     [firstKey]="'address'"
@@ -52,7 +52,7 @@
   </div>
   <hr />
 
-  <div>
+  <!-- <div>
     <select id="trade_select" (change)="callPassNumber($event)">
       <option *ngFor="let item of data_trade" [value]="item.currency">
         {{ item.name }}
@@ -70,5 +70,5 @@
     <pancakeswap-form-text-trade
       [displayNumber]="{ number: callCalculateNumber() }"
     ></pancakeswap-form-text-trade>
-  </div>
+  </div> -->
 </table>

@@ -4,8 +4,7 @@
       <div class="div_outer_input">
         <input
           class="input_area"
-          (keyup)="onType($event)"
-          placeholder="{{ _displayNumber.number }}"
+          placeholder="0.0"
           type="text"
           oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
         />
