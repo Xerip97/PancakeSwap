@@ -11,7 +11,7 @@ export class SearchTextService {
   constructor() { }
 
   takeValue(value: string) {
-    this.value += value
+    this.value = value
     console.log(this.value)
   }
 
