@@ -1,6 +1,6 @@
 <!---FORM FABIO---->
 
-<div class="dropdown-list" [style.width.px]="_dropdown.width" (click)="addClass()">
+<div class="dropdown-list" [style.width.px]="_dropdown.width"   (click)="addClass()" (focusout)="onFocusOutEvent()">
   <div class="dropdown-list_label"><p>SORT BY</p></div>
   <div class="dropdown dropdown-list_dropdown" >
     <a
@@ -21,13 +21,13 @@
       *ngFor="let item of data"
     >
     <div  *ngFor="let i of item | keyvalue; last as isLast">
-      <li>
+      <li  (click)="addClass()">
         <a
           class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item1"
           href="#" routerLink="{{ _dropdown.link }}" *ngIf="!isLast" (click)="takeKey(i.key)"> {{i.key}}
         </a>
       </li> 
-      <li>
+      <li  (click)="addClass()">
         <a 
           class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
           href="#" routerLink="{{ _dropdown.link }}" (click)="takeKey(i.key)" *ngIf="isLast"> {{i.key}}</a
