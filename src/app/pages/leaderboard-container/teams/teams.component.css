@@ -1,0 +1,53 @@
+.generic_div {
+    border: 1px solid var(--secondary-color-white1);
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.team-id {
+    padding: 25px;
+    width: 56px;
+    background: var(--secondary-color-white-nuanced);
+}
+
+.team-info {
+    padding: 25px;
+}
+
+.team-info h2 {
+  color: var(--secondary-color-blue);
+}
+
+.team-info p {
+  color: var(--secondary-color-violet1)
+}
+
+.team-status {
+    display: flex;
+    flex-direction: row;
+}
+
+.team-status h4{
+    font-weight: 600;
+}
+
+.team-troph {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4vw;
+}
+
+.team-troph h4 {
+    color: #bdc2c4;
+}
+
+.team-status img {
+    filter: invert(81%) sepia(5%) saturate(191%) hue-rotate(151deg) brightness(94%) contrast(94%);
+}

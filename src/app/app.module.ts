@@ -10,7 +10,7 @@ import { FormPollComponent } from './designsystem/forms-container/form-poll/form
 import { FormSliderComponent } from './designsystem/forms-container/form-slider/form-slider.component';
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
-import { TestComponent } from './test/test.component';
+import { TestComponent } from './pages/test/test.component';
 import { NavbarComponent } from './core/layout/navbar/navbar.component';
 
 @NgModule({

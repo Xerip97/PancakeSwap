@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router' //(tipo TS)
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component'
-import { TestComponent } from "./test/test.component";
+import { TestComponent } from "./pages/test/test.component";
 
 const routes: Routes = [
     { path: 'farms', component: FarmsContainerComponent },
