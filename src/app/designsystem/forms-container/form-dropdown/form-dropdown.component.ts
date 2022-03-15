@@ -37,34 +37,22 @@ export class FormDropdownComponent implements OnInit {
   }
 
   
-  addClass() { 
-     if (!this.addressState) {
-       console.log('open')
-       this.addressState = true
-      document
-          .querySelector('.dropdown-list_dropdown_a')
-          ?.classList.add('border-change');
-     }
-    else {
-      console.log('closed')
-      this.addressState = false
-        document
-      .querySelector('.dropdown-list_dropdown_a')
-      ?.classList.remove('border-change');
+  addClass() {
+    const elem = document.querySelector('.dropdown-list_dropdown_a');
+      if (!this.addressState) {
+        this.addressState = true;
+        elem?.classList.add('border-change');
+      } else {
+        this.addressState = false;
+        elem?.classList.remove('border-change');
+    
     }
-    // if (
-    //   document.querySelector('#dropdownMenuLink')?.classList.contains('show')
-    // ) {
-    //   console.log("sta togliendo")
-    //   document
-    //     .querySelector('.dropdown-list_dropdown_a')
-    //     ?.classList.add('border-change');
-    // } else {
-    //   console.log("sta passando")
-    //   document
-    //   .querySelector('.dropdown-list_dropdown_a')
-    //   ?.classList.remove('border-change');
-    // }
   }
+
+  onFocusOutEvent(){
+    this.addressState = false;
+    document.querySelector('.dropdown-list_dropdown_a')?.classList.remove('border-change');
+  }
+  
  
 }

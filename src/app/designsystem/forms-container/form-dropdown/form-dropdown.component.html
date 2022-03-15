@@ -1,6 +1,6 @@
 <!---FORM FABIO---->
 
-<div class="dropdown-list" [style.width.px]="_dropdown.width" (click)="addClass()">
+<div class="dropdown-list" [style.width.px]="_dropdown.width"   (click)="addClass()" (focusout)="onFocusOutEvent()">
   <div class="dropdown-list_label"><p>SORT BY</p></div>
   <div class="dropdown dropdown-list_dropdown" >
     <a
