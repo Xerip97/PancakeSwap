@@ -12,7 +12,8 @@ import { FormTextTradeComponent } from './designsystem/forms-container/form-text
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
 import { TestComponent } from './pages/test/test.component';
 import { NavbarComponent } from './core/layout/navbar/navbar.component';
-
+import { LeaderboardContainerComponent } from './pages/leaderboard-container/leaderboard-container.component';
+import { TeamsComponent } from './pages/leaderboard-container/teams/teams.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,9 @@ import { NavbarComponent } from './core/layout/navbar/navbar.component';
     FormTextTradeComponent,
     NavbarComponent,
     FarmsContainerComponent,
-    TestComponent
+    TestComponent,
+    LeaderboardContainerComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
