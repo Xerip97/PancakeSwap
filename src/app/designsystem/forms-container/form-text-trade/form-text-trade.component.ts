@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Subject } from 'rxjs';
-import { TradeTextService } from 'src/app/shared/services/forms/trade-text/trade-text.service';
+import { TradeTextService } from '@app/share/services/forms/trade-text/trade-text.service';
 
 interface DefaultNumber {
   number: string;

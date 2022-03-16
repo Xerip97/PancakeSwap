@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SliderService } from 'src/app/shared/services/forms/slider/slider.service';
+import { SliderService } from '@app/share/services/forms/slider/slider.service';
 
 interface TypeSlider {
   type: 'forms' | 'footer';

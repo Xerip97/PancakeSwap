@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Subject } from 'rxjs';
-import { SearchTextService } from 'src/app/shared/services/forms/search-text/search-text.service';
+import { SearchTextService } from '@app/share/services/forms/search-text/search-text.service';
 
 @Component({
   selector: 'pancakeswap-form-text-search',
