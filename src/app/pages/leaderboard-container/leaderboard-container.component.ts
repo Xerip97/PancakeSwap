@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Team } from '@app/models/Team';
+import { LeaderboardTeamsService } from '@app/shared/services/pages/leaderboard-teams.service';
 
 @Component({
   selector: 'pancakeswap-leaderboard-container',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./leaderboard-container.component.css']
 })
 export class LeaderboardContainerComponent implements OnInit {
-
-  constructor() { }
+  teams: Team[] = []
+  constructor(private leaderboardTeamsService: LeaderboardTeamsService) { }
 
   ngOnInit(): void {
+    this.teams = this.leaderboardTeamsService.teams
   }
 
 }

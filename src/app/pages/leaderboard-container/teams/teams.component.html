@@ -1,27 +1,29 @@
 <div class="generic_div">
-    <div class="team-id">
-        <h4>1</h4>
-    </div>
-    <div class="main-team">
+  <div class="team-id">
+    <h4>{{ team.id }}</h4>
+  </div>
+  <div class="main-team">
     <div class="team-info">
-        <h2 class="h2-40">Syrup Storm</h2>
-        <p class="team-desc">
-            The storm's a-comin! Watch out! These bulls are stampeding in a syrupy
-            surge!
-        </p>
-        <div class="team-status">
-            <span class="team-troph"><span><img src="../../../../assets/svg/trophe.svg" /></span>
-                <h4>Coming soon...</h4>
-            </span>
-            <span class="team-members"><span><img src="../../../../assets/svg/members.svg" /></span>
-                <h4>176.008</h4>
-            </span>
-        </div>
+      <h2 class="h2-40">{{ team.name }}</h2>
+      <p class="team-desc">
+        {{ team.description }}
+      </p>
+      <div class="team-status">
+        <span class="team-troph"
+          ><span><img src="../../../../assets/svg/trophe.svg" /></span>
+          <h4>Coming soon...</h4>
+        </span>
+        <span class="team-members"
+          ><span><img src="../../../../assets/svg/members.svg" /></span>
+          <h4>{{ valueDecimal(team.members)}}</h4>
+        </span>
+      </div>
     </div>
     <div class="team-more">
-       <span class="team-image">
-           <button>See more</button>
-          <img src="https://pancakeswap.finance/images/teams/syrup-storm-md.png"></span>
+      <span class="team-image">
+        <button>See more</button>
+        <img src="{{ team.urlAvatar }}"
+      /></span>
     </div>
-</div>
+  </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Team } from '@app/models/Team';
 
 @Component({
   selector: 'pancakeswap-teams',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teams.component.css']
 })
 export class TeamsComponent implements OnInit {
+  @Input() team!: Team
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
+  valueDecimal(number: number){
+    return number / 1000
+  }
 }
