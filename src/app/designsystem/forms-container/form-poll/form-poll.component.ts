@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { PollService } from '@app/share/services/forms/poll/poll.service';
+import { PollService } from '@app/shared/services/forms/poll/poll.service';
 
 interface Poll {
   option_1: string,

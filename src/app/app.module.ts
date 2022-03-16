@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BtnTrisComponent } from './btn-tris/btn-tris.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
@@ -18,6 +19,7 @@ import { TeamsComponent } from './pages/leaderboard-container/teams/teams.compon
   declarations: [
     AppComponent,
     FooterComponent,
+    BtnTrisComponent,
     FormsContainerComponent,
     FormDropdownComponent,
     FormTextSearchComponent,
@@ -28,7 +30,7 @@ import { TeamsComponent } from './pages/leaderboard-container/teams/teams.compon
     FarmsContainerComponent,
     TestComponent,
     LeaderboardContainerComponent,
-    TeamsComponent
+    TeamsComponent,
   ],
   imports: [
     BrowserModule,
