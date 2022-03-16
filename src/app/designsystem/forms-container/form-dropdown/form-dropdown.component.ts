@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core'
-import { DropdownService } from '../../../shared/services/dropdown/dropdown.service';
+import { DropdownService } from '../../../shared/services/forms/dropdown/dropdown.service';
 
 interface Dropdown {
   width: number;
