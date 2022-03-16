@@ -91,3 +91,7 @@
     border-radius: 100%;
     margin-right: 1.5vw;
 }
+
+.team-image .btn3 {
+    border-radius: 50px;
+}
