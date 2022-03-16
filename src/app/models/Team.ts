@@ -3,4 +3,6 @@ export interface Team  {
  name: string;
  description: string;
  members: number;
+ urlAvatar: string;
+ urlSfondo: string;
 }

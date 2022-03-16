@@ -23,8 +23,7 @@
       "dom"
     ],
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@img/*": ["src/app/assets/*"]
+      "@app/*": ["src/app/*"]
     }
   },
   "angularCompilerOptions": {
