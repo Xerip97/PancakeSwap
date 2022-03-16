@@ -1,3 +1,4 @@
+@import url('app/shared/style/btns.css');
 :root {
     --primary-color-violet: #7645d9;
     --primary-color-cyan: #1fc7d4;
@@ -10,6 +11,7 @@
     --secondary-color-white1: #eeeaf4;
     --secondary-color-white2: #f4eeff;
     --secondary-color-white3: #eeeeee;
+    --secondary-color-white4: #faf9fa;
     --secondary-color-gray: #bdc2c4;
     --secondary-color-white-nuanced: linear-gradient(
       to bottom right,

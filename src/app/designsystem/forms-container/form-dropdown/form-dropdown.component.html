@@ -1,48 +1,38 @@
- <!---FORM FABIO---->
- 
- <div class="dropdown-list">
-    <div class="dropdown-list_label"><p>SORT BY</p></div>
-    <div class="dropdown dropdown-list_dropdown">
-      <a
-        class="btn dropdown-toggle dropdown-list_dropdown_a"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        {{ _dropdown.title }}
-      </a>
-      <ul
-        class="dropdown-menu dropdown-list_dropdown-list"
-        aria-labelledby="dropdownMenuLink"
-      >
-        <li>
-          <a
-            class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item1"
-            href="#"
-            >{{ _dropdown.label_1 }}</a
-          >
-        </li>
-        <li>
-          <a class="dropdown-item dropdown-list_dropdown-item" href="#"
-            >{{ _dropdown.label_2 }}</a
-          >
-        </li>
-        <li>
-          <a
-            class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
-            href="#"
-            >{{ _dropdown.label_3 }}</a
-          >
-        </li>
-         <li>
-          <a
-            class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
-            href="#"
-            >{{ _dropdown.label_4 }}</a
-          >
-        </li>
-      </ul>
-    </div>
+<!---FORM FABIO---->
+
+<div class="dropdown-list" [style.width.px]="_dropdown.width"   (click)="addClass()" (focusout)="onFocusOutEvent()">
+  <div class="dropdown-list_label"><p>SORT BY</p></div>
+  <div class="dropdown dropdown-list_dropdown" >
+    <a
+      class="btn dropdown-toggle dropdown-list_dropdown_a"
+      href="#"
+      role="button"
+      id="dropdownMenuLink"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      
+    >
+    {{ firstKey }}
+    </a>
+    <ul
+      class="dropdown-menu dropdown-list_dropdown-list"
+      aria-labelledby="dropdownMenuLink"
+      [style.width.px]="_dropdown.width"
+      *ngFor="let item of data"
+    >
+    <div  *ngFor="let i of item | keyvalue; last as isLast">
+      <li  (click)="addClass()">
+        <a
+          class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item1"
+          href="#" routerLink="{{ _dropdown.link }}" *ngIf="!isLast" (click)="takeKey(i.key)"> {{i.key}}
+        </a>
+      </li> 
+      <li  (click)="addClass()">
+        <a 
+          class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
+          href="#" routerLink="{{ _dropdown.link }}" (click)="takeKey(i.key)" *ngIf="isLast"> {{i.key}}</a
+        >
+      </li></div>
+    </ul>
   </div>
+</div>

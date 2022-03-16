@@ -1,11 +1,11 @@
 footer { 
     left: 0;
     bottom: 0;
-    width: 100vw -10px;
     background-color: #27262C;
     padding: 36px 40px 32px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footer_container {
@@ -16,15 +16,14 @@ footer {
 .footer_column_container  {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;    
-    width: 1200px;
-    gap: 12vh;
+    justify-content: space-between;   
 }
 
-.icon_a_social  img{
-    width: 21px;
-    height: 20px;
-    padding: 10px;
+.icon_a_social {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    justify-content: space-between;
 }
 
 .footer_column ul { 
@@ -34,9 +33,6 @@ footer {
     line-height:  2;
 }
 
-.footer_column:nth-child(2) {
-    margin-left: -20vh;
-}
 
 .footer_column ul li:first-child {
     color: var(--primary-color-violet);
@@ -64,15 +60,13 @@ text-decoration: none;
     width: 160px;
 }
 
-.footer_container hr {
-    opacity: 0.1;
+.footer_container .hr {
     border-top: 1px solid rgb(128, 113, 129, 0.3);
 }
 
 .footer_row_container {
     display: flex;
     flex-direction: row;
-     width: 1200px;
      justify-content: space-between;
      align-content: space-between;
 }
@@ -149,3 +143,47 @@ gap: 0px  8px;
     width: 23px;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(98deg) brightness(102%) contrast(101%);
 }
+
+.footer_language:hover .footer_button_lang_container,
+.footer_button_lang_container:hover {
+  display: flex;
+  margin-top: 0px;
+}
+
+  .footer_button_lang_container {   
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+   background-color: var(--primary-color-white);
+    transform: translate(-10%, 5%);
+    flex-direction: column;
+    padding: 16px;
+    min-height: 392px;
+    max-height: 408px;
+    min-width: 160px;
+    overflow-y: scroll;
+    border-radius: 4px;
+  }
+  
+  .footer_button_lang {
+    text-decoration: none;
+    background-color: var(--primary-color-white);
+    border: none;
+    color: var(--secondary-color-blue);
+    margin: 0;
+    min-height: 32px;
+    font-weight: 600;
+    padding: 0 8px;
+    height: auto;
+    opacity: 1;
+  }
+  
+  .footer_button_lang:hover {
+    opacity: 0.65;
+  }
+  
+  .footer_button_lang:active {
+    opacity: 0.85;
+    transform: translateY(4%);
+  }

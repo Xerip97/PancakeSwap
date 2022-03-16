@@ -1,0 +1,21 @@
+<body>
+
+    <div class="leaderboard">
+  <div class="leaderboard-title">
+    <h1>Teams & Profiles</h1>
+    <h6>
+      Show off your stats and collectibles with your unique profile. Team
+      features will be revealed soon!
+    </h6>
+    <br>
+  </div>
+  <div class="teams">
+    <h2 class="h2-40">Teams</h2>
+    <br>
+    <div *ngFor="let team of teams">
+        <pancakeswap-teams [team]="team"></pancakeswap-teams><br>
+    </div>
+  </div>
+  <br>
+</div>
+</body>

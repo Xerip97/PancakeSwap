@@ -1,11 +1,15 @@
+<div class="flex">
 <div class="form-check">
     <input
       class="form-check-input"
       type="radio"
       name="flexRadioDefault"
       id="flexRadioDefault1"
+      checked
+      (change)="callSendProposal($event)"
+      [value] = "_poll_options.prop_1"
     />
-    <label class="form-check-label" for="flexRadioDefault1"> Vote now </label>
+    <label class="form-check-label" for="flexRadioDefault1"  > {{_poll.option_1}} </label>
   </div>
   <div class="form-check">
     <input
@@ -13,8 +17,10 @@
       type="radio"
       name="flexRadioDefault"
       id="flexRadioDefault2"
+      (change)="callSendProposal($event)"
+      [value] = "_poll_options.prop_2"
     />
-    <label class="form-check-label" for="flexRadioDefault2"> Soon </label>
+    <label class="form-check-label" for="flexRadioDefault2"> {{_poll.option_2}} </label>
   </div>
   <div class="form-check">
     <input
@@ -22,6 +28,8 @@
       type="radio"
       name="flexRadioDefault"
       id="flexRadioDefault3"
+      (change)="callSendProposal($event)"
+      [value] = "_poll_options.prop_3"
     />
-    <label class="form-check-label" for="flexRadioDefault3"> Closed </label>
-  </div>
+    <label class="form-check-label" for="flexRadioDefault3"> {{_poll.option_3}} </label>
+  </div></div>

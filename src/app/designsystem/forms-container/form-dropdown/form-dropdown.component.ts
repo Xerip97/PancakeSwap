@@ -1,28 +1,58 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core'
+import { DropdownService } from '../../../shared/services/forms/dropdown/dropdown.service';
 
 interface Dropdown {
-  title: string;
-  label_1: string;
-  label_2: string;
-  label_3: string;
-  label_4: string;
+  width: number;
+  link: string;
 }
 
 @Component({
   selector: 'pancakeswap-form-dropdown',
   templateUrl: './form-dropdown.component.html',
-  styleUrls: ['./form-dropdown.component.css']
+  styleUrls: ['./form-dropdown.component.css'],
 })
 export class FormDropdownComponent implements OnInit {
+  @Input() data: any;
+  @Output() takenKey = new EventEmitter();
+  @Input() firstKey: any;
+  addressState: boolean = false
 
-  _dropdown: Dropdown = {title:'', label_1: '', label_2:'', label_3:'', label_4:''}
-  constructor() { }
-
+  _dropdown: Dropdown = {
+    width: 200,
+    link: '',
+  };
+  constructor(private dropdownService: DropdownService) {}
   @Input() set dropdown(value: Partial<Dropdown>) {
-    this._dropdown = { ...this._dropdown, ...value }
+    this._dropdown = { ...this._dropdown, ...value };
   }
-
 
   ngOnInit(): void {
   }
+
+
+  takeKey(key: any) {
+    this.firstKey = key
+    // this.addClass('closed')
+    return this.dropdownService.takeKey(key)
+  }
+
+  
+  addClass() {
+    const elem = document.querySelector('.dropdown-list_dropdown_a');
+      if (!this.addressState) {
+        this.addressState = true;
+        elem?.classList.add('border-change');
+      } else {
+        this.addressState = false;
+        elem?.classList.remove('border-change');
+    
+    }
+  }
+
+  onFocusOutEvent(){
+    this.addressState = false;
+    document.querySelector('.dropdown-list_dropdown_a')?.classList.remove('border-change');
+  }
+  
+ 
 }

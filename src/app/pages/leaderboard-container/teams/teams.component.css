@@ -1,0 +1,97 @@
+.generic_div {
+    border: 1px solid var(--secondary-color-white1);
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 0%;
+    gap: 6vw
+}
+
+.team-id {
+    padding: 25px;
+    width: 56px;
+    color: var(--secondary-color-blue);
+    background:  linear-gradient( #e6fcff 25%, #f1f0ff 60%);
+}
+
+
+.team-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.team-info h2 {
+  color: var(--secondary-color-blue);
+}
+
+.team-info p {
+  color: var(--secondary-color-violet1)
+}
+
+.team-status {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.team-status h4{
+    font-weight: 600;
+}
+
+.team-troph {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4vw;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4vw;
+}
+
+.team-troph h4 {
+    color: #bdc2c4;
+}
+
+.team-troph img {
+    filter: invert(81%) sepia(5%) saturate(191%) hue-rotate(151deg) brightness(94%) contrast(94%);
+}
+
+.team-members h4 {
+    color: var(--secondary-color-blue);
+}
+
+.team-members img {
+   filter: invert(6%) sepia(55%) saturate(5798%) hue-rotate(259deg) brightness(101%) contrast(103%);
+}
+
+.team-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.team-image img {
+    border-radius: 100%;
+    margin-right: 1.5vw;
+}
+
+.team-image .btn3 {
+    border-radius: 50px;
+}

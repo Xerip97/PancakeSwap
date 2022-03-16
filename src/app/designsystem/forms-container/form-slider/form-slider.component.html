@@ -1,4 +1,4 @@
 <label class="{{ _typeslider.type }}_switch">
-    <input type="checkbox">
-    <span class="{{ _typeslider.type }} slider round"></span>
+    <input type="checkbox" (change)="callSliderOn($event)">
+    <span class="{{ _typeslider.type }} slider round"  ></span>
 </label>

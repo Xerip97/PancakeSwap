@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
-import { FooterComponent } from './designsystem/footer/footer.component';
 import { BtnTrisComponent } from './btn-tris/btn-tris.component';
-=======
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
@@ -13,19 +10,16 @@ import { FormTextSearchComponent } from './designsystem/forms-container/form-tex
 import { FormPollComponent } from './designsystem/forms-container/form-poll/form-poll.component';
 import { FormSliderComponent } from './designsystem/forms-container/form-slider/form-slider.component';
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
+import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
+import { TestComponent } from './pages/test/test.component';
 import { NavbarComponent } from './core/layout/navbar/navbar.component';
->>>>>>> develop
-
+import { LeaderboardContainerComponent } from './pages/leaderboard-container/leaderboard-container.component';
+import { TeamsComponent } from './pages/leaderboard-container/teams/teams.component';
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-<<<<<<< HEAD
-    BtnTrisComponent
-  ],
-  imports: [
-    BrowserModule
-=======
+    BtnTrisComponent,
     FormsContainerComponent,
     FormDropdownComponent,
     FormTextSearchComponent,
@@ -33,9 +27,15 @@ import { NavbarComponent } from './core/layout/navbar/navbar.component';
     FormSliderComponent,
     FormTextTradeComponent,
     NavbarComponent,
->>>>>>> develop
+    FarmsContainerComponent,
+    TestComponent,
+    LeaderboardContainerComponent,
+    TeamsComponent,
   ],
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
