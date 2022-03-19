@@ -19,6 +19,7 @@ header,
   justify-content: space-between;
   align-items: center;
   border: 1px solid #e7e3eb;
+  border-style: inset;
 }
 
 .pancake-navbar * {
@@ -71,6 +72,7 @@ header,
   list-style-type: none;
   position: absolute;
   width: 280px;
+  transform: translateY(-2px);
 }
 
 .navbar_dropdown-li:first-child {
@@ -149,14 +151,15 @@ header,
   display: flex;
   flex-direction: column;
   padding: 0 8px;
-  margin: 0 8px 0 0;
+  margin: 0 24px 0 0;
   height: 24px;
   width: 24px;
 }
 
 #navbar_icon_lang {
   height: 24px;
-  padding-top: 15px;
+  width: 24px;
+  margin-top: 15px;
 }
 
 .navbar_container_icon_lang img,
