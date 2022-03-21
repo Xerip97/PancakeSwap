@@ -15,13 +15,15 @@
         </span>
         <span class="team-members"
           ><span><img src="../../../../assets/svg/members.svg" /></span>
-          <h4>{{ valueDecimal(team.members)}}</h4>
+          <h4>{{ valueDecimal(team.members) }}</h4>
         </span>
       </div>
     </div>
     <div class="team-more">
       <span class="team-image">
-        <button class="btn3">See more</button>
+        <button class="btn3" [routerLink]="['/teams', team.id]">
+          See more
+        </button>
         <img src="{{ team.urlAvatar }}"
       /></span>
     </div>

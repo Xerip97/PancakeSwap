@@ -15,6 +15,10 @@ import { TestComponent } from './pages/test/test.component';
 import { NavbarComponent } from './core/layout/navbar/navbar.component';
 import { LeaderboardContainerComponent } from './pages/leaderboard-container/leaderboard-container.component';
 import { TeamsComponent } from './pages/leaderboard-container/teams/teams.component';
+import { TeamContainerComponent } from './pages/leaderboard-container/team-container/team-container.component';
+import { Team1Component } from './pages/leaderboard-container/team-container/team1/team1.component';
+import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
+import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,11 +35,12 @@ import { TeamsComponent } from './pages/leaderboard-container/teams/teams.compon
     TestComponent,
     LeaderboardContainerComponent,
     TeamsComponent,
+    TeamContainerComponent,
+    Team1Component,
+    Team2Component,
+    Team3Component,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,55 @@
+<body>
+  <div class="team">
+    <div class="team-title">
+      <h1>Teams & Profiles</h1>
+      <h6>
+        Show off your stats and collectibles with your unique profile. Team
+        features will be revealed soon!
+      </h6>
+      <br />
+    </div>
+    <a href="#" [routerLink]="'/teams'" class="teams-link">
+      < Teams Overview
+    </a>
+    <br />
+    <div class="team-detail">
+      <div
+        class="team-detail-top"
+        [ngStyle]="{ 'background-image': 'url(' + team.urlSfondo + ')' }"
+      >
+        <img src="{{ team.urlAvatar }}" alt="" class="urlAvatar" />
+        <h2 class="h2-40" [ngStyle]="{ color: '#' + team.fontColor }">
+          {{ team.name }}
+        </h2>
+        <h6 class="h6-description" [ngStyle]="{ color: '#' + team.fontColor }">
+          {{ team.description }}
+        </h6>
+      </div>
+      <div class="team-detail-bottom">
+        <div class="members">
+          <img src="/assets/svg/people-blue.svg" alt="people" />
+          <div class="members-detail">
+            <h2 class="members-number">
+              {{ team.members }}
+            </h2>
+            <h6 class="active-members">ACTIVE MEMBERS</h6>
+          </div>
+        </div>
+        <div class="trophy">
+          <img src="/assets/svg/trophy-grey.svg" alt="trophy" />
+          <div class="trophy-detail">
+            <h2 class="trophy-title">Coming Soon</h2>
+            <h6 class="trophy-points">TEAM POINTS</h6>
+          </div>
+        </div>
+        <div class="achievements">
+          <h3 class="achievements-title">Team achievements</h3>
+          <div class="achievements-detail">
+            <img src="/assets/svg/coming-soon-grey.svg" alt="coming soon" />
+            <h5 class="achievements-coming-soon">Coming Soon!</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
