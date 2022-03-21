@@ -5,14 +5,13 @@ import { LeaderboardTeamsService } from '@app/shared/services/pages/leaderboard-
 @Component({
   selector: 'pancakeswap-leaderboard-container',
   templateUrl: './leaderboard-container.component.html',
-  styleUrls: ['./leaderboard-container.component.css']
+  styleUrls: ['./leaderboard-container.component.css'],
 })
 export class LeaderboardContainerComponent implements OnInit {
-  teams: Team[] = []
-  constructor(private leaderboardTeamsService: LeaderboardTeamsService) { }
+  teams: Team[] = [];
+  constructor(private leaderboardTeamsService: LeaderboardTeamsService) {}
 
   ngOnInit(): void {
-    this.teams = this.leaderboardTeamsService.teams
+    this.teams = this.leaderboardTeamsService.teams;
   }
-
 }
