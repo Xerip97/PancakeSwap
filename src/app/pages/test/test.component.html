@@ -36,6 +36,16 @@
     option_3: 'Prova 3'
   }"></pancakeswap-form-poll> -->
 
+  <hr>
+  <pancakeswap-btn-double></pancakeswap-btn-double>
+  <div class="fintodiv">
+    <div *ngFor="let item of data_poll">
+      <h6>{{ item.name }} || {{ item.proposal }}</h6>
+    </div>
+  </div>
+
+  <hr>
+
   <pancakeswap-form-poll
     [poll_options]="{
       prop_1: 'open',

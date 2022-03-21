@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BtnTrisComponent } from './btn-tris/btn-tris.component';
+import { BtnTrisComponent } from './designsystem/buttons/btn-tris/btn-tris.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
@@ -19,6 +19,7 @@ import { TeamContainerComponent } from './pages/leaderboard-container/team-conta
 import { Team1Component } from './pages/leaderboard-container/team-container/team1/team1.component';
 import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
+import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { Team3Component } from './pages/leaderboard-container/team-container/tea
     Team1Component,
     Team2Component,
     Team3Component,
+    BtnDoubleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
