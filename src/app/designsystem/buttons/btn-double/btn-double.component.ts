@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, EventEmitter } from '@angular/core';
+import { BtnDoubleService } from '@app/shared/services/buttons/btn-double.service';
 
 interface ButtonDouble {
   link1: string;
@@ -15,7 +16,7 @@ export class BtnDoubleComponent implements OnInit {
     link1: 'Live',
     link2: 'Finished',
   };
-  constructor() {}
+  constructor(private btnDoubleService : BtnDoubleService) {}
   @Input() set btnDouble(value: Partial<ButtonDouble>) {
     this._btnDouble = { ...this._btnDouble, ...value };
   }
@@ -32,6 +33,7 @@ export class BtnDoubleComponent implements OnInit {
         live?.classList.add('not-checked');
         finished?.classList.remove('not-checked');
         finished?.classList.add('btn4');
+        this.btnDoubleService.checkButton(false)
         break
 
         case 'live':
@@ -39,6 +41,7 @@ export class BtnDoubleComponent implements OnInit {
           finished?.classList.add('not-checked');
           live?.classList.remove('not-checked');
           live?.classList.add('btn4');
+          this.btnDoubleService.checkButton(true)
           break;
     }
   }

@@ -39,8 +39,8 @@
   <hr>
   <pancakeswap-btn-double></pancakeswap-btn-double>
   <div class="fintodiv">
-    <div *ngFor="let item of data_poll">
-      <h6>{{ item.name }} || {{ item.proposal }}</h6>
+    <div *ngFor="let item of data_live">
+      <h6 *ngIf="callReturnValue(item.isFinished)">{{ item.name }} || {{ item.isFinished }}</h6>
     </div>
   </div>
 
