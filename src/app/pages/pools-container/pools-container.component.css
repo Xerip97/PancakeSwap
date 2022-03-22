@@ -1,0 +1,38 @@
+.pools-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 103px;
+  background-image: var(--secondary-color-white-nuanced-right-bottom);
+}
+
+.section-header-title {
+  color: var(--primary-color-violet);
+  margin: 0 0 24px 0;
+}
+
+.section-header-description {
+  color: var(--secondary-color-blue);
+  margin: 0;
+}
+
+.section-header-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header-help .generic_div {
+  background-color: var(--primary-color-white);
+  border: 1.5px solid var(--secondary-color-white1);
+}
+
+.section-header-help-btn {
+  padding: 0 20px;
+  margin-right: 16px;
+}
+
+.section-header-question-mark {
+  width: 20px;
+  margin-left: 6px;
+}
