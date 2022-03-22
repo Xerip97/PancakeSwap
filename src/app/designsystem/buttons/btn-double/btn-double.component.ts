@@ -29,7 +29,7 @@ export class BtnDoubleComponent implements OnInit {
     let id = event.target.id;
     switch(id) {
       case 'state_2':
-      stat1?.classList.remove('btn4');
+        stat1?.classList.remove('btn4');
         stat1?.classList.add('not-checked');
         stat2?.classList.remove('not-checked');
         stat2?.classList.add('btn4');
