@@ -28,6 +28,22 @@
   </ul>
 
   <hr />
+  <!-- <pancakeswap-btn-double
+    [btnDouble]="{ link1: 'Test1', link2: 'Test2' }"
+  ></pancakeswap-btn-double> -->
+  <!-- <pancakeswap-btn-double
+  [btnDouble]="{ link1: 'Prova1', link2: 'Prova2' }"></pancakeswap-btn-double> -->
+  <pancakeswap-btn-double
+  [btnDouble]="{ link1: 'Live', link2: 'Finished' }"></pancakeswap-btn-double>
+  <div class="fintodiv">
+    <div *ngFor="let item of data_live">
+      <h6 *ngIf="callReturnValue(item.isFinished)">
+        {{ item.name }} || {{ item.isFinished }}
+      </h6>
+    </div>
+  </div>
+
+  <hr />
 
   <!-- <pancakeswap-form-poll
   [poll]="{
@@ -35,16 +51,6 @@
     option_2: 'Prova 2',
     option_3: 'Prova 3'
   }"></pancakeswap-form-poll> -->
-
-  <hr>
-  <pancakeswap-btn-double></pancakeswap-btn-double>
-  <div class="fintodiv">
-    <div *ngFor="let item of data_live">
-      <h6 *ngIf="callReturnValue(item.isFinished)">{{ item.name }} || {{ item.isFinished }}</h6>
-    </div>
-  </div>
-
-  <hr>
 
   <pancakeswap-form-poll
     [poll_options]="{

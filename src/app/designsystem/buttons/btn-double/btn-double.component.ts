@@ -13,8 +13,8 @@ interface ButtonDouble {
 })
 export class BtnDoubleComponent implements OnInit {
   _btnDouble: ButtonDouble = {
-    link1: 'Live',
-    link2: 'Finished',
+    link1: 'stat1',
+    link2: 'stat2',
   };
   constructor(private btnDoubleService : BtnDoubleService) {}
   @Input() set btnDouble(value: Partial<ButtonDouble>) {
@@ -24,23 +24,23 @@ export class BtnDoubleComponent implements OnInit {
   ngOnInit(): void {}
 
   changeButton(event: any) {
-    const live = document.querySelector('#label-live');
-    const finished = document.querySelector('#label-finished');
+    const stat1 = document.querySelector('#label-stat1');
+    const stat2 = document.querySelector('#label-stat2');
     let id = event.target.id;
     switch(id) {
-      case 'finished':
-      live?.classList.remove('btn4');
-        live?.classList.add('not-checked');
-        finished?.classList.remove('not-checked');
-        finished?.classList.add('btn4');
+      case 'state_2':
+      stat1?.classList.remove('btn4');
+        stat1?.classList.add('not-checked');
+        stat2?.classList.remove('not-checked');
+        stat2?.classList.add('btn4');
         this.btnDoubleService.checkButton(false)
         break
 
-        case 'live':
-          finished?.classList.remove('btn4');
-          finished?.classList.add('not-checked');
-          live?.classList.remove('not-checked');
-          live?.classList.add('btn4');
+        case 'state_1':
+          stat2?.classList.remove('btn4');
+          stat2?.classList.add('not-checked');
+          stat1?.classList.remove('not-checked');
+          stat1?.classList.add('btn4');
           this.btnDoubleService.checkButton(true)
           break;
     }
