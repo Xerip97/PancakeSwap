@@ -2,7 +2,9 @@ import { Component, Input, OnInit, EventEmitter } from '@angular/core';
 import { BtnDoubleService } from '@app/shared/services/buttons/btn-double.service';
 
 interface ButtonDouble {
+  name1: string;
   link1: string;
+  name2: string;
   link2: string;
 }
 
@@ -13,8 +15,10 @@ interface ButtonDouble {
 })
 export class BtnDoubleComponent implements OnInit {
   _btnDouble: ButtonDouble = {
-    link1: 'stat1',
-    link2: 'stat2',
+    name1: 'stat1',
+    link1: '/',
+    name2: 'stat2',
+    link2: '/',
   };
   constructor(private btnDoubleService : BtnDoubleService) {}
   @Input() set btnDouble(value: Partial<ButtonDouble>) {

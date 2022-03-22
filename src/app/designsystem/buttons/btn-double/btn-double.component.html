@@ -1,2 +1,22 @@
-<div class="btn-double"><input type="radio" id="state_1" name="double-button" (change)="changeButton($event)" checked> <label id="label-stat1" class="btn4" for="state_1">{{_btnDouble.link1 }}</label> 
-<input type="radio" id="state_2" (change)="changeButton($event)" name="double-button"><label id="label-stat2" class="not-checked" for="state_2">{{ _btnDouble.link2}}</label></div> 
+<div class="btn-double">
+  <input
+    type="radio"
+    id="state_1"
+    name="double-button"
+    (change)="changeButton($event)"
+    [routerLink] = "_btnDouble.link1"
+    checked
+  />
+  <label id="label-stat1" class="btn4" for="state_1">{{
+    _btnDouble.name1
+  }}</label>
+  <input
+    type="radio"
+    id="state_2"
+    (change)="changeButton($event)"
+    [routerLink] = "_btnDouble.link2"
+    name="double-button"
+  /><label id="label-stat2" class="not-checked" for="state_2">{{
+    _btnDouble.name2
+  }}</label>
+</div>

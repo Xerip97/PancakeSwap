@@ -18,8 +18,8 @@ export class BtnDoubleService {
     }
   }
   
-  returnValue(arr: any) {
-    return arr == this.isFinished
+  returnValue(bool: boolean) {
+    return bool == this.isFinished
   }
 
 }

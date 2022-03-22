@@ -80,7 +80,7 @@ export class TestComponent implements OnInit {
 
   //  }
 
-  callReturnValue(arr:  any) {
-    return this.btnDoubleService.returnValue(arr)
+  callReturnValue(bool: boolean) {
+    return this.btnDoubleService.returnValue(bool)
   }
 }
