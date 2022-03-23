@@ -20,6 +20,7 @@ import { Team1Component } from './pages/leaderboard-container/team-container/tea
 import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
+import { FilterComponent } from './core/layout/filter/filter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double
     Team2Component,
     Team3Component,
     BtnDoubleComponent,
+    FilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

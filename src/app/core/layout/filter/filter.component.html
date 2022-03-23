@@ -1,0 +1,32 @@
+<div class="main">
+  <div class="filter">
+    <button class="farms_view" id="farms_cards">
+      <img src="../../../../assets/svg/Farms _graph_icon.svg" />
+    </button>
+    <button class="farms_view" id="farms_table">
+      <img src="../../../../assets/svg/Farms_graph_icon_2.svg" />
+    </button>
+    <div class="slider">
+      <pancakeswap-form-slider
+        [typeslider]="{ type: 'forms' }"
+        [ngStyle]="{ 'margin-top.px': 4 }"
+      ></pancakeswap-form-slider
+      ><label>Stacked only</label>
+    </div>
+    <pancakeswap-btn-double
+      [btnDouble]="{
+        link1: '/farms',
+        name1: 'Live',
+        link2: '/farms',
+        name2: 'Finished'
+      }"
+    ></pancakeswap-btn-double>
+  </div>
+  <div class="sorting">
+    <pancakeswap-form-dropdown  [firstKey]="'Hot'"> </pancakeswap-form-dropdown>
+    <div class="search">
+        <label>Search</label>
+      <pancakeswap-form-text-search></pancakeswap-form-text-search>
+    </div>
+  </div>
+</div>
