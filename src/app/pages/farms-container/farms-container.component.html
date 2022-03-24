@@ -1,6 +1,18 @@
 <div class="farms_main_table">
-    <pancakeswap-filter></pancakeswap-filter>
-    <ul *ngFor="let item of farms">
-    <li><img src="{{item.urlAvatar}}" style="width: 30px"> {{item.id}}, {{item.name}} || {{item.earned}} || {{item.apr}}% || {{item.liquidity | number: '3.' }} || {{item.multiplier}}x</li>
-    </ul>
+  <pancakeswap-filter [filter] = "{
+    link1: '/farms',
+    link2: '/farms',
+    arrayDropdown: farms_dropdown,
+    searchPlaceholder: 'Search Farms'
+  }"></pancakeswap-filter>
+  <ul *ngFor="let item of callSortBy(farms, keyToUse)">
+    <li *ngIf="!callIfCheck()">
+      <img src="{{ item.urlAvatar }}" style="width: 30px" /> {{ item.id }} ||
+      {{ item.name }} || {{ item.earned }} || {{ item.apr }}% ||
+      {{ item.liquidity | number: "3." }} || {{ item.multiplier }}x
+    </li>
+  </ul>
+  <ul *ngIf="callIfCheck()">
+    <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
+  </ul>
 </div>

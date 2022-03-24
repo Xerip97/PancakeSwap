@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { data_1 } from '../../../mock/data_1';
+import { data_dropdown } from '../../../mock/data_1'
 import { data_2 } from '../../../mock/data_2';
 import { data_3 } from '../../../mock/data_3';
 import { data_4 } from '../../../mock/data_4';
@@ -21,6 +22,7 @@ import { BtnDoubleService } from '@app/shared/services/buttons/btn-double.servic
 export class TestComponent implements OnInit {
   
   data = data_1;
+  data_dropdown = data_dropdown
   data_poll = data_3;
   data_live = data_5
   data_trade = data_4;

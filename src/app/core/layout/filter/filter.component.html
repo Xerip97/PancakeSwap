@@ -15,18 +15,18 @@
     </div>
     <pancakeswap-btn-double
       [btnDouble]="{
-        link1: '/farms',
+        link1: _filter.link1,
         name1: 'Live',
-        link2: '/farms',
+        link2: _filter.link2,
         name2: 'Finished'
       }"
     ></pancakeswap-btn-double>
   </div>
   <div class="sorting">
-    <pancakeswap-form-dropdown  [firstKey]="'Hot'"> </pancakeswap-form-dropdown>
+    <pancakeswap-form-dropdown [data]="_filter.arrayDropdown"  [firstKey]="'Hot'"> </pancakeswap-form-dropdown>
     <div class="search">
         <label>Search</label>
-      <pancakeswap-form-text-search></pancakeswap-form-text-search>
+      <pancakeswap-form-text-search [search]="_filter.searchPlaceholder"></pancakeswap-form-text-search>
     </div>
   </div>
 </div>

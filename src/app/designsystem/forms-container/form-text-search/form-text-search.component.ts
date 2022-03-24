@@ -2,9 +2,6 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Subject } from 'rxjs';
 import { SearchTextService } from '@app/shared/services/forms/search-text/search-text.service';
 
-interface PlaceholderSearch {
-  placeholder: string
-}
  
 @Component({
   selector: 'pancakeswap-form-text-search',
@@ -14,14 +11,7 @@ interface PlaceholderSearch {
 export class FormTextSearchComponent implements OnInit {
   @Output() value = new EventEmitter
   private subjectKeyUp = new Subject<any>()
-
-  _search: PlaceholderSearch = {
-    placeholder: "Search..."
-  }
-
-  @Input() set search(value: Partial<PlaceholderSearch>) {
-    this._search = { ...this._search, ...value}
-  }
+ @Input() search: string = "Search..."
 
   constructor(private searchTextService : SearchTextService ) { }
 
