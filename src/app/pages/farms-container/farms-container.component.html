@@ -5,7 +5,7 @@
     arrayDropdown: farms_dropdown,
     searchPlaceholder: 'Search Farms'
   }"></pancakeswap-filter>
-  <ul *ngFor="let item of callSortBy(farms, keyToUse)">
+  <ul *ngFor="let item of callSortBy(callgetResult(farms, 'name'), keyToUse)">
     <li *ngIf="!callIfCheck()">
       <img src="{{ item.urlAvatar }}" style="width: 30px" /> {{ item.id }} ||
       {{ item.name }} || {{ item.earned }} || {{ item.apr }}% ||

@@ -4,6 +4,7 @@ import { SliderService } from '@app/shared/services/forms/slider/slider.service'
 import { DropdownService } from '@app/shared/services/forms/dropdown/dropdown.service';
 import { farms } from 'src/mock/farmsMock';
 import { dropDown_Farms } from 'src/mock/farmsDropDown';
+import { SearchTextService } from '@app/shared/services/forms/search-text/search-text.service';
 
 @Component({
   selector: 'pancakeswap-farms-container',
@@ -18,10 +19,12 @@ export class FarmsContainerComponent implements OnInit {
 
   constructor(
    private sliderService: SliderService,
-   private dropdownService : DropdownService
+   private dropdownService: DropdownService,
+   private searchService: SearchTextService
   ) {}
 
   ngOnInit(): void {
+    this.searchService.value = ''
   }
  
   callIfCheck() {
@@ -30,6 +33,10 @@ export class FarmsContainerComponent implements OnInit {
 
   callSortBy(arr: Farms[], key: string) {
    return this.dropdownService.callArray(arr, key)
+  }
+
+  callgetResult(arr: Farms[], key: string) {
+  return this.searchService.getResultv2(arr, key)
   }
  
 }
