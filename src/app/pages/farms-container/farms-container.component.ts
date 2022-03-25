@@ -32,7 +32,7 @@ export class FarmsContainerComponent implements OnInit {
   }
 
   callSortBy(arr: Farms[], key: string) {
-   return this.dropdownService.callArray(arr, key)
+   return this.dropdownService.callArrayReversed(arr, key)
   }
 
   callgetResult(arr: Farms[], key: string) {
