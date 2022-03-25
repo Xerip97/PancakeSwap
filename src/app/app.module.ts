@@ -21,6 +21,8 @@ import { Team2Component } from './pages/leaderboard-container/team-container/tea
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { LiquidityContainerComponent } from './pages/liquidity-container/liquidity-container.component';
 import { TradeUndernavbarDivComponent } from './core/layout/trade-undernavbar-div/trade-undernavbar-div.component';
+import { SettComponent } from './core/layout/sett/sett.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +45,8 @@ import { TradeUndernavbarDivComponent } from './core/layout/trade-undernavbar-di
     Team3Component,
     LiquidityContainerComponent,
     TradeUndernavbarDivComponent,
+    SettComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

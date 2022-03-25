@@ -1,0 +1,72 @@
+.global p {
+    text-transform: uppercase;
+    color: var(--primary-color-violet);
+    font-weight: 800;
+    font-size: 10px;
+}
+.global-modal-body{
+    color: var(--secondary-color-blue);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.transaction_speed_modal p{
+    font-size: 15px;
+font-weight: 600;
+color: var(--secondary-color-blue);
+}
+.transaction_speed_modal {
+    display: flex;
+}
+.slippage_btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.swap_p{
+     text-transform: uppercase;
+     color: var(--primary-color-violet);
+    font-weight: 800;
+    font-size: 10px;}
+ .slippage_tolerance_modal{
+    display: flex;
+    }
+     .slippage_tolerance_modal p{
+   color: var(--secondary-color-blue);
+   font-weight: 700;
+    }
+    .modal_slippage{
+        
+        display: flex;
+        align-items: center;
+       
+    }
+    .modal_slippage button{
+        margin-right: 5px;
+    }
+    .slippage_span {color:var(--primary-color-cyan); font-weight: 700; font-size: 15px;
+    }
+    .modal_footer{
+
+        padding-left: 20px;
+        font-size: 8px;
+font-weight: 600;
+color: var(--secondary-color-blue);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+     .modal_footer p {
+         margin-bottom: 20px;
+     }
+ .txDeadline,
+ .expertMode,
+ .multiHops,
+ .healthIndicator,
+ .flippy{
+     width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+ }
+ 

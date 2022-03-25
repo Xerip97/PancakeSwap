@@ -1,3 +1,128 @@
-.liquidity_undernav{
+.liquidity_body{
+    position: relative;
+    width: 100%;
+}
+.liquidity_main{
+    padding: 32px 32px 0px 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.liquidity_box{
+
+    display: flex;
+    height:50px;
+    padding: 24px;
+    height: 25%;
+
+}
+.liquidity_box_top{
+    display: flex;
+    width: 100%;
+}
+.liquidity_box_top_left {
+
+    width: 300px;
+}
+.liquidity_box_top_left h2{
+    color: var(--secondary-color-blue);
+    font-size: 20px;
+    margin: 20px 0px 8px 0px;
+    font-weight: bold;
+}
+.liquidity_box_top_left p{
+    font-size: 14px;
+    margin: 0px;
+    color: var(--secondary-color-violet1);
+}
+.liquidity_box_top_right {
+    position: inherit;
+    display: flex;
+    height: 67px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.liquidity_box_top_right img{
+    width: 25px;
+    height: 25px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    color: var(--secondary-color-violet1);
+
+}
+.liquidity_box_top_right img:hover{
+   opacity: 0.6;
+
+}
+.liquidity_box_top_right img:first-of-type {
+    margin-right: 25px;
+}
+
+.liquidity_wallet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.liquidity_wallet p {
+    color: var(--secondary-color-violet1);
+    font-weight: 700;
+}
+.liquidity_wallet button{
+    width: 386px;
+    height: 48px;
+    margin: 30px 0px 0px 0px;
+}
+.liquidity_wallet a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-color-white);
+}
+
+.liquidity_footer{
+    align-items: center;
+    width: 100%;
+    display: flex;
+  
+}
+.liquidity_footer_button{
+    display: flex;
+    height: 50px;
+    width:100%;
+    padding: 16px;
+
+}
+.liquidity_generic_div {
+    height: 40vh;
+
+}
+.liquidity_footer_link{
+    display: flex;
     
+}
+.liquidity_footer_link a {color: var(--primary-color-cyan);
+    text-decoration: none;
+    display: flex;
+    margin-left: 50px;}
+
+.liquidity_footer_link a:hover{
+    text-decoration: underline;
+}
+.liquidity_svg_footer{
+
+    display: flex;
+  align-items: center;
+    
+}
+.liquidity_svg_footer a {
+    
+    padding: 0px 24px 0px 24px;
+    width: 92px;
+ 
+    text-decoration: none;
+    color: var(--primary-color-white);
+}
+.liquidity_svg_footer img:last-of-type {
+    margin-left: 30px;
+    padding-top: 10px;
 }

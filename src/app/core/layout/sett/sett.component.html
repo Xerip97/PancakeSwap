@@ -1,0 +1,151 @@
+<div>
+  <!-- Button trigger modal -->
+  <button
+    type="button"
+    style="border: none"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
+    <img
+      src="/assets/svg/settings_icon_violet.svg"
+      alt="img_setting"
+      width="23px"
+      height="23px"
+    />
+  </button>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Settings</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="X"
+            style="color: var(--primary-color-cyan); border: none"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="global">
+            <p>global</p>
+          </div>
+          <div class="global-modal-body dark_modal">
+            <p>Dark mode</p>
+            <pancakeswap-form-slider
+              [typeslider]="{ type: 'footer' }"
+            ></pancakeswap-form-slider>
+          </div>
+          <div class="transaction_speed_modal">
+            <p>{{Default Transaction Speed {GWEI}</p>
+            <img
+              src="/assets/svg/Farms_question_mark_violet.svg"
+              alt="Question mark"
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <div class="slippage_btn">
+            <button class="btn3">Standard(5)</button>
+            <button class="btn3">Fast(6)</button>
+            <button class="btn3">Instant(7)</button>
+          </div>
+          <div class="swaps_modal">
+            <br />
+            <p class="swap_p">Swaps & Liquidity</p>
+          </div>
+          <div class="slippage_tolerance_modal">
+            <p>Slippage Tolerance</p>
+            <img
+              src="/assets/svg/Farms_question_mark_violet.svg"
+              alt="Question mark"
+              width="20px"
+              height="20px"
+            />
+          </div>
+          <div class="modal_slippage">
+            <button class="btn3">0.1%</button>
+            <button class="btn3">0.5%</button>
+            <button class="btn3">1.0%</button>
+
+            <pancakeswap-form-text-trade
+              [textTrade]="{ width: 70 }"
+            ></pancakeswap-form-text-trade>
+            <p class="slippage_span">%</p>
+          </div>
+        </div>
+
+        <div class="modal_footer">
+          <div class="txDeadline">
+            <p>
+              Tx Deadline<img
+                src="/assets/svg/Farms_question_mark_violet.svg"
+                alt="Question mark"
+                width="20px"
+                height="20px"
+              />
+            </p>
+            <pancakeswap-form-slider></pancakeswap-form-slider>
+          </div>
+          <div class="expertMode">
+            <p>
+              Expert Mode
+              <img
+                src="/assets/svg/Farms_question_mark_violet.svg"
+                alt="Question mark"
+                width="20px"
+                height="20px"
+              />
+            </p>
+            <pancakeswap-form-slider></pancakeswap-form-slider>
+          </div>
+          <div class="multiHops">
+            <p>
+              Disable multiHops
+              <img
+                src="/assets/svg/Farms_question_mark_violet.svg"
+                alt="Question mark"
+                width="20px"
+                height="20px"
+              />
+            </p>
+            <pancakeswap-form-slider></pancakeswap-form-slider>
+          </div>
+          <div class="healthIndicator">
+            <p>
+              Subgraph Health Indicator<img
+                src="/assets/svg/Farms_question_mark_violet.svg"
+                alt="Question mark"
+                width="20px"
+                height="20px"
+              />
+            </p>
+            <pancakeswap-form-slider></pancakeswap-form-slider>
+          </div>
+          <div class="flippy">
+            <p>
+              Flippy Sound
+              <img
+                src="/assets/svg/Farms_question_mark_violet.svg"
+                alt="Question mark"
+                width="20px"
+                height="20px"
+              />
+            </p>
+            <pancakeswap-form-slider></pancakeswap-form-slider>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

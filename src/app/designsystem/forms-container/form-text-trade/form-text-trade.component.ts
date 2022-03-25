@@ -2,6 +2,9 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Subject } from 'rxjs';
 import { TradeTextService } from '@app/shared/services/forms/trade-text/trade-text.service';
 
+interface ITextTrade {
+  width: number;
+}
 interface DefaultNumber {
   number: string;
 }
@@ -9,11 +12,11 @@ interface DefaultNumber {
 @Component({
   selector: 'pancakeswap-form-text-trade',
   templateUrl: './form-text-trade.component.html',
-  styleUrls: ['./form-text-trade.component.css']
+  styleUrls: ['./form-text-trade.component.css'],
 })
 export class FormTextTradeComponent implements OnInit {
   // @Output() value = new EventEmitter
-  // number: any 
+  // number: any
   // private subjectKeyUp = new Subject<any>()
 
   // _displayNumber: DefaultNumber = {
@@ -23,26 +26,28 @@ export class FormTextTradeComponent implements OnInit {
   // @Input() set displayNumber(value: Partial<DefaultNumber>) {
   //   this._displayNumber = { ...this._displayNumber, ...value };
   // }
+  _textTrade: ITextTrade = {
+    width: 50,
+  };
+  @Input() set textTrade(value: Partial<ITextTrade>) {
+    this._textTrade = { ...this._textTrade, ...value };
+  }
 
-  constructor(private tradeTextService : TradeTextService) { 
+  constructor(private tradeTextService: TradeTextService) {
     // this.subjectKeyUp
     // .pipe(debounceTime(1000), distinctUntilChanged()).subscribe((d) => this.callTakeNumber(d))
-    
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   // onType($event: any) {
   //   if ($event.target.value > 0) {
   //   const search = $event.target.value;
   //   this.subjectKeyUp.next(search)}
   //   }
-  
-    
+
   //   callTakeNumber (value: string) {
   //     let num: number = parseFloat(value)
   //     return this.tradeTextService.takeNumber(num)
   //   }
-
 }
