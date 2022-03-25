@@ -16,13 +16,13 @@
   margin: 0;
 }
 
-.section-header-help {
+.section-header-bounty {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section-header-help .generic_div {
+.section-header-bounty .generic_div {
   background-color: var(--primary-color-white);
   border: 1.5px solid var(--secondary-color-white1);
 }
@@ -37,15 +37,14 @@
   margin-left: 6px;
 }
 
-/* flag */
-.pools_syrup_generic_div {
+.cake-bounty-title {
   display: flex;
   justify-content: left;
   align-items: center;
   margin-bottom: 12px;
 }
 
-.pools_syrup_h2-16 {
+.pools-syrup-h2-16 {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -53,12 +52,12 @@
   color: var(--secondary-color-violet1);
 }
 
-.pools_bounty_question-mark {
+.cake-bounty-question-mark {
   position: relative;
   width: 20px;
 }
 
-.pools_bounty_bonus {
+.bounty-info {
   position: absolute;
   visibility: hidden;
   font-size: 16px;
@@ -73,28 +72,28 @@
   top: 110%;
 }
 
-.pools_bounty_bonus_visible {
+.bounty-info-visible {
   visibility: visible;
 }
 
-.pools_bounty_bonus div {
+.bounty-info div {
   padding-top: 8px;
   font-weight: 400;
 }
 
-.pools_syrup_generic_div2 {
+.bounty-value-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5vw;
 }
 
-.pools_syrup_generic_div2 * ~ {
+.bounty-value-section * ~ {
   width: 100%;
   height: 100%;
 }
 
-.pools_syrup_generic_div2_div {
+.bounty-value {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,12 +101,12 @@
   margin-right: 12px;
 }
 
-.pools_syrup_value1 {
+.bounty-value1 {
   margin: 0;
   color: var(--secondary-color-blue);
 }
 
-.pools_syrup_h2-12 {
+.pools-syrup-h2-12 {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
