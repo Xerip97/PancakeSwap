@@ -1,8 +1,8 @@
 <!---FORM FABIO---->
 
-<div class="dropdown-list" [style.width.px]="_dropdown.width"   (click)="addClass()" (focusout)="onFocusOutEvent()">
+<div class="dropdown-list" [style.width.px]="_dropdown.width"   (focusout)="onFocusOutEvent()">
   <div class="dropdown-list_label"><p>SORT BY</p></div>
-  <div class="dropdown dropdown-list_dropdown" >
+  <div class="dropdown dropdown-list_dropdown"  (click)="addClass()">
     <a
       class="btn dropdown-toggle dropdown-list_dropdown_a"
       href="#"
