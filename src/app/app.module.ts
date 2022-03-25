@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BtnTrisComponent } from './designsystem/buttons/btn-tris/btn-tris.component';
-import { FooterComponent } from './core/layout/footer/footer.component';
+import { FooterComponent } from './Core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
 import { FormTextSearchComponent } from './designsystem/forms-container/form-text-search/form-text-search.component';
@@ -12,7 +12,7 @@ import { FormSliderComponent } from './designsystem/forms-container/form-slider/
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
 import { TestComponent } from './pages/test/test.component';
-import { NavbarComponent } from './core/layout/navbar/navbar.component';
+import {NavbarComponent} from './Core/layout/navbar/navbar.component';
 import { LeaderboardContainerComponent } from './pages/leaderboard-container/leaderboard-container.component';
 import { TeamsComponent } from './pages/leaderboard-container/teams/teams.component';
 import { TeamContainerComponent } from './pages/leaderboard-container/team-container/team-container.component';
@@ -20,6 +20,8 @@ import { Team1Component } from './pages/leaderboard-container/team-container/tea
 import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
+import { WarningBannerComponent } from './Core/warning-banner/warning-banner.component';
+import { DesignSystemComponent } from './pages/design-system/design-system.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,8 @@ import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double
     Team2Component,
     Team3Component,
     BtnDoubleComponent,
+    WarningBannerComponent,
+    DesignSystemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

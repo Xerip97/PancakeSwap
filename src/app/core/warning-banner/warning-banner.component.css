@@ -1,0 +1,795 @@
+.phishing {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    
+  }
+  
+  .bunny-container {
+    width: 18vw;
+  }
+  .phishing-bunny {
+    height: 11.2vh;
+    width: 8vw;
+  }
+  
+  .phi_position {
+    height: 56px;
+    width: 89vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .phishing_warn {
+    height: 56px;
+    width: 57.5vw;
+    background: rgba(39, 38, 44, 0.4);
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    font-family: Kanit, sans-serif;
+    gap: 2px;
+  }
+  
+  .warn_position {
+    width: 60px;
+    padding: 0;
+    align-items: flex-end;
+  }
+  
+  .warnclose_button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .gabbibo {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .gabbibo:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    opacity: 0.65;
+  }
+  span {
+    text-align: center;
+  }
+  
+  .pwtext1 {
+    color: rgb(255, 178, 55);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+  .pwtext2 {
+    color: rgb(189, 194, 196);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .pwtext3 {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .pwtext4 {
+    color: rgb(189, 194, 196);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  /* media querry in ordine decrescente da 2560px che scende fino a 483px */
+   @media (min-width: 1915px) and (max-width: 2560px){
+    .phishing {
+      width:100vw;
+      height:70px;
+      background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+      block-size:auto;
+      
+    }
+  
+    .bunny-container {
+      width: 18.5vw;
+    }
+    .phishing-bunny {
+      height: auto;
+      width: 75px;
+    }
+  
+    .phi_position {
+      height: 56px;
+      width: 86vw;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    .phishing_warn {
+      height: 56px;
+      width: 50vw;
+      background: rgba(39, 38, 44, 0.4);
+      overflow: hidden;
+      border-radius: 16px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .warn_position {
+      margin-right: 3.1px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    .gabbibo {
+      width: 20px;
+      height: 20px;
+    }
+  
+    span {
+      text-align: center;
+    }
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (min-width: 1650px) and (max-width: 1914px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 70px;
+      background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+      
+    }
+  
+    .bunny-container {
+      width: 18.5vw;
+    }
+    .phishing-bunny {
+      height: auto;
+      width: 89px;
+    }
+  
+    .phi_position {
+      height: 56px;
+      width: 86vw;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    .phishing_warn {
+      height: 56px;
+      width: 50vw;
+      background: rgba(39, 38, 44, 0.4);
+      border-radius: 16px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .warn_position {
+      margin-right: 3.1px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    .gabbibo {
+      width: 20px;
+      height: 20px;
+    }
+  
+    span {
+      text-align: center;
+    }
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  } 
+  
+  @media (min-width: 1378px) and (max-width: 1650px) {
+    .phishing {
+      width: 100vw;
+      height: 70px;
+      background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+      display:flex;
+      
+    }
+  
+    .bunny-container {
+      width: 18.5vw;
+    }
+    .phishing-bunny {
+      height: auto;
+      width: 100px;
+    }
+  
+    .phi_position {
+      height: 56px;
+      width: 86vw;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    .phishing_warn {
+      height: 56px;
+      width: 54vw;
+      background: rgba(39, 38, 44, 0.4);
+      border-radius: 16px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .warn_position {
+      margin-right: 3.1px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    .gabbibo {
+      width: 20px;
+      height: 20px;
+    }
+  
+    span {
+      text-align: center;
+    }
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (min-width: 1280px) and (max-width: 1378px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 70px;
+      background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  
+    .bunny-container {
+      width: 18.5vw;
+    }
+    .phishing-bunny {
+      height: auto;
+      width: 100px;
+    }
+  
+    .phi_position {
+      height: 56px;
+      width: 86vw;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    .phishing_warn {
+      background: rgba(39, 38, 44, 0.4);
+      border-radius: 16px;
+      padding: 8px;
+      width: 57vw;
+      height: 56px;
+      display: flex;
+  
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .warn_position {
+      margin-right: 3.1px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    .gabbibo {
+      width: 20px;
+      height: 20px;
+    }
+  
+    span {
+      text-align: center;
+    }
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (min-width: 853px) and (max-width: 1280px),screen and (max-height: 750px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 70px;
+      background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  
+    .bunny-container {
+      width: 16vw;
+    }
+    .phishing-bunny {
+      height: auto;
+      width: 100px;
+    }
+  
+    .phi_position {
+      height: 56px;
+      width: 86vw;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+    .phishing_warn {
+      background: rgba(39, 38, 44, 0.4);
+      border-radius: 16px;
+      padding: 8px;
+      width: 56.7vw;
+      height: 56px;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .warn_position {
+      margin-right: 3.1px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    .gabbibo {
+      width: 20px;
+      height: 20px;
+    }
+  
+    span {
+      text-align: center;
+    }
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 800px) and (max-width: 852px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 70px;
+      background: rgb(86, 58, 136);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  
+    .phishing-bunny {
+      display: none;
+    }
+    .phishing_warn {
+      height: 56px;
+      width: 95vw;
+      background: transparent;
+      border-radius: 16px;
+      padding: 8px;
+      font-size: 8px;
+      word-wrap: break-word;
+      text-align: center;
+      font-family: Kanit, sans-serif;
+      gap: 2px;
+    }
+  
+    .warn_position {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    span {
+      text-align: center;
+      display: inline-block;
+    }
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (min-width: 745px) and (max-width: 799px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 70px;
+      background: rgb(86, 58, 136);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  
+    .phishing-bunny {
+      display: none;
+    }
+    .phishing_warn {
+      display: flex;
+      height: 56px;
+      width: 90vw;
+      background: transparent;
+      border-radius: 16px;
+      padding: 0px;
+      text-align: center;
+      font-family: Kanit, sans-serif;
+      gap: 2px;
+    }
+  
+    .warn_position {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    span {
+      text-align: center;
+      display: inline-block;
+    }
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+      white-space: pre;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 12px;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 12px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  @media (min-width: 483px) and (max-width: 744px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 84px;
+      background: rgb(86, 58, 136);
+    }
+  
+    .phishing-bunny {
+      display: none;
+    }
+    .phishing_warn {
+      display: flex;
+      height: 56px;
+      width: 90vw;
+      background: transparent;
+  
+      padding: 0px;
+  
+      font-family: Kanit, sans-serif;
+      gap: 2px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .warn_position {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .warnclose_button {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+    }
+  
+    
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 14px;
+      white-space: pre;
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      word-break: break-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 14px;
+      overflow: hidden;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 482px) {
+    .phishing {
+      display: flex;
+      width: 100vw;
+      height: 84px;
+      background:  rgb(86, 58, 136);
+    }
+  
+    .phishing-bunny {
+      display: none;
+    }
+    .phishing_warn {
+      display: flex;
+      height: 70px;
+      width: 99vw;
+      background: transparent;
+      font-family: Kanit, sans-serif;
+      padding: 7px;
+      
+    }
+  
+  
+    .pwtext1 {
+      color: rgb(255, 178, 55);
+      font-size: 13px;
+      font-weight: 600;
+     
+    }
+    .pwtext2 {
+      color: rgb(189, 194, 196);
+      font-size: 13px;
+      font-weight: 400;
+     
+    }
+    .pwtext3 {
+      color: rgb(255, 255, 255);
+      font-size: 13px;
+      font-weight: 400;
+     
+    }
+    .pwtext4 {
+      color: rgb(189, 194, 196);
+      font-size: 13px;
+      font-weight: 400;
+    
+      
+    }
+  } 
