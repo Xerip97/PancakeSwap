@@ -67,26 +67,22 @@
   .pwtext1 {
     color: rgb(255, 178, 55);
     font-size: 14px;
-    font-weight: 600;
     line-height: 1.5;
     text-transform: uppercase;
   }
   .pwtext2 {
     color: rgb(189, 194, 196);
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.5;
   }
   .pwtext3 {
     color: rgb(255, 255, 255);
     font-size: 14px;
-    font-weight: 600;
     line-height: 1.5;
   }
   .pwtext4 {
     color: rgb(189, 194, 196);
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.5;
   }
   /* media querry in ordine decrescente da 2560px che scende fino a 483px */
