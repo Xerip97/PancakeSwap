@@ -9,6 +9,7 @@
   ></pancakeswap-filter>
 
   <div *ngIf="!callIfCheck()">
+    <!--table view-->
     <div class="generic_div">
       <div
         *ngFor="let item of callgetResult(callSortBy(farms, keyToUse), 'name')"
@@ -19,7 +20,7 @@
         <button>to top <img src="/assets/svg/little_up_arrow.svg" /></button>
       </div>
     </div>
-
+   <!--end of table view-->
     <br /><br />
     <div class="bottom-img">
       <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
