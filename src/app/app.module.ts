@@ -21,6 +21,7 @@ import { Team2Component } from './pages/leaderboard-container/team-container/tea
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
 import { FilterComponent } from './core/layout/filter/filter.component';
+import { FarmsTableComponent } from './pages/farms-container/farms-table/farms-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { FilterComponent } from './core/layout/filter/filter.component';
     Team3Component,
     BtnDoubleComponent,
     FilterComponent,
+    FarmsTableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

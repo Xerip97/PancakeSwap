@@ -1,18 +1,31 @@
 <div class="farms_main_table">
-  <pancakeswap-filter [filter] = "{
-    link1: '/farms',
-    link2: '/farms',
-    arrayDropdown: farms_dropdown,
-    searchPlaceholder: 'Search Farms'
-  }"></pancakeswap-filter>
-  <ul *ngFor="let item of callgetResult(callSortBy(farms, keyToUse), 'name')">
-    <li *ngIf="!callIfCheck()">
-      <img src="{{ item.urlAvatar }}" style="width: 30px" /> {{ item.id }} ||
-      {{ item.name }} || {{ item.earned }} || {{ item.apr }}% ||
-      {{ item.liquidity | number: "3." }} || {{ item.multiplier }}x
-    </li>
-  </ul>
-  <ul *ngIf="callIfCheck()">
-    <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
-  </ul>
+  <pancakeswap-filter
+    [filter]="{
+      link1: '/farms',
+      link2: '/farms',
+      arrayDropdown: farms_dropdown,
+      searchPlaceholder: 'Search Farms'
+    }"
+  ></pancakeswap-filter>
+
+  <div *ngIf="!callIfCheck()">
+    <div class="generic_div">
+      <div
+        *ngFor="let item of callgetResult(callSortBy(farms, keyToUse), 'name')"
+      >
+        <pancakeswap-farms-table [farms_item]="item"></pancakeswap-farms-table>
+      </div>
+      <div class="return-top">
+        <button>to top <img src="/assets/svg/little_up_arrow.svg" /></button>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="bottom-img">
+      <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
+    </div>
+  </div>
+</div>
+<div *ngIf="callIfCheck()" class="center-img">
+  <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
 </div>

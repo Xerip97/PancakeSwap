@@ -1,0 +1,126 @@
+.row {
+  cursor: pointer;
+  padding: 22px 20px;
+  border-bottom: 2px solid rgba(25, 19, 38, 0.15);
+}
+
+.main-info {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.img {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.farms-ico {
+  width: 16px;
+  height: inherit;
+  position: relative;
+  inset: -9px 9px;
+  z-index: -5;
+  border-radius: 100px;
+  background-color: rgba(25, 19, 38, 0.36);
+  border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.farms-avatar {
+  width: 28px;
+  border-radius: 100px;
+  background-color: rgba(25, 19, 38, 0.36);
+  border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.name {
+  margin-left: 0.5vw;
+  font-size: 16px;
+  color: var(--secondary-color-blue);
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info.earned,
+.info.apr {
+  flex: 1.5;
+}
+
+.info.liquidity {
+  flex: 1.2;
+}
+
+.info.multiplier {
+  flex: 0.5;
+}
+
+.extra-space {
+  flex: 0.8;
+}
+
+.title {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: var(--secondary-color-violet1);
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 16px;
+  color: var(--secondary-color-blue);
+}
+
+.earn-number {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--secondary-color-gray);
+}
+
+.apr img {
+  margin-left: 0.2vw;
+  width: 18px;
+  filter: invert(47%) sepia(4%) saturate(5047%) hue-rotate(212deg)
+    brightness(95%) contrast(82%);
+}
+
+.title.space {
+  color: white;
+}
+
+.space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.liquidity-mark {
+  width: 20px;
+  filter: invert(47%) sepia(4%) saturate(5047%) hue-rotate(212deg)
+    brightness(95%) contrast(82%);
+}
+
+.hide-button {
+  flex: 1.2;
+  margin-left: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide-button img {
+  width: 20px;
+  filter: invert(75%) sepia(21%) saturate(1794%) hue-rotate(132deg)
+    brightness(91%) contrast(81%);
+}

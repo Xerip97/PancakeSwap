@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="main-info">
+    <div class="img">
+      <img src="{{ farms_item.urlIcon }}" class="farms-ico" />
+      <img src="{{ farms_item.urlAvatar }}" class="farms-avatar" /><label
+        class="name"
+        >{{ farms_item.name }} </label
+      >
+    </div>
+    <div class="info earned">
+      <label class="title">earned</label
+      ><label class="earn-number"> {{ farms_item.earned }} </label>
+    </div>
+    <div class="info apr">
+      <label class="title">APR</label
+      ><label class="number apr">
+        {{ farms_item.apr }}% <img src="/assets/svg/Farms _calcolatrice.svg"
+      /></label>
+    </div>
+    <div class="info liquidity">
+      <label class="title">liquidity</label>
+      <div class="space">
+        <label class="number liquidity">
+          ${{ farms_item.liquidity | number: "3." }}</label
+        >
+          <img
+            src="/assets/svg/Farms_question_mark.svg"
+            class="liquidity-mark"
+          />
+      </div>
+    </div>
+    <div class="extra-space">
+
+    </div>
+    <div class="info multiplier">
+      <label class="title">multiplier</label
+      >
+      <div class="space">
+      <label class="number"> {{ farms_item.multiplier }}x </label>
+      <img src="/assets/svg/Farms_question_mark.svg" class="liquidity-mark" /></div>
+    </div>
+
+    <div class="hide-button">
+      <img src="/assets/svg/Farms_PancakeSwap - $11.375-13.svg" />
+    </div>
+  </div>
+</div>

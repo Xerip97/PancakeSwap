@@ -12,31 +12,29 @@ import { SearchTextService } from '@app/shared/services/forms/search-text/search
   styleUrls: ['./farms-container.component.css'],
 })
 export class FarmsContainerComponent implements OnInit {
-  farms: Farms[] = farms
-  farms_dropdown: Array<any> = dropDown_Farms
-  keyToUse: string = this.dropdownService.keyToUse
-
+  farms: Farms[] = farms;
+  farms_dropdown: Array<any> = dropDown_Farms;
+  keyToUse: string = this.dropdownService.keyToUse;
 
   constructor(
-   private sliderService: SliderService,
-   private dropdownService: DropdownService,
-   private searchService: SearchTextService
+    private sliderService: SliderService,
+    private dropdownService: DropdownService,
+    private searchService: SearchTextService
   ) {}
 
   ngOnInit(): void {
-    this.searchService.value = ''
+    this.searchService.value = '';
   }
- 
+
   callIfCheck() {
-   return this.sliderService.checked
+    return this.sliderService.checked;
   }
 
   callSortBy(arr: Farms[], key: string) {
-   return this.dropdownService.callArrayReversed(arr, key)
+      return this.dropdownService.callArrayReversed(arr, key);
   }
 
   callgetResult(arr: Farms[], key: string) {
-  return this.searchService.getResultv2(arr, key)
+    return this.searchService.getResultv2(arr, key);
   }
- 
 }
