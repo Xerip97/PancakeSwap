@@ -9,18 +9,30 @@
   ></pancakeswap-filter>
 
   <div *ngIf="!callIfCheck()">
-    <!--table view-->
-    <div class="generic_div">
-      <div
-        *ngFor="let item of callgetResult(callSortBy(farms, keyToUse), 'name')"
-      >
-        <pancakeswap-farms-table [farms_item]="item"></pancakeswap-farms-table>
-      </div>
-      <div class="return-top">
-        <button>to top <img src="/assets/svg/little_up_arrow.svg" /></button>
+    <div *ngIf="callView()">
+      <!--table view-->
+      <div class="generic_div">
+        <div
+          *ngFor="
+            let item of callgetResult(callSortBy(farms, keyToUse), 'name')
+          "
+        >
+          <pancakeswap-farms-table
+            [farms_item]="item"
+          ></pancakeswap-farms-table>
+        </div>
+        <div class="return-top">
+          <button>to top <img src="/assets/svg/little_up_arrow.svg" /></button>
+        </div>
       </div>
     </div>
-   <!--end of table view-->
+    <!--end of table view-->
+    <!--cards view-->
+    <div *ngIf="!callView()">
+      <pancakeswap-farms-cards></pancakeswap-farms-cards>
+    </div>
+
+    <!--end of card view-->
     <br /><br />
     <div class="bottom-img">
       <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />

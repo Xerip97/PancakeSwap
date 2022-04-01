@@ -1,11 +1,13 @@
 <div class="main">
   <div class="filter">
-    <button class="farms_view" id="farms_cards">
+    <input (change)="activeButton($event)" type="radio" id="farms_cards" name="farms_view" value="cards" >
+    <label  class="farms_view view-card offline" for="farms_cards" >
       <img src="../../../../assets/svg/Farms _graph_icon.svg" />
-    </button>
-    <button class="farms_view" id="farms_table">
-      <img src="../../../../assets/svg/Farms_graph_icon_2.svg" />
-    </button>
+    </label>
+    <input (change)="activeButton($event)" type="radio" id="farms_table" name="farms_view" value="table" checked>
+    <label class="farms_view view-table active" for="farms_table">
+      <img  src="../../../../assets/svg/Farms_graph_icon_2.svg" />
+    </label>
     <div class="slider">
       <pancakeswap-form-slider
         [typeslider]="{ type: 'forms' }"

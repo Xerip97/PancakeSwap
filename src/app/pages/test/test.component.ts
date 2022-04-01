@@ -11,7 +11,7 @@ import { PollService } from '@app/shared/services/forms/poll/poll.service';
 import { TradeTextService } from '@app/shared/services/forms/trade-text/trade-text.service';
 import { SliderService } from '../../shared/services/forms/slider/slider.service';
 import { BtnDoubleComponent } from '@app/designsystem/buttons/btn-double/btn-double.component';
-import { BtnDoubleService } from '@app/shared/services/buttons/btn-double.service';
+import { BtnDoubleService } from '@app/shared/services/buttons/btn-double/btn-double.service';
 
 
 @Component({

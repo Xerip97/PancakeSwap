@@ -5,6 +5,7 @@ import { DropdownService } from '@app/shared/services/forms/dropdown/dropdown.se
 import { farms } from 'src/mock/farmsMock';
 import { dropDown_Farms } from 'src/mock/farmsDropDown';
 import { SearchTextService } from '@app/shared/services/forms/search-text/search-text.service';
+import { FilterViewService } from '@app/shared/services/filter-view/filter-view.service';
 
 @Component({
   selector: 'pancakeswap-farms-container',
@@ -19,7 +20,8 @@ export class FarmsContainerComponent implements OnInit {
   constructor(
     private sliderService: SliderService,
     private dropdownService: DropdownService,
-    private searchService: SearchTextService
+    private searchService: SearchTextService,
+    private filterViewService: FilterViewService
   ) {}
 
   ngOnInit(): void {
@@ -36,5 +38,9 @@ export class FarmsContainerComponent implements OnInit {
 
   callgetResult(arr: Farms[], key: string) {
     return this.searchService.getResultv2(arr, key);
+  }
+
+  callView() {
+    return this.filterViewService.checkLocalStorage()
   }
 }
