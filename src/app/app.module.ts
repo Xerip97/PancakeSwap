@@ -23,6 +23,7 @@ import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double
 import { FilterComponent } from './core/layout/filter/filter.component';
 import { FarmsTableComponent } from './pages/farms-container/farms-table/farms-table.component';
 import { FarmsCardsComponent } from './pages/farms-container/farms-cards/farms-cards.component';
+import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms-header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +48,7 @@ import { FarmsCardsComponent } from './pages/farms-container/farms-cards/farms-c
     FilterComponent,
     FarmsTableComponent,
     FarmsCardsComponent,
+    FarmsHeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
