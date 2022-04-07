@@ -1,6 +1,8 @@
 .main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
 }
 
 .filter,
@@ -11,6 +13,10 @@
   gap: 7px;
   align-content: center;
   align-items: center;
+}
+
+.filter {
+  gap: 15px
 }
 
 .farms_view {
@@ -52,9 +58,9 @@
     margin-left: 15px;
 }
 
-/* .filter input {
+.filter input {
   display: none
-} */
+}
 
 .active {
   filter: invert(89%) sepia(21%) saturate(6153%) hue-rotate(139deg) brightness(86%) contrast(91%)

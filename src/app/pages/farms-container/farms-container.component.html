@@ -1,12 +1,13 @@
 <div class="farms_main_table">
-  <pancakeswap-filter
+ <div class="farms-filter">  <pancakeswap-filter
     [filter]="{
       link1: '/farms',
       link2: '/farms',
       arrayDropdown: farms_dropdown,
       searchPlaceholder: 'Search Farms'
     }"
-  ></pancakeswap-filter>
+  ></pancakeswap-filter></div>
+
 
   <div *ngIf="!callIfCheck()">
     <div *ngIf="callView()">
@@ -29,7 +30,14 @@
     <!--end of table view-->
     <!--cards view-->
     <div *ngIf="!callView()">
-      <pancakeswap-farms-cards></pancakeswap-farms-cards>
+      <div class="cards_view">
+      <div
+          *ngFor="
+            let item of callgetResult(callSortBy(farms, keyToUse), 'name')
+          "
+        >
+      <pancakeswap-farms-cards [farms_item]="item"></pancakeswap-farms-cards></div>
+    </div>
     </div>
 
     <!--end of card view-->

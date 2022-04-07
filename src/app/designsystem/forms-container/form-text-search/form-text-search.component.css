@@ -1,7 +1,6 @@
 .form_marco {
     display: flex;
     height: 60px;
-    width: 223px;
 }
 .form_marco * {
     height: 100%;
@@ -10,7 +9,6 @@
 .exchange_div {
 display: flex;
 flex-flow: column nowrap;
-width:295px;
 position:relative
 }
 
@@ -54,7 +52,6 @@ padding: 0px 16px;
 
 }
 .input_farm_area {
-    width: 190px;
    padding: 0px 16px;
     height: 30px;
     border-radius: 16px;
