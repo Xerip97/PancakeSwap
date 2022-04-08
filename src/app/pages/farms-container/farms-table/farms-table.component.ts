@@ -8,11 +8,20 @@ import { Farms } from '@app/models/Farms';
 })
 export class FarmsTableComponent implements OnInit {
   @Input() farms_item!: Farms
-
+  checked: boolean = false
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeClick(e: any) {
+    if (e.target.checked) {
+      return this.checked = true
+    }
+    else {
+      return this.checked = false
+    }
   }
 
 }

@@ -43,4 +43,9 @@ export class FarmsContainerComponent implements OnInit {
   callView() {
     return this.filterViewService.checkLocalStorage()
   }
+
+    topFunction() {
+      let div = document.querySelector('.generic_div')
+      return div?.scrollIntoView()
+  }
 }
