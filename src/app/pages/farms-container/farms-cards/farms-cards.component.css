@@ -4,7 +4,11 @@
   display: flex;
   padding: 0;
   flex-direction: column;
-  border-radius: 24px;
+  box-shadow: none;
+}
+
+.top-div {
+  border-radius: 24px 24px 0px 0px;
   border: 1px solid rgba(25, 19, 38, 0.15);
 }
 
@@ -181,13 +185,22 @@
 }
 
 .details {
-  padding: 25px;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  font-weight: 700;
+  flex-direction: column;
   color: var(--primary-color-cyan);
   cursor: pointer;
+  border-radius: 0px 0px 24px 24px;
+  border: 1px solid rgba(25, 19, 38, 0.15);
+}
+
+.title-details { 
+  padding: 25px;
+  font-weight: 700;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 
 .details img {
