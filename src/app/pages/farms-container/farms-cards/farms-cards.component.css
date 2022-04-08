@@ -7,6 +7,35 @@
   box-shadow: none;
 }
 
+.card-cake {
+  animation-name: color-div;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 26px;
+  background: linear-gradient( var(--primary-color-white), var(--primary-color-white) ) padding-box, linear-gradient(var(--primary-color-cyan), var(--primary-color-violet)) 0% 0% / 500% 500%;
+  border: 1px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+@keyframes color-div {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.top-div-card{
+  border-radius: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.0)
+}
+
 .top-div {
   border-radius: 24px 24px 0px 0px;
   border: 1px solid rgba(25, 19, 38, 0.15);
@@ -69,7 +98,8 @@
   margin-top: 20px;
 }
 
-.core, .community {
+.core,
+.community {
   font-size: 13px;
   padding: 3px 10px;
   color: var(--primary-color-violet);
@@ -91,17 +121,19 @@
   border: 2px solid var(--secondary-color-pink);
 }
 
-.core img, .community img {
+.core img,
+.community img {
   width: 18px;
 }
 
 .core img {
   filter: invert(27%) sepia(78%) saturate(2042%) hue-rotate(246deg)
-  brightness(90%) contrast(89%);
+    brightness(90%) contrast(89%);
 }
 
 .community img {
-  filter: invert(47%) sepia(56%) saturate(2871%) hue-rotate(301deg) brightness(95%) contrast(95%);
+  filter: invert(47%) sepia(56%) saturate(2871%) hue-rotate(301deg)
+    brightness(95%) contrast(95%);
 }
 
 .multiplier {
@@ -194,13 +226,13 @@
   border: 1px solid rgba(25, 19, 38, 0.15);
 }
 
-.title-details { 
+.title-details {
   padding: 25px;
   font-weight: 700;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .details img {
@@ -224,7 +256,7 @@ align-items: center;
   justify-content: space-between;
   height: 25px;
 }
-.link-details  {
+.link-details {
   display: flex;
   flex-direction: column;
 }
@@ -235,7 +267,9 @@ align-items: center;
     brightness(91%) contrast(81%);
 }
 
-.link-details a, a:link, a:visited{
+.link-details a,
+a:link,
+a:visited {
   display: flex;
   flex-direction: row;
   color: var(--primary-color-cyan);
