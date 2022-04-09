@@ -21,6 +21,7 @@ import { Team2Component } from './pages/leaderboard-container/team-container/tea
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { EarnUndernavbarDivComponent } from './core/earn-undernavbar-div/earn-undernavbar-div.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
+import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { PoolsContainerComponent } from './pages/pools-container/pools-container
     Team3Component,
     EarnUndernavbarDivComponent,
     PoolsContainerComponent,
+    BountyInfoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

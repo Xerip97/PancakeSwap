@@ -21,44 +21,6 @@
         />
       </button>
     </a>
-    <div class="generic_div">
-      <div class="cake-bounty-title">
-        <h2 class="pools-syrup-h2-16">Auto CAKE Bounty</h2>
-        <div class="cake-bounty-question-mark">
-          <img
-            src="/assets/svg/Farms_question_mark_violet.svg"
-            alt=""
-            (mouseover)="showBountyInfo()"
-            (mouseleave)="hideBountyInfo()"
-          />
-          <div class="bounty-info">
-            <div>
-              This bounty is given as a reward for providing a service to other
-              users.<br />
-            </div>
-            <div>
-              Whenever you successfully claim the bounty, you’re also helping
-              out by activating the Auto CAKE Pool’s compounding function for
-              everyone.<br />
-            </div>
-            <div>
-              <b
-                >Auto-Compound Bounty: 0.05% of all Auto CAKE pool users pending
-                yield</b
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bounty-value-section">
-        <div class="bounty-value">
-          <h2 class="h2-20 bounty-value1">valore</h2>
-          <h2 class="pools-syrup-h2-12">valore</h2>
-        </div>
-        <div>
-          <button class="btn1">Claim</button>
-        </div>
-      </div>
-    </div>
+    <pancakeswap-bounty-info></pancakeswap-bounty-info>
   </div>
 </div>

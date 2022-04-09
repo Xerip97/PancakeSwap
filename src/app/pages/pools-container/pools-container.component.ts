@@ -10,13 +10,4 @@ export class PoolsContainerComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  showBountyInfo() {
-    const bountyInfo = document.querySelector('.bounty-info');
-    bountyInfo?.classList.add('bounty-info-visible');
-  }
-
-  hideBountyInfo() {
-    const bountyInfo = document.querySelector('.bounty-info');
-    bountyInfo?.classList.remove('bounty-info-visible');
-  }
 }
