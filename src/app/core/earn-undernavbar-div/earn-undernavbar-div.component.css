@@ -1,0 +1,37 @@
+.earn-undernav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.earn-link {
+  color: var(--secondary-color-violet1);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin: 0 5px 0 5px;
+}
+
+.earn-link:hover {
+  background-color: var(--secondary-color-white1);
+}
+
+.active-link {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-color-violet);
+  position: relative;
+}
+
+.active-link::after {
+  content: "";
+  bottom: 0px;
+  left: 5%;
+  position: absolute;
+  height: 4px;
+  width: 90%;
+  background-color: var(--primary-color-cyan);
+  border-radius: 2px 2px 0px 0px;
+}
