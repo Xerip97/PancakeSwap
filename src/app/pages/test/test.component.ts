@@ -3,11 +3,14 @@ import { data_1 } from '../../../mock/data_1';
 import { data_2 } from '../../../mock/data_2';
 import { data_3 } from '../../../mock/data_3';
 import { data_4 } from '../../../mock/data_4';
+import { data_5 } from '../../../mock/data_5'
 import { DropdownService } from '@app/shared/services/forms/dropdown/dropdown.service';
 import { SearchTextService } from '@app/shared/services/forms/search-text/search-text.service';
 import { PollService } from '@app/shared/services/forms/poll/poll.service';
 import { TradeTextService } from '@app/shared/services/forms/trade-text/trade-text.service';
 import { SliderService } from '../../shared/services/forms/slider/slider.service';
+import { BtnDoubleComponent } from '@app/designsystem/buttons/btn-double/btn-double.component';
+import { BtnDoubleService } from '@app/shared/services/buttons/btn-double.service';
 
 
 @Component({
@@ -19,15 +22,18 @@ export class TestComponent implements OnInit {
   
   data = data_1;
   data_poll = data_3;
+  data_live = data_5
   data_trade = data_4;
   keyToUse: string = this.dropdownService.keyToUse;
+  isFinished = this.btnDoubleService.isFinished
 
   constructor(
     private dropdownService: DropdownService,
     private searchTextService: SearchTextService,
     private pollService: PollService,
     private tradeTextService:TradeTextService,
-    private sliderService: SliderService
+    private sliderService: SliderService,
+    private btnDoubleService: BtnDoubleService
   ) { }
 
   ngOnInit() {
@@ -74,6 +80,7 @@ export class TestComponent implements OnInit {
 
   //  }
 
- 
-
+  callReturnValue(bool: boolean) {
+    return this.btnDoubleService.returnValue(bool)
+  }
 }

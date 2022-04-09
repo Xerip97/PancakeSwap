@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BtnTrisComponent } from './btn-tris/btn-tris.component';
+import { BtnTrisComponent } from './designsystem/buttons/btn-tris/btn-tris.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
@@ -22,6 +22,7 @@ import { Team3Component } from './pages/leaderboard-container/team-container/tea
 import { EarnUndernavbarDivComponent } from './core/earn-undernavbar-div/earn-undernavbar-div.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-info.component';
+import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-
     EarnUndernavbarDivComponent,
     PoolsContainerComponent,
     BountyInfoComponent,
+    BtnDoubleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
