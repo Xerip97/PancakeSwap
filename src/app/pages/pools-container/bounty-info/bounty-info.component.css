@@ -1,0 +1,81 @@
+.cake-bounty-title {
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     margin-bottom: 12px;
+}
+
+.pools-syrup-h2-16 {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 1.5;
+     margin: 0 4px 0 0;
+     color: var(--secondary-color-violet1);
+}
+
+.cake-bounty-question-mark {
+     position: relative;
+     width: 20px;
+}
+
+.bounty-info {
+     position: absolute;
+     visibility: hidden;
+     font-size: 16px;
+     min-width: 288px;
+     background-color: rgb(39, 38, 44);
+     color: var(--primary-color-white);
+     text-align: left;
+     border-radius: 16px;
+     padding: 8px 16px 16px 16px;
+     z-index: 101;
+     left: -285px;
+     transform: translate(10px, 0);
+     top: 100%;
+}
+
+.bounty-info:hover {
+     visibility: visible;
+}
+
+.bounty-info-visible {
+     visibility: visible;
+}
+
+.bounty-info div {
+     padding-top: 8px;
+     font-weight: 400;
+}
+
+.bounty-value-section {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 5vw;
+}
+
+.bounty-value-section *~ {
+     width: 100%;
+     height: 100%;
+}
+
+.bounty-value {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: left;
+     margin-right: 12px;
+}
+
+.bounty-value1 {
+     margin: 0;
+     color: var(--secondary-color-blue);
+}
+
+.pools-syrup-h2-12 {
+     font-size: 12px;
+     font-weight: 400;
+     line-height: 1.5;
+     color: var(--secondary-color-violet1);
+     margin: 0;
+}

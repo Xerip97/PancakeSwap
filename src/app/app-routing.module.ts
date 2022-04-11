@@ -7,9 +7,11 @@ import { Team1Component } from './pages/leaderboard-container/team-container/tea
 import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
+import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 
 const routes: Routes = [
   { path: 'farms', component: FarmsContainerComponent },
+  { path: 'pools', component: PoolsContainerComponent },
   { path: 'test', component: TestComponent },
   { path: 'teams', component: LeaderboardContainerComponent },
   { path: 'teams/1', component: Team1Component },
