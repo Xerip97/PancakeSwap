@@ -19,6 +19,9 @@ import { TeamContainerComponent } from './pages/leaderboard-container/team-conta
 import { Team1Component } from './pages/leaderboard-container/team-container/team1/team1.component';
 import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
+import { EarnUndernavbarDivComponent } from './core/earn-undernavbar-div/earn-undernavbar-div.component';
+import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
+import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-info.component';
 import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
 import { FilterComponent } from './core/layout/filter/filter.component';
 import { FarmsTableComponent } from './pages/farms-container/farms-table/farms-table.component';
@@ -44,6 +47,9 @@ import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms
     Team1Component,
     Team2Component,
     Team3Component,
+    EarnUndernavbarDivComponent,
+    PoolsContainerComponent,
+    BountyInfoComponent,
     BtnDoubleComponent,
     FilterComponent,
     FarmsTableComponent,
