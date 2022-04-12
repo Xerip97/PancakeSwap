@@ -34,11 +34,13 @@
 .top-div-card{
   border-radius: 26px;
   border: 1px solid rgba(0, 0, 0, 0.0)
+  
 }
 
 .top-div {
   border-radius: 24px 24px 0px 0px;
   border: 1px solid rgba(25, 19, 38, 0.15);
+  border-bottom: 0px;
 }
 
 .main-info {
@@ -153,6 +155,14 @@
   align-items: center;
 }
 
+.apr .number {
+  cursor: pointer;
+}
+
+.apr .number:hover {
+  opacity: 0.6;
+}
+
 .property {
   font-size: 15.5px;
   color: var(--secondary-color-blue);
@@ -217,14 +227,20 @@
 }
 
 .details {
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   color: var(--primary-color-cyan);
   cursor: pointer;
   border-radius: 0px 0px 24px 24px;
   border: 1px solid rgba(25, 19, 38, 0.15);
+  border-top: 0px;
+  border-bottom: 4px solid var(--secondary-color-white3);
 }
+
+.details.cake {
+  border-bottom: 4px solid transparent;
+}
+
 
 .title-details {
   padding: 25px;
@@ -233,6 +249,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid rgba(25, 19, 38, 0.15);
 }
 
 .details img {
