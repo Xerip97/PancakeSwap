@@ -14,7 +14,6 @@
     --secondary-color-white4: #faf9fa;
     --secondary-color-gray: #bdc2c4;
     --secondary-color-white-nuanced: linear-gradient(
-      to bottom right,
       #e6fcff,
       #f1f0ff
     );
@@ -24,6 +23,7 @@
       #e5fdff,
       #f1f0ff
     );
+    --secondary-color-nuanced-header: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%) 
   }
   
   /*---------------TYPOGRAPHY------------------*/
@@ -107,4 +107,21 @@
     border-radius: 100px;
   }
   
+  .my-custom-class {
+    background: rgb(41, 41, 41);
+    border: none;
+    border-radius: 16px;
+  }
 
+  /* .my-custom-class .popover-arrow {
+  } */
+  .my-custom-class .popover-arrow::after {
+    border-top-color: rgb(41, 41, 41);
+}
+
+.my-custom-class .popover-body {
+  color: white;
+  text-align: left;
+ font-weight: 600;
+ font-size: 16px;
+}

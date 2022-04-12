@@ -23,6 +23,11 @@ import { EarnUndernavbarDivComponent } from './core/earn-undernavbar-div/earn-un
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-info.component';
 import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
+import { FilterComponent } from './core/layout/filter/filter.component';
+import { FarmsTableComponent } from './pages/farms-container/farms-table/farms-table.component';
+import { FarmsCardsComponent } from './pages/farms-container/farms-cards/farms-cards.component';
+import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms-header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 @NgModule({
@@ -49,10 +54,14 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
     PoolsContainerComponent,
     BountyInfoComponent,
     BtnDoubleComponent,
+    FilterComponent,
+    FarmsTableComponent,
+    FarmsCardsComponent,
+    FarmsHeaderComponent,
     WarningBannerComponent,
     DesignSystemComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

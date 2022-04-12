@@ -16,6 +16,7 @@
   .dropdown-list_dropdown_a {
     border-radius: 16px;
     background-color: var(--secondary-color-white1);
+    cursor: pointer;
   }
   .dropdown-list_dropdown-list {
     padding: 0;

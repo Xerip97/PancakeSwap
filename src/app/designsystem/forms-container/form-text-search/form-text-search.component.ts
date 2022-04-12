@@ -1,7 +1,8 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Subject } from 'rxjs';
 import { SearchTextService } from '@app/shared/services/forms/search-text/search-text.service';
 
+ 
 @Component({
   selector: 'pancakeswap-form-text-search',
   templateUrl: './form-text-search.component.html',
@@ -10,6 +11,7 @@ import { SearchTextService } from '@app/shared/services/forms/search-text/search
 export class FormTextSearchComponent implements OnInit {
   @Output() value = new EventEmitter
   private subjectKeyUp = new Subject<any>()
+ @Input() search: string = "Search..."
 
   constructor(private searchTextService : SearchTextService ) { }
 

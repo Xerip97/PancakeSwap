@@ -3,7 +3,6 @@ import { DropdownService } from '@app/shared/services/forms/dropdown/dropdown.se
 
 interface Dropdown {
   width: number;
-  link: string;
 }
 
 @Component({
@@ -18,8 +17,7 @@ export class FormDropdownComponent implements OnInit {
   addressState: boolean = false
 
   _dropdown: Dropdown = {
-    width: 200,
-    link: '',
+    width: 200
   };
   constructor(private dropdownService: DropdownService) {}
   @Input() set dropdown(value: Partial<Dropdown>) {
@@ -30,10 +28,10 @@ export class FormDropdownComponent implements OnInit {
   }
 
 
-  takeKey(key: any) {
+  takeKey(key: any, value: any) {
     this.firstKey = key
     // this.addClass('closed')
-    return this.dropdownService.takeKey(key)
+    return this.dropdownService.takeKey(value)
   }
 
   

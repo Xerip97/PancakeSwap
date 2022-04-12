@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, EventEmitter } from '@angular/core';
-import { BtnDoubleService } from '@app/shared/services/buttons/btn-double.service';
+import { BtnDoubleService } from '@app/shared/services/buttons/btn-double/btn-double.service';
 
 interface ButtonDouble {
   name1: string;

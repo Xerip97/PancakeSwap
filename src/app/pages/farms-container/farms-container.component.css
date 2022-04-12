@@ -1,0 +1,73 @@
+.farms_main_table {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.farms-filter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ .generic_div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: inherit;
+  margin-top: 3vh;
+  box-shadow: 0px 0px 10px rgba(25, 19, 38, 0.2);
+  padding: 0;
+  border-radius: 15px;
+  overflow-x: hidden;
+}
+.bottom-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.return-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.return-top button {
+  border: none;
+  outline: none;
+  background: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color-cyan);
+  cursor: pointer;
+}
+
+.return-top img {
+  width: 20px;
+  filter: invert(75%) sepia(21%) saturate(1794%) hue-rotate(132deg)
+    brightness(91%) contrast(81%);
+}
+
+.return-top:hover button {
+  opacity: 0.6;
+}
+.return-top:active button {
+  transform: translateY(1px);
+}
+
+.center-img {
+  margin-top: 5vh;
+  margin-bottom: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards_view {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:30px 13px;
+}
