@@ -1,8 +1,8 @@
 <!---FORM FABIO---->
 
-<div class="dropdown-list" [style.width.px]="_dropdown.width"   (click)="addClass()" (focusout)="onFocusOutEvent()">
+<div class="dropdown-list" [style.width.px]="_dropdown.width"   (focusout)="onFocusOutEvent()">
   <div class="dropdown-list_label"><p>SORT BY</p></div>
-  <div class="dropdown dropdown-list_dropdown" >
+  <div class="dropdown dropdown-list_dropdown"  (click)="addClass()">
     <a
       class="btn dropdown-toggle dropdown-list_dropdown_a"
       href="#"
@@ -24,13 +24,13 @@
       <li  (click)="addClass()">
         <a
           class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item1"
-          href="#" routerLink="{{ _dropdown.link }}" *ngIf="!isLast" (click)="takeKey(i.key)"> {{i.key}}
+           *ngIf="!isLast" (click)="takeKey(i.key, i.value)"> {{i.key}}
         </a>
       </li> 
       <li  (click)="addClass()">
         <a 
           class="dropdown-item dropdown-list_dropdown-item dropdown-list_dropdown-item3"
-          href="#" routerLink="{{ _dropdown.link }}" (click)="takeKey(i.key)" *ngIf="isLast"> {{i.key}}</a
+           (click)="takeKey(i.key, i.value)" *ngIf="isLast"> {{i.key}}</a
         >
       </li></div>
     </ul>

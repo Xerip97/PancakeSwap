@@ -181,3 +181,15 @@ export const data_1 = [
 	}
 
 ];
+
+export const data_dropdown = [
+	{ 
+		"Name": "name",
+		"Phone": "phone",
+		"E-mail": "email",
+		"Address": "address",
+		"Postal-Zip": "postalZip",
+		"Region": "region",
+		"Country": "country"
+	}
+]

@@ -1,1 +1,64 @@
 <pancakeswap-earn-undernavbar-div></pancakeswap-earn-undernavbar-div>
+<pancakeswap-farms-header></pancakeswap-farms-header>
+<br />
+<br />
+<div class="farms_main_table">
+  <div class="farms-filter">
+    <pancakeswap-filter
+      [filter]="{
+        link1: '/farms',
+        link2: '/farms',
+        arrayDropdown: farms_dropdown,
+        searchPlaceholder: 'Search Farms'
+      }"
+    ></pancakeswap-filter>
+  </div>
+
+  <div *ngIf="!callIfCheck()">
+    <div *ngIf="callView()">
+      <!--table view-->
+      <div class="generic_div">
+        <div
+          *ngFor="
+            let item of callgetResult(callSortBy(farms, keyToUse), 'name')
+          "
+        >
+          <pancakeswap-farms-table
+            [farms_item]="item"
+          ></pancakeswap-farms-table>
+        </div>
+
+        
+        <div class="return-top">
+          <button (click)="topFunction()">
+            to top <img src="/assets/svg/little_up_arrow.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--end of table view-->
+    <!--cards view-->
+    <div *ngIf="!callView()">
+      <div class="cards_view">
+        <div
+          *ngFor="
+            let item of callgetResult(callSortBy(farms, keyToUse), 'name')
+          "
+        >
+          <pancakeswap-farms-cards
+            [farms_item]="item"
+          ></pancakeswap-farms-cards>
+        </div>
+      </div>
+    </div>
+
+    <!--end of card view-->
+    <br /><br />
+    <div class="bottom-img">
+      <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
+    </div>
+  </div>
+</div>
+<div *ngIf="callIfCheck()" class="center-img">
+  <img src="https://pancakeswap.finance/images/decorations/3dpan.png" />
+</div>
