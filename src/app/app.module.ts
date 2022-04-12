@@ -12,13 +12,10 @@ import { FormSliderComponent } from './designsystem/forms-container/form-slider/
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
 import { TestComponent } from './pages/test/test.component';
-import {NavbarComponent} from './core/layout/navbar/navbar.component';
+import { NavbarComponent } from './core/layout/navbar/navbar.component';
 import { LeaderboardContainerComponent } from './pages/leaderboard-container/leaderboard-container.component';
 import { TeamsComponent } from './pages/leaderboard-container/teams/teams.component';
 import { TeamContainerComponent } from './pages/leaderboard-container/team-container/team-container.component';
-import { Team1Component } from './pages/leaderboard-container/team-container/team1/team1.component';
-import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
-import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { EarnUndernavbarDivComponent } from './core/earn-undernavbar-div/earn-undernavbar-div.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-info.component';
@@ -30,6 +27,7 @@ import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
+import { TeamDetailComponent } from './pages/leaderboard-container/team-container/team-detail/team-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,9 +45,6 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
     LeaderboardContainerComponent,
     TeamsComponent,
     TeamContainerComponent,
-    Team1Component,
-    Team2Component,
-    Team3Component,
     EarnUndernavbarDivComponent,
     PoolsContainerComponent,
     BountyInfoComponent,
@@ -60,6 +55,7 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
     FarmsHeaderComponent,
     WarningBannerComponent,
     DesignSystemComponent,
+    TeamDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

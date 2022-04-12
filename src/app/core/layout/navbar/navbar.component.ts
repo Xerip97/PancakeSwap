@@ -1,24 +1,18 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CakeValueService } from '@app/shared/services/pages/cake-value.service';
-import { Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'pancakeswap-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit, OnDestroy {
-  cakeValue!: number;
-  cakeValueSubscription!: Subscription;
+export class NavbarComponent implements OnInit {
   constructor(private cakeValueService: CakeValueService) {}
 
-  ngOnInit(): void {
-    this.cakeValueSubscription = this.cakeValueService
-      .getCakeValue()
-      .subscribe((cakeValue) => (this.cakeValue = cakeValue));
-  }
+  cakeValueObs$!: Observable<number>;
 
-  ngOnDestroy(): void {
-    this.cakeValueSubscription.unsubscribe();
+  ngOnInit(): void {
+    this.cakeValueObs$ = this.cakeValueService.getCakeValue();
   }
 }
