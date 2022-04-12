@@ -27,6 +27,7 @@ import { FilterComponent } from './core/layout/filter/filter.component';
 import { FarmsTableComponent } from './pages/farms-container/farms-table/farms-table.component';
 import { FarmsCardsComponent } from './pages/farms-container/farms-cards/farms-cards.component';
 import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms-header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +57,7 @@ import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms
     FarmsCardsComponent,
     FarmsHeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })

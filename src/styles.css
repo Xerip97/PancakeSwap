@@ -107,4 +107,21 @@
     border-radius: 100px;
   }
   
+  .my-custom-class {
+    background: rgb(41, 41, 41);
+    border: none;
+    border-radius: 16px;
+  }
 
+  /* .my-custom-class .popover-arrow {
+  } */
+  .my-custom-class .popover-arrow::after {
+    border-top-color: rgb(41, 41, 41);
+}
+
+.my-custom-class .popover-body {
+  color: white;
+  text-align: left;
+ font-weight: 600;
+ font-size: 16px;
+}

@@ -24,10 +24,17 @@
           <label class="number liquidity">
             ${{ farms_item.liquidity | number: "3." }}</label
           >
-          <img
+          <img ngbPopover="Nice class!"
+          placement="top"
+          triggers="mouseenter:mouseleave"
+          popoverClass="my-custom-class"
+          [ngbPopover]="LiquidityPop"
             src="/assets/svg/Farms_question_mark.svg"
             class="liquidity-mark"
           />
+          <ng-template #LiquidityPop>
+            Total value of the funds in this farm’s liquidity pool
+          </ng-template>
         </div>
       </div>
       <div class="extra-space"></div>
@@ -35,10 +42,21 @@
         <label class="title">multiplier</label>
         <div class="space">
           <label class="number"> {{ farms_item.multiplier }}x </label>
-          <img
+          <img ngbPopover="Nice class!"
+          placement="top"
+          triggers="mouseenter:mouseleave"
+          popoverClass="my-custom-class"
+          [ngbPopover]="MultiplierPop"
             src="/assets/svg/Farms_question_mark.svg"
             class="liquidity-mark"
           />
+          <ng-template #MultiplierPop>
+            The Multiplier represents the proportion of CAKE rewards each farm receives, 
+  as a proportion of the CAKE produced each block. <br><br>
+  For example, if a 1x farm received 1 CAKE per block,
+   a 40x farm would receive 40 CAKE per block. <br><br>
+  This amount is already included in all APR calculations for the farm.
+          </ng-template>
         </div>
       </div>
 

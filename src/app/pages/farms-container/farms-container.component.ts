@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ANALYZE_FOR_ENTRY_COMPONENTS, Component, HostListener, OnInit } from '@angular/core';
 import { Farms } from '@app/models/Farms';
 import { SliderService } from '@app/shared/services/forms/slider/slider.service';
 import { DropdownService } from '@app/shared/services/forms/dropdown/dropdown.service';
@@ -6,6 +6,7 @@ import { farms } from 'src/mock/farmsMock';
 import { dropDown_Farms } from 'src/mock/farmsDropDown';
 import { SearchTextService } from '@app/shared/services/forms/search-text/search-text.service';
 import { FilterViewService } from '@app/shared/services/filter-view/filter-view.service';
+
 
 @Component({
   selector: 'pancakeswap-farms-container',
@@ -22,11 +23,15 @@ export class FarmsContainerComponent implements OnInit {
     private dropdownService: DropdownService,
     private searchService: SearchTextService,
     private filterViewService: FilterViewService
-  ) {}
+  ) {
+
+  }
 
   ngOnInit(): void {
-    this.searchService.value = '';
+  
   }
+
+
 
   callIfCheck() {
     return this.sliderService.checked;
@@ -48,4 +53,5 @@ export class FarmsContainerComponent implements OnInit {
       let div = document.querySelector('.generic_div')
       return div?.scrollIntoView()
   }
+
 }
