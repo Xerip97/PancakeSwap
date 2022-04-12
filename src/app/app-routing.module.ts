@@ -8,6 +8,7 @@ import { Team2Component } from './pages/leaderboard-container/team-container/tea
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
+import { HomeContainerComponent } from './pages/home-container/home-container.component';
 
 const routes: Routes = [
   { path: 'farms', component: FarmsContainerComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'teams/1', component: Team1Component },
   { path: 'teams/2', component: Team2Component },
   { path: 'teams/3', component: Team3Component },
-  {path:'design', component: DesignSystemComponent}
+  {path:'design', component: DesignSystemComponent},
+  {path:'', component: HomeContainerComponent}
 ];
 
 @NgModule({

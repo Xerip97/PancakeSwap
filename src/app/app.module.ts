@@ -30,6 +30,7 @@ import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
+import { HomeContainerComponent } from './pages/home-container/home-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +61,7 @@ import { DesignSystemComponent } from './pages/design-system/design-system.compo
     FarmsHeaderComponent,
     WarningBannerComponent,
     DesignSystemComponent,
+    HomeContainerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
