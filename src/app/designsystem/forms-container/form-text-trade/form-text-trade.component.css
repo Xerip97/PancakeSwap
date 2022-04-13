@@ -1,7 +1,11 @@
 .form_marco {
     display: flex;
     height: 60px;
+<<<<<<< HEAD
     width: 120px;
+=======
+    width: 223px;
+>>>>>>> develop
 }
 .form_marco * {
     height: 100%;

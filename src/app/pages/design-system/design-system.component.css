@@ -1,0 +1,81 @@
+.carino{
+    width:calc(100vw-10px);
+    height:calc(100vh-10px);
+background: #b9f2ff;
+    padding:20px;
+    
+    
+}
+
+.compoconatiner{
+    width: calc(100vw-10px);
+    height: 50vh; 
+    background:blueviolet; 
+    display:flex;
+    flex-direction:column;
+    gap: 5px;
+  
+}
+.designtitle{
+    font-family: Kanit, sans-serif;
+ color:rgb(128, 81, 214);
+ font-size: 54px;
+
+}
+.undertitle{
+    color:rgb( 128, 81, 214);
+    height:1.5px;
+}
+.undertitleF{
+    color:rgb( 128, 81, 214);
+    height:1.5px;
+    width:12%;
+}
+.buttoncontainer{
+    display:flex;
+    gap: 10px;
+}
+.palettedesign{
+    width: calc(100vw-10px);
+    height: 50vh;
+    display:flex;
+    gap:5px;
+    flex-direction: column;
+     
+}
+.palettefirst{
+    display:flex;
+gap:10px;
+}
+
+.palettesecond{
+    display:flex;
+    gap:10px;
+}
+.palette{
+    width:60px;
+    height: 60px;
+    border: solid 1px black;
+    border-radius: 25%;
+}
+.palettedescription{
+    font: size 4px;
+    font-family: Kanit, sans-serif;
+    color: rgb(61, 59, 59);
+}
+.logodesign{
+display:flex;
+    gap:20px;
+}
+.designImg{
+    width:60px;
+    height:60px;
+}
+
+.icondesign{
+    display:flex;
+    gap: 7px;
+}
+hr{
+    width:calc(100vw-10px);
+}

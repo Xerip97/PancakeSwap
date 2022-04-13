@@ -1,0 +1,125 @@
+  <label for="{{ farms_item.id }}" id="initial"><div class="row">
+
+    <div class="main-info">
+      <div class="img">
+        <img src="{{ farms_item.urlIcon }}" class="farms-ico" />
+        <img src="{{ farms_item.urlAvatar }}" class="farms-avatar" /><label
+          class="name"
+          >{{ farms_item.name }}
+        </label>
+      </div>
+      <div class="info earned">
+        <label class="title">earned</label
+        ><label class="earn-number"> {{ farms_item.earned }} </label>
+      </div>
+      <div class="info apr">
+        <label class="title">APR</label
+        ><label class="number apr">
+          {{ farms_item.apr }}% <img src="/assets/svg/Farms _calcolatrice.svg"
+        /></label>
+      </div>
+      <div class="info liquidity">
+        <label class="title">liquidity</label>
+        <div class="space">
+          <label class="number liquidity">
+            ${{ farms_item.liquidity | number: "3." }}</label
+          >
+          <img ngbPopover="Nice class!"
+          placement="top"
+          triggers="mouseenter:mouseleave"
+          popoverClass="my-custom-class"
+          [ngbPopover]="LiquidityPop"
+            src="/assets/svg/Farms_question_mark.svg"
+            class="liquidity-mark"
+          />
+          <ng-template #LiquidityPop>
+            Total value of the funds in this farm’s liquidity pool
+          </ng-template>
+        </div>
+      </div>
+      <div class="extra-space"></div>
+      <div class="info multiplier">
+        <label class="title">multiplier</label>
+        <div class="space">
+          <label class="number"> {{ farms_item.multiplier }}x </label>
+          <img ngbPopover="Nice class!"
+          placement="top"
+          triggers="mouseenter:mouseleave"
+          popoverClass="my-custom-class"
+          [ngbPopover]="MultiplierPop"
+            src="/assets/svg/Farms_question_mark.svg"
+            class="liquidity-mark"
+          />
+          <ng-template #MultiplierPop>
+            The Multiplier represents the proportion of CAKE rewards each farm receives, 
+  as a proportion of the CAKE produced each block. <br><br>
+  For example, if a 1x farm received 1 CAKE per block,
+   a 40x farm would receive 40 CAKE per block. <br><br>
+  This amount is already included in all APR calculations for the farm.
+          </ng-template>
+        </div>
+      </div>
+
+      <div class="hide-button">
+        <input
+          type="checkbox"
+          (change)="changeClick($event)"
+          id="{{ farms_item.id }}"
+        />
+        <div *ngIf="!checked; else notChecked"><img src="/assets/svg/Farms_PancakeSwap - $11.375-13.svg" /></div>
+        <ng-template #notChecked><img src="/assets/svg/little_up_arrow.svg" /></ng-template>
+      </div></div
+  >
+</div>
+</label>
+
+
+
+<div *ngIf="checked">
+<div class="row hidden">
+  <div class="main-info">
+    <span class="link-details"
+      ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        >Get {{ farms_item.name }} LP <img src="/assets/svg/graph_popup.svg"
+      /></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        >View Contract <img src="/assets/svg/graph_popup.svg"
+      /></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        >See Pair Info <img src="/assets/svg/graph_popup.svg"
+      /></a>
+      <div *ngIf="farms_item.multiplier != 1; else noWinner"
+      >
+      <div class="core">
+        <img src="/assets/svg/Voting _ PancakeSwap - $11.371-9.svg" />core
+      </div></div>
+      <ng-template #noWinner>
+        <div class="community">
+          <img src="assets/svg/icon_community.svg" />Farm Auction
+        </div>
+      </ng-template></span
+    >
+
+    <div class="details-earned">
+      <span class="title-cake"
+        ><h6>CAKE</h6>
+        <h6>EARNED</h6></span
+      >
+      <span class="details-number">
+        <h2 class="h2-20">0</h2>
+        <button class="btn3" disabled>Harvest</button>
+      </span>
+    </div>
+
+    <div class="details-earned">
+      <span class="title-cake"
+        >
+        <h6>Start farming</h6></span
+      >
+      <span class="details-number">
+        <button class="btn1">connect wallet</button>
+      </span>
+    </div>
+  </div>
+</div>
+</div>

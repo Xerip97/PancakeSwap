@@ -1,0 +1,90 @@
+
+<div class="generic_div">
+  <div class="top-div">
+  <div class="main-info">
+    <div class="cards-img">
+      <img src="{{ farms_item.urlIcon }}" class="farms-ico" />
+      <img src="{{ farms_item.urlAvatar }}" class="farms-avatar" />
+    </div>
+    <div class="cards-name">
+      <h2>{{ farms_item.name }}</h2>
+      <div
+        class="cards-name-info"
+        *ngIf="farms_item.multiplier != 1; else noWinner"
+      >
+        <div class="core">
+          <img src="/assets/svg/Voting _ PancakeSwap - $11.371-9.svg" />core
+        </div>
+        <div class="multiplier">{{ farms_item.multiplier }}X</div>
+      </div>
+      <ng-template #noWinner>
+        <div class="cards-name-info">
+          <div class="community">
+            <img src="assets/svg/icon_community.svg" />Farm Auction
+          </div>
+          <div class="multiplier">{{ farms_item.multiplier }}X</div>
+        </div></ng-template
+      >
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="apr">
+      <span class="property">APR:</span
+      ><span class="number"
+        >{{ farms_item.apr }}% <img src="/assets/svg/Farms _calcolatrice.svg"
+      /></span>
+    </div>
+    <div class="earn">
+      <span class="property">earn:</span
+      ><span class="number"> CAKE + Fees </span>
+    </div>
+    <br />
+    <span class="cake">
+      <span class="title-cake"
+        ><h6>CAKE</h6>
+        <h6>EARNED</h6></span
+      >
+    </span>
+    <span class="earn">
+      <h6>{{ farms_item.earned | number: ".3" }}</h6>
+      <button class="btn3" disabled>Harvest</button>
+    </span>
+    <span class="title-cake"
+      ><h6>{{ farms_item.name }} LP</h6>
+      <h6>STAKED</h6></span
+    >
+    <button class="btn1">connect wallet</button>
+  </div>
+</div>
+  <label class="hidden-details" for="{{ farms_item.id }}"
+    ><input
+      type="checkbox"
+      (change)="changeClick($event)"
+      id="{{ farms_item.id }}" />
+    <div *ngIf="!checked; else notChecked" class="details">
+      <span class="title-details">Details<img src="/assets/svg/Farms_PancakeSwap - $11.375-13.svg" /></span>
+    </div>
+    <ng-template #notChecked>
+      <div class="details">
+       <span class="title-details">Hide<img src="/assets/svg/little_up_arrow.svg" /></span> 
+      <div class="info-details">
+        <span class="liquidity"
+          ><p>Total Liquidity:</p>
+
+          <p>${{ farms_item.liquidity | number: "3." }}</p></span
+        >
+        <span class="link-details"
+          ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >Get {{ farms_item.name }} LP
+            <img src="/assets/svg/graph_popup.svg"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >View Contract <img src="/assets/svg/graph_popup.svg"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >See Pair Info <img src="/assets/svg/graph_popup.svg" /></a
+        ></span></div></div>
+      </ng-template
+  ></label>
+</div>
