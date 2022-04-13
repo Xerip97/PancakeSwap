@@ -1,4 +1,4 @@
-import { ANALYZE_FOR_ENTRY_COMPONENTS, Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Farms } from '@app/models/Farms';
 import { SliderService } from '@app/shared/services/forms/slider/slider.service';
 import { DropdownService } from '@app/shared/services/forms/dropdown/dropdown.service';
@@ -23,15 +23,12 @@ export class FarmsContainerComponent implements OnInit {
     private dropdownService: DropdownService,
     private searchService: SearchTextService,
     private filterViewService: FilterViewService
-  ) {
-
-  }
+  ) {}
 
   ngOnInit(): void {
-  
+    
   }
-
-
+  
 
   callIfCheck() {
     return this.sliderService.checked;
