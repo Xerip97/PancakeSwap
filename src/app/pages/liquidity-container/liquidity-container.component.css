@@ -83,27 +83,27 @@
     align-items: center;
     width: 100%;
     display: flex;
+    height: 100px;
   
 }
-.liquidity_footer_button{
-    display: flex;
-    height: 50px;
-    width:100%;
-    padding: 16px;
 
-}
 .liquidity_generic_div {
     height: 40vh;
 
 }
 .liquidity_footer_link{
     display: flex;
+    align-items: center;
     
 }
 .liquidity_footer_link a {color: var(--primary-color-cyan);
     text-decoration: none;
     display: flex;
-    margin-left: 50px;}
+    margin-left: 50px;
+    font-weight: 600;
+    width: 100%;
+
+}
 
 .liquidity_footer_link a:hover{
     text-decoration: underline;
@@ -112,17 +112,21 @@
 
     display: flex;
   align-items: center;
+  width: 160vh;
+  justify-content: flex-end;
+  
     
 }
 .liquidity_svg_footer a {
-    
-    padding: 0px 24px 0px 24px;
-    width: 92px;
- 
+    margin-left: 0px;
+   
     text-decoration: none;
     color: var(--primary-color-white);
 }
+.liquidity_svg_footer a:hover{
+    text-decoration: none;
+    }
 .liquidity_svg_footer img:last-of-type {
-    margin-left: 30px;
+   
     padding-top: 10px;
 }

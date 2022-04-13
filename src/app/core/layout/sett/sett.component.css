@@ -22,6 +22,11 @@ color: var(--secondary-color-blue);
     display: flex;
     justify-content: space-evenly;
 }
+.text-trade{
+    display: flex;
+    margin-bottom: 2px;
+}
+ 
 .swap_p{
      text-transform: uppercase;
      color: var(--primary-color-violet);
@@ -43,7 +48,10 @@ color: var(--secondary-color-blue);
     .modal_slippage button{
         margin-right: 5px;
     }
-    .slippage_span {color:var(--primary-color-cyan); font-weight: 700; font-size: 15px;
+    .slippage_span {
+        color:var(--primary-color-cyan); font-weight: 700; font-size: 15px;
+        display: flex;
+        align-items: flex-end;
     }
     .modal_footer{
 
@@ -68,5 +76,4 @@ color: var(--secondary-color-blue);
     display: flex;
     justify-content: space-between;
 
- }
- 
+}

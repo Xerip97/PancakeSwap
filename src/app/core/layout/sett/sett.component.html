@@ -29,9 +29,13 @@
           <button
             type="button"
             class="close"
-            data-dismiss="modal"
-            aria-label="X"
-            style="color: var(--primary-color-cyan); border: none"
+            data-bs-dismiss="modal"
+            aria-label=""
+            style="
+              color: var(--primary-color-cyan);
+              border: none;
+              font-weight: 700;
+            "
           >
             <span aria-hidden="true">&times;</span>
           </button>
@@ -77,11 +81,12 @@
             <button class="btn3">0.1%</button>
             <button class="btn3">0.5%</button>
             <button class="btn3">1.0%</button>
-
-            <pancakeswap-form-text-trade
-              [textTrade]="{ width: 70 }"
-            ></pancakeswap-form-text-trade>
-            <p class="slippage_span">%</p>
+            <div class="text-trade">
+              <pancakeswap-form-text-trade
+                [textTrade]="{ width: 70 }"
+              ></pancakeswap-form-text-trade>
+              <p class="slippage_span">%</p>
+            </div>
           </div>
         </div>
 

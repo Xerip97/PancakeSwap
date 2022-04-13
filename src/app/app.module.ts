@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BtnTrisComponent } from './btn-tris/btn-tris.component';
+import { BtnTrisComponent } from './designsystem/buttons/btn-tris/btn-tris.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
@@ -23,6 +23,7 @@ import { LiquidityContainerComponent } from './pages/liquidity-container/liquidi
 import { TradeUndernavbarDivComponent } from './core/layout/trade-undernavbar-div/trade-undernavbar-div.component';
 import { SettComponent } from './core/layout/sett/sett.component';
 
+import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,7 @@ import { SettComponent } from './core/layout/sett/sett.component';
     LiquidityContainerComponent,
     TradeUndernavbarDivComponent,
     SettComponent,
-
+    BtnDoubleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
