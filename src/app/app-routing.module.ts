@@ -6,6 +6,7 @@ import { LeaderboardContainerComponent } from './pages/leaderboard-container/lea
 import { TeamDetailComponent } from './pages/leaderboard-container/team-container/team-detail/team-detail.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
+import { HomeContainerComponent } from './pages/home-container/home-container.component';
 
 const routes: Routes = [
   { path: 'farms', component: FarmsContainerComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'teams', component: LeaderboardContainerComponent },
   { path: 'teams/:id', component: TeamDetailComponent },
   { path: 'design', component: DesignSystemComponent },
+  { path: '', component: HomeContainerComponent },
 ];
 
 @NgModule({

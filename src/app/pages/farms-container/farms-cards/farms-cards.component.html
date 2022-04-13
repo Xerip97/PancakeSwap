@@ -57,7 +57,7 @@
     <button class="btn1">connect wallet</button>
   </div>
 </div>
-  <label class="hidden-details" for="{{ farms_item.id }}"
+  <label class="hidden-details" *ngIf="farms_item.id != 0; else cakeCard" for="{{ farms_item.id }}"
     ><input
       type="checkbox"
       (change)="changeClick($event)"
@@ -87,4 +87,36 @@
         ></span></div></div>
       </ng-template
   ></label>
+  <ng-template #cakeCard>
+    <label class="hidden-details" for="{{ farms_item.id }}"
+    ><input
+      type="checkbox"
+      (change)="changeClick($event)"
+      id="{{ farms_item.id }}" />
+    <div *ngIf="!checked; else notChecked" class="details cake card-cake">
+      <span class="title-details">Details<img src="/assets/svg/Farms_PancakeSwap - $11.375-13.svg" /></span>
+    </div>
+    <ng-template #notChecked>
+      <div class="details cake card-cake">
+       <span class="title-details">Hide<img src="/assets/svg/little_up_arrow.svg" /></span> 
+      <div class="info-details">
+        <span class="liquidity"
+          ><p>Total Liquidity:</p>
+
+          <p>${{ farms_item.liquidity | number: "3." }}</p></span
+        >
+        <span class="link-details"
+          ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >Get {{ farms_item.name }} LP
+            <img src="/assets/svg/graph_popup.svg"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >View Contract <img src="/assets/svg/graph_popup.svg"
+          /></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >See Pair Info <img src="/assets/svg/graph_popup.svg" /></a
+        ></span></div></div>
+      </ng-template
+  ></label>
+  </ng-template>
 </div>

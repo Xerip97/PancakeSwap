@@ -28,6 +28,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { TeamDetailComponent } from './pages/leaderboard-container/team-container/team-detail/team-detail.component';
+import { HomeContainerComponent } from './pages/home-container/home-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import { TeamDetailComponent } from './pages/leaderboard-container/team-containe
     WarningBannerComponent,
     DesignSystemComponent,
     TeamDetailComponent,
+    HomeContainerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
