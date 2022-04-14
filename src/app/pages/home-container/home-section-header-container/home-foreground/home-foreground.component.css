@@ -1,0 +1,13 @@
+.foreground-container{
+     
+}
+
+.trading-competiton{
+     display: flex;
+     flex-direction: row;
+}
+
+.competition-img {
+     max-width: 100%;
+     max-height: 100%;
+}
