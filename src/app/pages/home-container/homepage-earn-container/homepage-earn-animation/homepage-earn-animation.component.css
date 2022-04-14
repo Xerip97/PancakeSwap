@@ -1,0 +1,78 @@
+
+.img-earn .folder img {
+    width: 77%;
+}
+
+.img-earn img {
+    width: 87%;
+}
+
+
+.folder, .pie, .stonks {
+    position: absolute;
+    top: inherit;
+    left: auto;
+}
+
+.folder  {
+    z-index: 2;
+    animation-name: animation-folder;
+    animation-duration: 2.8s, 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.pie {
+    z-index: 1;
+    animation-name: animation-pie;
+    animation-duration: 2.8s, 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.stonks {
+    z-index: 0;
+    animation-name: animation-stonks;
+    animation-duration: 2.8s, 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation-stonks {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(5px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes animation-pie {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(3px, 24px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes animation-folder {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(8px, 9px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }

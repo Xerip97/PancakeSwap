@@ -1,0 +1,66 @@
+<div class="table-earn">
+ <span class="top-earn"><h3>Top</h3> <h3 class="earn-type">{{ topText }}</h3><button id="change-top" (click)="changeView()"><img src="/assets/svg/down_up_arrows.svg" /></button></span> 
+    <!-- <div *ngIf="isViewFarms; else Pools">  <br> -->
+      <div class="earn-show">
+        <br>
+  <div class="currencies farms show">
+    <div class="row">
+      <div *ngFor="let farm of farms | slice: 4:5" class="column one">
+        <h6>{{ farm.name }} LP</h6>
+        <h5>{{farm.apr | number: '.3'}}%</h5>
+        <p>APR</p>
+      </div>
+      <div *ngFor="let farm of farms | slice: 5:6" class="column two">
+        <h6>{{ farm.name }}</h6>
+        <h5>{{farm.apr  | number: '.3'}}%</h5>
+        <p>APR</p>
+      </div>
+      <div *ngFor="let farm of farms | slice: 6:7" class="column three">
+        <h6>{{ farm.name }} LP</h6>
+        <h5>{{farm.apr  | number: '.3'}}%</h5>
+        <p>APR</p>
+      </div>
+      <div *ngFor="let farm of farms | slice: 7:8" class="column four">
+        <h6>{{ farm.name }} LP</h6>
+        <h5>{{farm.apr  | number: '.3'}}%</h5>
+        <p>APR</p>
+      </div>
+      <div *ngFor="let farm of farms | slice: 8:9" class="column five">
+        <h6>{{ farm.name }} LP</h6>
+        <h5>{{farm.apr  | number: '.3'}}%</h5>
+        <p>APR</p>
+      </div>
+    </div></div>
+ 
+  </div>
+
+<!-- <ng-template #Pools>  -->
+  <br>
+<div class="currencies pools dont-show">
+  <div class="row">
+    <div *ngFor="let pool of pools | slice: 0:1" class="column one">
+      <h6>{{ pool.name }} {{ pool.type }}</h6>
+      <h5>{{pool.apr | number: '.3'}}%</h5>
+      <p>APR</p>
+    </div>
+    <div *ngFor="let pool of pools | slice: 1:2" class="column two">
+      <h6>{{ pool.name }} {{ pool.type }}</h6>
+      <h5>{{pool.apr | number: '.3'}}%</h5>
+      <p>APR</p>
+    </div>
+    <div *ngFor="let pool of pools | slice: 5:6" class="column three">
+      <h6>{{ pool.name }} {{ pool.type }}</h6>
+      <h5>{{pool.apr | number: '.3'}}%</h5>
+      <p>APR</p>
+    </div>
+    <div *ngFor="let pool of pools | slice: 6:7" class="column four">
+      <h6>{{ pool.name }} {{ pool.type }} - Earn TINC</h6>
+    </div>
+    <div *ngFor="let pool of pools | slice: 7:8" class="column five">
+      <h6>{{ pool.name }} {{ pool.type }} - Earn PEX</h6>
+    </div>
+  </div>
+</div>
+<!-- </ng-template> -->
+ 
+</div>
