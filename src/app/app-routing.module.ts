@@ -12,8 +12,8 @@ const routes: Routes = [
   { path: 'farms', component: FarmsContainerComponent },
   { path: 'pools', component: PoolsContainerComponent },
   { path: 'test', component: TestComponent },
-  { path: 'teams', component: LeaderboardContainerComponent },
   { path: 'teams/:id', component: TeamDetailComponent },
+  { path: 'teams', component: LeaderboardContainerComponent },
   { path: 'design', component: DesignSystemComponent },
   { path: '', component: HomeContainerComponent },
 ];
