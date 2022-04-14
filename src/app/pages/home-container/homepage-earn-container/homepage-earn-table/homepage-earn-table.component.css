@@ -65,14 +65,14 @@ left: auto;
 
 .in {
   animation-name: animation-in;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
 }
 
 .out {
   animation-name: animation-out;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
 }
