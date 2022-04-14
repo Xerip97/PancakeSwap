@@ -31,10 +31,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
-import { HomepageEarnContainerComponent } from './pages/home-container/homepage-earn-container/homepage-earn-container.component';
-import { HomepageEarnAnimationComponent } from './pages/home-container/homepage-earn-container/homepage-earn-animation/homepage-earn-animation.component';
-import { HomepageEarnDescComponent } from './pages/home-container/homepage-earn-container/homepage-earn-desc/homepage-earn-desc.component';
-import { HomepageEarnTableComponent } from './pages/home-container/homepage-earn-container/homepage-earn-table/homepage-earn-table.component';
+import { HomeEarnContainerComponent } from './pages/home-container/home-earn-container/home-earn-container.component';
+import { HomeEarnAnimationComponent } from './pages/home-container/home-earn-container/home-earn-animation/home-earn-animation.component';
+import { HomeEarnDescComponent } from './pages/home-container/home-earn-container/home-earn-desc/home-earn-desc.component';
+import { HomeEarnTableComponent } from './pages/home-container/home-earn-container/home-earn-table/home-earn-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,10 +66,10 @@ import { HomepageEarnTableComponent } from './pages/home-container/homepage-earn
     WarningBannerComponent,
     DesignSystemComponent,
     HomeContainerComponent,
-    HomepageEarnContainerComponent,
-    HomepageEarnAnimationComponent,
-    HomepageEarnDescComponent,
-    HomepageEarnTableComponent,
+    HomeEarnContainerComponent,
+    HomeEarnAnimationComponent,
+    HomeEarnDescComponent,
+    HomeEarnTableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

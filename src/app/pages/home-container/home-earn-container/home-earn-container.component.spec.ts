@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomepageEarnContainerComponent } from './homepage-earn-container.component';
+import { HomeEarnContainerComponent } from './home-earn-container.component';
 
 describe('HomepageEarnContainerComponent', () => {
-  let component: HomepageEarnContainerComponent;
-  let fixture: ComponentFixture<HomepageEarnContainerComponent>;
+  let component: HomeEarnContainerComponent;
+  let fixture: ComponentFixture<HomeEarnContainerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomepageEarnContainerComponent ]
+      declarations: [ HomeEarnContainerComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomepageEarnContainerComponent);
+    fixture = TestBed.createComponent(HomeEarnContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

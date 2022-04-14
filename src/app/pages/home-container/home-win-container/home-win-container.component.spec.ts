@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomepageEarnDescComponent } from './homepage-earn-desc.component';
+import { HomeWinContainerComponent } from './home-win-container.component';
 
-describe('HomepageEarnDescComponent', () => {
-  let component: HomepageEarnDescComponent;
-  let fixture: ComponentFixture<HomepageEarnDescComponent>;
+describe('HomeWinContainerComponent', () => {
+  let component: HomeWinContainerComponent;
+  let fixture: ComponentFixture<HomeWinContainerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomepageEarnDescComponent ]
+      declarations: [ HomeWinContainerComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomepageEarnDescComponent);
+    fixture = TestBed.createComponent(HomeWinContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,11 +5,11 @@ import { farms } from 'src/mock/farmsMock';
 import { pools } from 'src/mock/poolsMock';
 
 @Component({
-  selector: 'pancakeswap-homepage-earn-table',
-  templateUrl: './homepage-earn-table.component.html',
-  styleUrls: ['./homepage-earn-table.component.css'],
+  selector: 'pancakeswap-home-earn-table',
+  templateUrl: './home-earn-table.component.html',
+  styleUrls: ['./home-earn-table.component.css'],
 })
-export class HomepageEarnTableComponent implements OnInit {
+export class HomeEarnTableComponent implements OnInit {
   farms: Farms[] = farms;
   pools: Pool[] = pools;
   isViewFarms: boolean = true;

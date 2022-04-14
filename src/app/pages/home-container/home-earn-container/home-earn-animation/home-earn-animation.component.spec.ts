@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomepageEarnTableComponent } from './homepage-earn-table.component';
+import { HomeEarnAnimationComponent } from './home-earn-animation.component';
 
-describe('HomepageEarnTableComponent', () => {
-  let component: HomepageEarnTableComponent;
-  let fixture: ComponentFixture<HomepageEarnTableComponent>;
+describe('HomepageEarnAnimationComponent', () => {
+  let component: HomeEarnAnimationComponent;
+  let fixture: ComponentFixture<HomeEarnAnimationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomepageEarnTableComponent ]
+      declarations: [ HomeEarnAnimationComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomepageEarnTableComponent);
+    fixture = TestBed.createComponent(HomeEarnAnimationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
