@@ -57,7 +57,7 @@ export class HomepageEarnTableComponent implements OnInit {
     if (!this.isTimePaused) {
       setInterval(() => {
         this.changeView();
-      }, 7000);
+      }, 6000);
     }
   }
 }

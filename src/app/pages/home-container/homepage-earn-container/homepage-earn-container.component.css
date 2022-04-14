@@ -1,7 +1,7 @@
 .earn-container {
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
     width: calc(100vw - 7px);
-    height: 72vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
 }
