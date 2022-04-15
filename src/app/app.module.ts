@@ -35,6 +35,9 @@ import { HomeEarnContainerComponent } from './pages/home-container/home-earn-con
 import { HomeEarnAnimationComponent } from './pages/home-container/home-earn-container/home-earn-animation/home-earn-animation.component';
 import { HomeEarnDescComponent } from './pages/home-container/home-earn-container/home-earn-desc/home-earn-desc.component';
 import { HomeEarnTableComponent } from './pages/home-container/home-earn-container/home-earn-table/home-earn-table.component';
+import { HomeWinContainerComponent } from './pages/home-container/home-win-container/home-win-container.component';
+import { HomeWinLotteryComponent } from './pages/home-container/home-win-container/home-win-lottery/home-win-lottery.component';
+import { HomeWinPredictionComponent } from './pages/home-container/home-win-container/home-win-prediction/home-win-prediction.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,6 +73,9 @@ import { HomeEarnTableComponent } from './pages/home-container/home-earn-contain
     HomeEarnAnimationComponent,
     HomeEarnDescComponent,
     HomeEarnTableComponent,
+    HomeWinContainerComponent,
+    HomeWinLotteryComponent,
+    HomeWinPredictionComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
