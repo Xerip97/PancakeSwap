@@ -31,6 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
+import { HomePeopleStatisticContainerComponent } from './pages/home-container/home-people-statistic-container/home-people-statistic-container.component';
+import { HomeTradeContainerComponent } from './pages/home-container/home-trade-container/home-trade-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +64,8 @@ import { HomeContainerComponent } from './pages/home-container/home-container.co
     WarningBannerComponent,
     DesignSystemComponent,
     HomeContainerComponent,
+    HomePeopleStatisticContainerComponent,
+    HomeTradeContainerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

@@ -1,0 +1,16 @@
+.home-people-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   .home-people-img img{
+       width: 48px;
+       height: 48px;
+   }
+.home-people-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
