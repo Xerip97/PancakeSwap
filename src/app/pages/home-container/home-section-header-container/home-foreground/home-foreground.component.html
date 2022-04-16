@@ -1,9 +1,12 @@
-<div class="foreground-container">
+<div class="foreground-container" *ngIf="foregroundView; else winForeground">
   <div class="trading-competiton">
     <div class="details">
       <h3 class="title">Trading Competition</h3>
       <h2 class="description">$80,000 IN PRIZES</h2>
-      <button class="btn2">Trade Now!</button>
+      <button class="btn2">
+        Trade Now
+        <img src="/assets/svg/right_arrow.svg" alt="right_arrow" />
+      </button>
     </div>
     <div class="competition-img">
       <img
@@ -13,3 +16,41 @@
     </div>
   </div>
 </div>
+
+<ng-template #winForeground>
+  <div class="foreground-container">
+    <div class="win-lottery">
+      <div class="details">
+        <h3 class="title">Win ${{ lotteryInfo.jackpot }} in Lottery</h3>
+        <div class="description">
+          <h2 class="hours" *ngIf="lotteryInfo.date.hours > 0">
+            {{ lotteryInfo.date.hours }}h
+          </h2>
+          <h2
+            class="minutes"
+            *ngIf="(lotteryInfo.date.hours || lotteryInfo.date.minutes) > 0"
+          >
+            {{ lotteryInfo.date.minutes }}m
+          </h2>
+          <h2
+            class="seconds"
+            *ngIf="
+              (lotteryInfo.date.hours ||
+                lotteryInfo.date.minutes ||
+                lotteryInfo.date.seconds) > 0
+            "
+          >
+            {{ lotteryInfo.date.seconds }}s
+          </h2>
+        </div>
+        <button class="btn2">
+          Trade Now
+          <img src="/assets/svg/right_arrow.svg" alt="right_arrow" />
+        </button>
+      </div>
+      <div class="competition-img">
+        <img src="/assets/Logos/homepage-logos/lottery.png" alt="Angelo" />
+      </div>
+    </div>
+  </div>
+</ng-template>
