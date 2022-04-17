@@ -140,9 +140,11 @@
             />
           </div>
           <div class="cake_value">
-            <b class="cake_value">{{
-              tempValue | currency: "USD":"symbol":"1.0-0"
-            }}</b>
+            <b class="cake_value">
+              <ng-container *ngIf="cakeValueObs$ | async as cakeValue">
+                {{ cakeValue | currency: "USD":"symbol":"1.0-0" }}
+              </ng-container>
+            </b>
           </div>
         </a>
       </div>
