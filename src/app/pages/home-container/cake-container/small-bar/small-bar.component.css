@@ -1,0 +1,65 @@
+.cake2{
+    display: flex;
+    width: calc(100vw - 2vw);
+background:rgb(250,249,250);
+justify-content: center;
+
+}
+
+.cakepiece{
+ display: flex;
+ flex-direction:column;
+ color: rgb(122, 110, 170);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight:400;
+   
+  
+}
+.cake2containery{
+    display:flex;
+    height:56px;
+    width: 210px;
+    background-color:rgb(250,249,250);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+  
+}   
+.cake2containerx{
+    height:56px;
+    width: 210px;
+    border-left: 1px solid rgb(215, 202, 236);
+    background-color:rgb(250,249,250);
+    margin: 0px;
+    padding: 0px 8px;
+    font-size: 100%;
+    vertical-align: baseline;
+display: flex;
+flex-direction:column;
+
+}   
+.cakebr{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+.cakepiecevalue{
+    color: rgb(122, 110, 170);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight:400;
+  
+}
+.cakepiecevalue2{
+    color:rgb(40, 13, 95);
+     font-size: 24px;;
+     line-height: 1.1;
+   
+ }
+
+

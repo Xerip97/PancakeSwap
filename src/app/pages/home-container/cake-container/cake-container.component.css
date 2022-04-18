@@ -1,0 +1,84 @@
+.cakentainer{
+    width: calc(100vw - 7px) ;
+    background-color: rgb(250, 249, 250);
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+align-items: center;
+justify-content: flex-end;
+padding:48px 0px;
+}
+
+.cake1{
+    width:100%;
+height:500px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: row;
+background-color:rgb(250,249,250);
+gap:40px;
+}
+.cake1chad{
+    width:450px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+    
+ 
+}
+.caketitle{
+    font-size:42px;
+    color: rgb(118, 69, 217);
+    font-family: Kanit, sans-serif;
+}
+.caketitle2{
+    font-size:40px;
+     color: rgb(40, 13, 95);
+    font-family: Kanit, sans-serif;
+    font-weight: 600;
+}
+.cakedescription{
+    color: rgb(122, 110, 170);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-family: Kanit, sans-serif;
+}
+.learn{
+    color: rgb(31, 199, 212);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: Kanit, sans-serif;
+}
+.learn:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.CakeFlex{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    flex-direction: row;
+    gap:20px;
+}
+
+.cake1chad2{
+    width:390px;
+    height:350px;
+  
+}
+
+.cakeanimation{
+    width:420px;
+    animation: floating 2s ease-in-out 0.66s infinite none running ;
+}
+@keyframes floating{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 12px); }
+    100%   { transform: translate(0, -0px); }  
+}
+
