@@ -52,14 +52,24 @@ flex-direction:column;
     color: rgb(122, 110, 170);
     font-size: 16px;
     line-height: 1.5;
-    font-weight:400;
+    font-weight: 400px;
   
 }
 .cakepiecevalue2{
     color:rgb(40, 13, 95);
      font-size: 24px;;
      line-height: 1.1;
-   
+     font-weight: bold;
  }
 
 
+
+
+@media screen and (max-width: 850px) {
+.cake2 {
+display: grid;
+gap: 16px 8px;
+margin-top: 24px;
+grid-template-columns: repeat(2, auto);
+}
+}

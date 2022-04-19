@@ -32,6 +32,7 @@ gap:40px;
     font-size:42px;
     color: rgb(118, 69, 217);
     font-family: Kanit, sans-serif;
+    font-weight: bold;
 }
 .caketitle2{
     font-size:40px;
@@ -82,3 +83,12 @@ gap:40px;
     100%   { transform: translate(0, -0px); }  
 }
 
+@media screen and (max-width: 850px) {
+    .cake1{
+display:flex;
+    flex-direction: column-reverse;
+    }
+    .cakeanimation{
+    width:250px;
+    height:250px;
+} }
