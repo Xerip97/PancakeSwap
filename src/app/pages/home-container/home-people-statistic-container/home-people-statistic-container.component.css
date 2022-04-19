@@ -8,9 +8,96 @@
        height: 48px;
    }
 .home-people-container{
-    
+    position: relative;
+  
+    background-image:var(--secondary-color-nuanced-home) ;
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.home-people-container .imgback{
+    
+    position: absolute;
+
+}
+.home-people-container p {
+        color: var(--secondary-color-violet1)
+}
+.home-people-container h2 {
+    color: var(--secondary-color-blue);
+    font-weight: 700;
+}
+.cards{
+ 
+   
+    
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cards h2{
+    color: var(--secondary-color-blue);
+    scale:xl;
+    font-weight: 700;
+}
+.cards h3{
+    font-weight: 700;
+    scale:xl;
+}
+.cards p {
+    color: var(--secondary-color-violet1)
+}
+
+.imgcard{
+
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+.imgcard img{
+
+    width: 40px;
+    height: 40px;
+}
+.card1,
+.card2,
+.card3{
+    padding: 15px;
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    background-color: #fff;
+    
+}
+
+.card1{
+    
+    margin-right: 20px;
+
+}
+
+.card2{
+    margin-right: 20px;
+}
+.card3{
+    
+}
+.card1 h3{
+    
+    color: var(--primary-color-violet);
+
+}
+
+.card2 h3{
+    color: var(--primary-color-cyan);
+    
+}
+.card3 h3{
+ color: var(--secondary-color-pink)   
+}
+.imgback{
+    filter: invert(87%) sepia(88%) saturate(1904%) hue-rotate(183deg) brightness(101%) contrast(86%);
 }
