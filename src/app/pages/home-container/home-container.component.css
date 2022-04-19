@@ -1,0 +1,6 @@
+pancakeswap-home-section-header-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 48px 0 48px 0;
+}

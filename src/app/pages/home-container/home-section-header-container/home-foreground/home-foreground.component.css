@@ -1,13 +1,22 @@
-.foreground-container{
-     
+.foreground-container {
+     width: 81.4vw;
 }
 
-.trading-competiton{
+.trading-competiton, .win-lottery{
+     background-color: var(--primary-color-violet);
      display: flex;
      flex-direction: row;
+     margin: 23px 0;
 }
 
-.competition-img {
-     max-width: 100%;
-     max-height: 100%;
+.lottery-img, .competition-img {
+     position: absolute;
+     z-index: 1;
+     top: 112px;
+}
+
+.lottery-img{
+     width: 81.4vw;
+     height: 224px;
+     left: 9.041vw;
 }
