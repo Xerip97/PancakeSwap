@@ -1,9 +1,19 @@
+.earn {
+
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+
+    
+}
+
 .earn-container {
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
     width: calc(100vw - 7px);
-    height: 82vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .earn-top {
@@ -23,21 +33,29 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 align-items: flex-start;
+gap: 2vw;
+margin-bottom: 2vh;
 }
 
 .earn-table {
-    margin-top: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 7vh;
 }
 
 
 .earn-animation {
     margin-top: -6vh;
-    margin-right: 4.5vw;
+    width: auto;
 }
 
 .earn-desc {
     margin-top: -5vh;
 }
+
+@media screen and (max-width: 1440px) {
+    .main-earn {
+        gap: 15vw;
+        }
+  }
