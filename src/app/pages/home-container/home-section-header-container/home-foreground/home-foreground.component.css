@@ -1,22 +1,136 @@
 .foreground-container {
-     width: 81.4vw;
+     width: 1112px;
+     height: 224px;
 }
 
 .trading-competiton, .win-lottery{
-     background-color: var(--primary-color-violet);
+     height: 86%;
+     background-image: var(--secondary-color-nuanced-foreground-violet);
+     border-radius: 32px;
      display: flex;
      flex-direction: row;
-     margin: 23px 0;
+     align-items: flex-start;
+     margin: 23px 0 0 0;
+     padding: 24px;
+}
+
+.details{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+}
+
+.title{
+     color: var(--primary-color-white);
+     text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+}
+
+.description{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: flex-end;
+     margin-bottom: 16px;
+     border: 2px solid #683DBD;
+     border-radius: 12px;
+     padding: 0 4px 4px 5px;
+     background-image: linear-gradient(#3A1D76, #492B83);
+}
+
+.timer{
+     margin: 0 4px -4px 0;
+     color: rgba(254, 189 , 25);
+}
+
+.timer-letter{
+     margin: 0 12px 0 0;
+     color: rgba(254, 189, 25);
+}
+
+.btn1{
+     height: 48px;
+}
+
+.btn-content{
+     display: flex;
+     flex-direction: row;
+
+}
+
+.btn-img{
+     width: 20px;
+     filter: invert(100%) sepia(2%) saturate(7449%) hue-rotate(325deg) brightness(115%) contrast(120%);
+}
+
+.button-text{
+     text-align: left;
+     margin: 0 4px 0 0;
 }
 
 .lottery-img, .competition-img {
      position: absolute;
      z-index: 1;
-     top: 112px;
+     top: 120px;
 }
 
 .lottery-img{
-     width: 81.4vw;
+     width: 1112px;
      height: 224px;
-     left: 9.041vw;
+     left: calc((100vw - 1112px)/2);
+}
+
+@media screen and (max-width: 1145px) {
+     .lottery-img {
+          width: 97vw;
+     }
+     .foreground-container {
+          width: 97vw;
+          height: 224px;
+     }
+}
+
+@media screen and (max-width: 1000px) {
+     .lottery-img {
+          top: 200px;
+          width: 190px;
+          height: 144px;
+          left: 77vw;
+     }
+}
+
+@media screen and (max-width: 935px) {
+     .lottery-img {
+          left: 75vw;
+     }
+}
+
+@media screen and (max-width: 860px) {
+     .lottery-img {
+          left: 73vw;
+     }
+}
+
+@media screen and (max-width: 782px) {
+     .lottery-img {
+          left: 71vw;
+     }
+}
+
+@media screen and (max-width: 732px) {
+     .lottery-img {
+          left: 68vw;
+     }
+}
+
+@media screen and (max-width: 666px) {
+     .lottery-img {
+          left: 64vw;
+     }
+}
+
+@media screen and (max-width: 596px) {
+     .lottery-img {
+          left: 60vw;
+     }
 }

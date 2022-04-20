@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Lottery } from '@app/models/Lottery-info';
-import { LotteryInfoService } from '@app/shared/services/pages/lottery-info.service';
 
 @Component({
   selector: 'pancakeswap-home-foreground',

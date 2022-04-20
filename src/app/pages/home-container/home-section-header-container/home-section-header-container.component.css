@@ -2,5 +2,18 @@ pancakeswap-home-foreground{
      display: flex;
      align-items: center;
      justify-content: center;
-     padding: 24px
+     padding: 24px;
+}
+
+pancakeswap-home-bunny-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+     pancakeswap-home-bunny-section, pancakeswap-home-foreground {
+          width: 1152px;
+     }
 }

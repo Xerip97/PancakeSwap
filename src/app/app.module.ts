@@ -31,6 +31,7 @@ import { TeamDetailComponent } from './pages/leaderboard-container/team-containe
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
 import { HomeSectionHeaderContainerComponent } from './pages/home-container/home-section-header-container/home-section-header-container.component';
 import { HomeForegroundComponent } from './pages/home-container/home-section-header-container/home-foreground/home-foreground.component';
+import { HomeBunnySectionComponent } from './pages/home-container/home-section-header-container/home-bunny-section/home-bunny-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +63,7 @@ import { HomeForegroundComponent } from './pages/home-container/home-section-hea
     HomeContainerComponent,
     HomeSectionHeaderContainerComponent,
     HomeForegroundComponent,
+    HomeBunnySectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

@@ -1,11 +1,18 @@
 <div class="foreground-container" *ngIf="foregroundView; else winForeground">
   <div class="trading-competiton">
     <div class="details">
-      <h3 class="title">Trading Competition</h3>
+      <h2 class="title h2-24">Trading Competition</h2>
       <h2 class="description">$80,000 IN PRIZES</h2>
-      <button class="btn2">
-        Trade Now
-        <img src="/assets/svg/right_arrow.svg" alt="right_arrow" />
+      <a href="#"></a>
+      <button class="btn1">
+        <div class="btn-content">
+          <p class="button-text">Trade Now</p>
+          <img
+            src="/assets/svg/right_arrow.svg"
+            alt="right_arrow"
+            class="btn-img"
+          />
+        </div>
       </button>
     </div>
     <div class="foreground-img">
@@ -22,39 +29,57 @@
   <div class="foreground-container">
     <div class="win-lottery">
       <div class="details">
-        <h3 class="title">Win ${{ lotteryInfo.jackpot }} in Lottery</h3>
+        <h2 class="title h2-24">
+          Win {{ lotteryInfo.jackpot | currency: "$":"symbol":"1.0-0" }} in
+          Lottery
+        </h2>
         <div class="description">
-          <h2 class="hours" *ngIf="lotteryInfo.date.hours > 0">
-            {{ lotteryInfo.date.hours }}h
+          <h2 class="timer h2-40" *ngIf="lotteryInfo.date.hours > 0">
+            {{ lotteryInfo.date.hours }}
           </h2>
+          <h2 class="timer-letter h2-20">h</h2>
           <h2
-            class="minutes"
+            class="timer h2-40"
             *ngIf="(lotteryInfo.date.hours || lotteryInfo.date.minutes) > 0"
           >
-            {{ lotteryInfo.date.minutes }}m
+            {{ lotteryInfo.date.minutes }}
           </h2>
+          <h2 class="timer-letter h2-20">m</h2>
           <h2
-            class="seconds"
+            class="timer h2-40"
             *ngIf="
               (lotteryInfo.date.hours ||
                 lotteryInfo.date.minutes ||
                 lotteryInfo.date.seconds) > 0
             "
           >
-            {{ lotteryInfo.date.seconds }}s
+            {{ lotteryInfo.date.seconds }}
           </h2>
+          <h2 class="timer-letter h2-20">s</h2>
         </div>
-        <button class="btn2">
-          Trade Now
-          <img src="/assets/svg/right_arrow.svg" alt="right_arrow" />
+        <button class="btn1">
+          <div class="btn-content">
+            <p class="button-text">Play Now</p>
+            <img
+              src="/assets/svg/right_arrow.svg"
+              alt="right_arrow"
+              class="btn-img"
+            />
+          </div>
         </button>
       </div>
       <div class="foreground-img">
-        <img
-          src="/assets/Logos/homepage-logos/lottery.png"
-          class="lottery-img"
-          alt="Angelo"
-        />
+        <picture>
+          <source
+            media="(max-width: 1000px)"
+            srcset="/assets/Logos/homepage-logos/lotteryMobile.webp"
+          />
+          <img
+            src="/assets/Logos/homepage-logos/lottery.png"
+            class="lottery-img"
+            alt="Angelo"
+          />
+        </picture>
       </div>
     </div>
   </div>

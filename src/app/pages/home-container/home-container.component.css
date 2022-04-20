@@ -2,5 +2,7 @@ pancakeswap-home-section-header-container {
      display: flex;
      flex-direction: column;
      justify-content: space-around;
-     padding: 48px 0 48px 0;
+     align-items: center;
+     padding: 48px 24px;
+     background-image: var(--secondary-color-white-nuanced);
 }
