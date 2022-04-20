@@ -1,0 +1,141 @@
+
+
+.img-earn .folder img {
+    width: 77%;
+}
+
+.img-earn img {
+    width: 87%;
+}
+
+
+.folder, .pie, .stonks {
+    position: absolute;
+    top: inherit;
+    left: auto;
+}
+
+.folder  {
+    z-index: 2;
+    animation-name: animation-folder;
+    animation-duration: 2.8s, 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.pie {
+    z-index: 1;
+    animation-name: animation-pie;
+    animation-duration: 2.8s, 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.stonks {
+    z-index: 0;
+    animation-name: animation-stonks;
+    animation-duration: 2.8s, 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation-stonks {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(5px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes animation-pie {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(3px, 24px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes animation-folder {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(8px, 9px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @media screen and (max-width: 638px)
+{ 
+    .img-earn .folder img {
+        width: 30%;
+    }
+    
+    .img-earn img {
+        width: 40%;
+    }
+    
+}
+
+
+@media screen and (min-width: 639px) and (max-width: 834px)
+{ 
+    .img-earn .folder img {
+        width: 40%;
+    }
+    
+    .img-earn img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width: 886px)
+{ 
+    .img-earn .folder img {
+        width: 60%;
+    }
+    
+    .img-earn img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 887px) and (max-width: 1031px){
+    .img-earn .folder img {
+        width: 70%;
+    }
+    .img-earn img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1440px) {
+    .img-earn .folder img {
+        width: 75%;
+    }
+    .img-earn img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1700px) {
+    .earn-top {
+        width: 99.4vw;
+      }
+  .main-earn {
+    gap: 15vw;
+  }
+}
