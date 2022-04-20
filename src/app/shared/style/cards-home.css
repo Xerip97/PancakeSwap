@@ -55,3 +55,35 @@
     background-color: var(--secondary-color-white4);
   }
 }
+
+
+@media screen and (max-width: 638px)
+{ 
+  .card-home-win .btn-home {
+    width: 100%;
+  }
+
+  .card-home-win {
+    width: max-content;
+  }
+}
+
+
+@media screen and (min-width: 639px) and (max-width: 851px)
+{ 
+  .card-home-win .btn-home {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 852px) and (max-width: 1332px){
+  .card-home-win .btn-home {
+    width: 100%;
+  }
+  .card-home-win {
+    width: max-content;
+  }
+.card-home-win .btn-home {
+  width: 100%;
+}
+}

@@ -140,3 +140,32 @@ left: auto;
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 569px)
+{ 
+  
+.column {
+  width: 50vw;
+}
+  
+  .two,
+  .three,
+  .four,
+  .five {
+    border-left: 0px 
+  }
+    
+}
+
+@media screen and (min-width: 570px) and (max-width: 851px)
+{ .table-earn {
+  padding: 5px;
+  width: 100vw;
+}
+  
+.column {
+  width: 20vw;
+}
+  
+    
+}

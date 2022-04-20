@@ -32,3 +32,9 @@ h6 {
 .teams h2 {
   color: var(--secondary-color-blue);
 }
+
+@media screen and (max-width: 1031px) {
+.leaderboard-title, .teams{
+  margin: 0 20px;
+}
+}

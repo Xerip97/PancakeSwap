@@ -67,3 +67,35 @@ color: var(--primary-color-violet);
     -ms-transform: rotate(2deg);
     transform: rotate(2deg);
 }
+
+@media screen and (max-width: 851px)
+{  .win-container {
+    height: 150vh;
+}
+    .win-main {
+        width: 95%;
+    
+    }
+
+    .cards-win {
+        flex-direction: column;
+    }
+
+    .first-card , .second-card{
+        transform: rotate(0deg);
+    }
+}
+
+@media screen  and (min-width: 852px) and (max-width: 1332px)
+{  .win-container {
+    height: 100vh;
+}
+    .win-main {
+        width: 95%;
+    
+    }
+
+    .cards-win {
+        flex-direction: row;
+    }
+}
