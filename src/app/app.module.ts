@@ -29,6 +29,7 @@ import { WarningBannerComponent } from './core/warning-banner/warning-banner.com
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { TeamDetailComponent } from './pages/leaderboard-container/team-container/team-detail/team-detail.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
+import { PoolsTableComponent } from './pages/pools-container/pools-table/pools-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +59,7 @@ import { HomeContainerComponent } from './pages/home-container/home-container.co
     DesignSystemComponent,
     TeamDetailComponent,
     HomeContainerComponent,
+    PoolsTableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

@@ -1,7 +1,7 @@
 .pools-section-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 32px 103px;
   background-image: var(--secondary-color-white-nuanced-right-bottom);
 }
@@ -35,4 +35,68 @@
 pancakeswap-bounty-info {
   background-color: var(--primary-color-white);
   border: 1.5px solid var(--secondary-color-white1);
+}
+
+
+.pools_main_table {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.generic_div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: inherit;
+  margin-top: 3vh;
+  border:  1px solid rgba(185, 185, 185, 0.387);
+  padding: 0;
+  border-radius: 25px;
+  overflow-x: hidden;
+}
+
+.return-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.return-top button {
+  border: none;
+  outline: none;
+  background: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color-cyan);
+  cursor: pointer;
+}
+
+.return-top img {
+  width: 20px;
+  filter: invert(75%) sepia(21%) saturate(1794%) hue-rotate(132deg)
+    brightness(91%) contrast(81%);
+}
+
+.return-top:hover button {
+  opacity: 0.6;
+}
+.return-top:active button {
+  transform: translateY(1px);
+}
+
+.img-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-bottom img{
+  width: 17%;
+}
+
+.img-bottom.space {
+  margin-bottom: 70vh;
 }

@@ -1,6 +1,6 @@
 export interface Pool {
   id: number;
-  type?: 'IFO' | 'Auto' | 'Manual';
+  type?: 'IFO' | 'Auto' | 'Manual' | 'Earn';
   name: string;
   description:
     | 'Stake CAKE to participate in IFOs'
@@ -19,4 +19,5 @@ export interface Pool {
   unstakingFee?: number;
   performanceFee?: number;
   daylyCompound?: number;
+  creation: Date;
 }

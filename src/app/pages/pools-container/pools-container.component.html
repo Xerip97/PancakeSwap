@@ -24,3 +24,55 @@
     <pancakeswap-bounty-info></pancakeswap-bounty-info>
   </div>
 </div>
+<br />
+<br />
+<div class="pools_main_table">
+  <pancakeswap-filter
+    [filter]="{
+      link1: '/pools',
+      link2: '/pools',
+      arrayDropdown: pools_dropdown,
+      searchPlaceholder: 'Search Pools'
+    }"
+  ></pancakeswap-filter>
+  <br />
+
+  <div *ngIf="callView()">
+    <!--table view-->
+    <div class="generic_div">
+      <div *ngIf="!callIfCheck()">
+        <div
+          *ngFor="
+            let item of callgetResult(callSortBy(pools, keyToUse), 'name')
+          "
+        >
+          <pancakeswap-pools-table
+            [pools_item]="item"
+          ></pancakeswap-pools-table>
+        </div>
+      </div>
+      <div class="return-top">
+        <button (click)="topFunction()">
+          to top <img src="/assets/svg/little_up_arrow.svg" />
+        </button>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div *ngIf="!callIfCheck()">
+    <div class="img-bottom">
+      <img
+        src="https://pancakeswap.finance/images/decorations/3d-syrup-bunnies.png"
+      />
+    </div>
+  </div>
+  <div *ngIf="callIfCheck()">
+    <div class="img-bottom space">
+      <img
+        src="https://pancakeswap.finance/images/decorations/3d-syrup-bunnies.png"
+      />
+    </div>
+  </div>
+
+  <br />
+</div>

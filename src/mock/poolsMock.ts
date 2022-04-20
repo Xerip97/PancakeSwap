@@ -18,6 +18,7 @@ export const pools: Pool[] = [
     unstakingFee: 1,
     performanceFee: 2,
     daylyCompound: 1,
+    creation: new Date('2015, 03, 12')
   },
   {
     id: 1,
@@ -35,6 +36,7 @@ export const pools: Pool[] = [
     unstakingFee: 0.1,
     performanceFee: 2,
     daylyCompound: 5000,
+    creation: new Date('2015, 03, 10')
   },
   {
     id: 2,
@@ -51,6 +53,7 @@ export const pools: Pool[] = [
     earned: 0,
     auto: false,
     daylyCompound: 1,
+    creation: new Date('2015, 03, 24')
   },
   {
     id: 3,
@@ -68,6 +71,7 @@ export const pools: Pool[] = [
     endsIn: 1494165,
     auto: false,
     daylyCompound: 1,
+    creation: new Date('2022, 03, 20')
   },
   {
     id: 4,
@@ -85,6 +89,7 @@ export const pools: Pool[] = [
     endsIn: 1406881,
     auto: false,
     daylyCompound: 1,
+    creation: new Date('2022, 03, 17')
   },
   {
     id: 5,
@@ -102,6 +107,7 @@ export const pools: Pool[] = [
     endsIn: 1352192,
     auto: false,
     daylyCompound: 1,
+    creation: new Date('2022, 03, 12')
   },
   {
     id: 6,
@@ -112,12 +118,13 @@ export const pools: Pool[] = [
       'https://pancakeswap.finance/images/tokens/0xBc7d6B50616989655AfD682fb42743507003056D.svg',
     urlIcon2:
       'https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg',
-    apr: 0,
+    apr: 43.66,
     apy: 0,
     totalStaked: 26199,
     earned: 0,
-    endsIn: 0,
+    endsIn: 54455,
     auto: false,
+    creation: new Date('2022, 03, 09')
   },
   {
     id: 7,
@@ -128,11 +135,46 @@ export const pools: Pool[] = [
       'https://pancakeswap.finance/images/tokens/0x477bC8d23c634C154061869478bce96BE6045D12.svg',
     urlIcon2:
       'https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg',
-    apr: 0,
+    apr: 78.65,
     apy: 0,
     totalStaked: 24009,
     earned: 0,
-    endsIn: 0,
+    endsIn: 45334,
     auto: false,
+    creation: new Date('2022, 03, 02')
+  },
+  {
+    id: 8,
+    type: 'Earn',
+    name: 'HIGH',
+    description: 'Stake CAKE',
+    urlIcon:
+      'https://pancakeswap.finance/images/tokens/0x5f4Bde007Dc06b867f86EBFE4802e34A1fFEEd63.svg',
+    urlIcon2:
+      'https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg',
+    apr: 66.11,
+    apy: 0,
+    totalStaked: 854079,
+    earned: 0,
+    endsIn: 181938,
+    auto: false,
+    creation: new Date('2022, 03, 24')
+  },
+  {
+    id: 9,
+    type: 'Earn',
+    name: 'XWG',
+    description: 'Stake CAKE',
+    urlIcon:
+      'https://pancakeswap.finance/images/tokens/0x6b23C89196DeB721e6Fd9726E6C76E4810a464bc.svg',
+    urlIcon2:
+      'https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg',
+    apr: 75.78,
+    apy: 0,
+    totalStaked: 237544,
+    earned: 0,
+    endsIn: 324097,
+    auto: false,
+    creation: new Date('2022, 03, 25')
   },
 ];
