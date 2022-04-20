@@ -1,0 +1,8 @@
+.prediction {
+    background: linear-gradient(
+        #FFB237,
+        #FFE76A
+    );
+    border-bottom: 3px solid #FFB237;
+    color: var(--secondary-color-blue);
+}

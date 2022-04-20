@@ -1,4 +1,5 @@
 @import url('app/shared/style/btns.css');
+@import url('app/shared/style/cards-home.css');
 :root {
     --primary-color-violet: #7645d9;
     --primary-color-cyan: #1fc7d4;
