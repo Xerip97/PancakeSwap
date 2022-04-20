@@ -77,3 +77,65 @@
         transform: translate(0px, 0px);
     }
   }
+
+  @media screen and (max-width: 638px)
+{ 
+    .img-earn .folder img {
+        width: 30%;
+    }
+    
+    .img-earn img {
+        width: 40%;
+    }
+    
+}
+
+
+@media screen and (min-width: 639px) and (max-width: 834px)
+{ 
+    .img-earn .folder img {
+        width: 40%;
+    }
+    
+    .img-earn img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width: 886px)
+{ 
+    .img-earn .folder img {
+        width: 60%;
+    }
+    
+    .img-earn img {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 887px) and (max-width: 1031px){
+    .img-earn .folder img {
+        width: 70%;
+    }
+    .img-earn img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1440px) {
+    .img-earn .folder img {
+        width: 75%;
+    }
+    .img-earn img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1700px) {
+    .earn-top {
+        width: 99.4vw;
+      }
+  .main-earn {
+    gap: 15vw;
+  }
+}

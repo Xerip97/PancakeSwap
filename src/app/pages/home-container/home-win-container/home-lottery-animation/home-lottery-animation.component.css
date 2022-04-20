@@ -79,3 +79,10 @@ overflow: hidden;
     transform: translate(0px, 0px);
   }
 }
+
+@media screen and (max-width: 851px)
+{ 
+  .lott-anim {
+    display: none;
+  }
+}
