@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BtnTrisComponent } from './designsystem/buttons/btn-tris/btn-tris.component';
-import { FooterComponent } from './core/layout/footer/footer.component';
+import {FooterComponent } from './core/layout/footer/footer.component';
 import { FormsContainerComponent } from './designsystem/forms-container/forms-container.component';
 import { FormDropdownComponent } from './designsystem/forms-container/form-dropdown/form-dropdown.component';
 import { FormTextSearchComponent } from './designsystem/forms-container/form-text-search/form-text-search.component';
@@ -12,7 +12,7 @@ import { FormSliderComponent } from './designsystem/forms-container/form-slider/
 import { FormTextTradeComponent } from './designsystem/forms-container/form-text-trade/form-text-trade.component';
 import { FarmsContainerComponent } from './pages/farms-container/farms-container.component';
 import { TestComponent } from './pages/test/test.component';
-import {NavbarComponent} from './core/layout/navbar/navbar.component';
+import { NavbarComponent } from './core/layout/navbar/navbar.component';
 import { LeaderboardContainerComponent } from './pages/leaderboard-container/leaderboard-container.component';
 import { TeamsComponent } from './pages/leaderboard-container/teams/teams.component';
 import { TeamContainerComponent } from './pages/leaderboard-container/team-container/team-container.component';
@@ -23,14 +23,15 @@ import { EarnUndernavbarDivComponent } from './core/earn-undernavbar-div/earn-un
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 import { BountyInfoComponent } from './pages/pools-container/bounty-info/bounty-info.component';
 import { BtnDoubleComponent } from './designsystem/buttons/btn-double/btn-double.component';
-import { FilterComponent } from './core/layout/filter/filter.component';
+import {FilterComponent} from './core/layout/filter/filter.component';
 import { FarmsTableComponent } from './pages/farms-container/farms-table/farms-table.component';
 import { FarmsCardsComponent } from './pages/farms-container/farms-cards/farms-cards.component';
 import { FarmsHeaderComponent } from './pages/farms-container/farms-header/farms-header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
+import {WarningBannerComponent} from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
+<<<<<<< HEAD
 import { HomeEarnContainerComponent } from './pages/home-container/home-earn-container/home-earn-container.component';
 import { HomeEarnAnimationComponent } from './pages/home-container/home-earn-container/home-earn-animation/home-earn-animation.component';
 import { HomeEarnDescComponent } from './pages/home-container/home-earn-container/home-earn-desc/home-earn-desc.component';
@@ -40,6 +41,11 @@ import { HomeWinLotteryComponent } from './pages/home-container/home-win-contain
 import { HomeWinPredictionComponent } from './pages/home-container/home-win-container/home-win-prediction/home-win-prediction.component';
 import { HomeLotteryAnimationComponent } from './pages/home-container/home-win-container/home-lottery-animation/home-lottery-animation.component';
 import { HomePredictionAnimationComponent } from './pages/home-container/home-win-container/home-prediction-animation/home-prediction-animation.component';
+=======
+import {CakeContainerComponent} from './pages/home-container/cake-container/cake-container.component'
+import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
+import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
+>>>>>>> develop
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +77,7 @@ import { HomePredictionAnimationComponent } from './pages/home-container/home-wi
     WarningBannerComponent,
     DesignSystemComponent,
     HomeContainerComponent,
+<<<<<<< HEAD
     HomeEarnContainerComponent,
     HomeEarnAnimationComponent,
     HomeEarnDescComponent,
@@ -80,6 +87,11 @@ import { HomePredictionAnimationComponent } from './pages/home-container/home-wi
     HomeWinPredictionComponent,
     HomeLotteryAnimationComponent,
     HomePredictionAnimationComponent
+=======
+    CakeContainerComponent,
+    SmallBarComponent,
+    QuickStartComponent,
+>>>>>>> develop
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
