@@ -48,23 +48,20 @@
 .bunny-img{
      width: calc((100vw - 48px)/2);
      height: calc((100vw - 48px)/2);
-     animation: bunny 3 infinite;
+     animation: bunny 4s infinite;
 }
 
 @keyframes bunny{
      0% {
-          top: 0px;
-          left: 0px;
+          transform: translate(0,0);
      }
 
      50% {
-          top: 8px;
-          left: 8px;
+          transform: translate(7px, 7px);
      }
 
      100% {
-          top: 0px;
-          left: 0px;
+          transform: translate(0, 0);
      }
 }
 

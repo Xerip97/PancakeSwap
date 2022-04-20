@@ -71,7 +71,7 @@
 .lottery-img, .competition-img {
      position: absolute;
      z-index: 1;
-     top: 120px;
+     top: 190px;
 }
 
 .lottery-img{
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1000px) {
      .lottery-img {
-          top: 200px;
+          top: 267px;
           width: 190px;
           height: 144px;
           left: 77vw;
