@@ -23,7 +23,7 @@ export class HomeSectionHeaderContainerComponent implements OnInit, OnDestroy {
       });
     setTimeout(() => {
       this.lotterySubs.unsubscribe();
-    }, this.lotteryInfoService.initialTime);
+    }, this.lotteryInfoService.initialTime * 1000);
   }
 
   ngOnDestroy(): void {
