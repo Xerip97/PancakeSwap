@@ -46,6 +46,7 @@ import { HomePredictionAnimationComponent } from './pages/home-container/home-wi
 import {CakeContainerComponent} from './pages/home-container/cake-container/cake-container.component'
 import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
+import { TradeAnimComponent } from './pages/home-container/home-trade-container/trade-anim/trade-anim.component';
 
 
 @NgModule({
@@ -94,7 +95,8 @@ import { QuickStartComponent } from './pages/home-container/quick-start/quick-st
     HomePredictionAnimationComponent,
     CakeContainerComponent,
     SmallBarComponent,
-    QuickStartComponent,
+      QuickStartComponent,
+    TradeAnimComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
