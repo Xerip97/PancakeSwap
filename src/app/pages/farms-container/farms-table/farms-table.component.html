@@ -24,10 +24,10 @@
           <label class="number liquidity">
             ${{ farms_item.liquidity | number: "3." }}</label
           >
-          <img ngbPopover="Nice class!"
+          <img 
           placement="top"
           triggers="mouseenter:mouseleave"
-          popoverClass="my-custom-class"
+          popoverClass="popoverClass"
           [ngbPopover]="LiquidityPop"
             src="/assets/svg/Farms_question_mark.svg"
             class="liquidity-mark"
@@ -42,10 +42,10 @@
         <label class="title">multiplier</label>
         <div class="space">
           <label class="number"> {{ farms_item.multiplier }}x </label>
-          <img ngbPopover="Nice class!"
+          <img 
           placement="top"
           triggers="mouseenter:mouseleave"
-          popoverClass="my-custom-class"
+          popoverClass="popoverClass"
           [ngbPopover]="MultiplierPop"
             src="/assets/svg/Farms_question_mark.svg"
             class="liquidity-mark"

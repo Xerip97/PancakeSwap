@@ -86,6 +86,14 @@
   color: var(--secondary-color-violet1);
 }
 
+.apr .number {
+  cursor: pointer;
+}
+
+.apr .number:hover {
+  opacity: 0.6;
+}
+
 .number {
   display: flex;
   align-items: center;
