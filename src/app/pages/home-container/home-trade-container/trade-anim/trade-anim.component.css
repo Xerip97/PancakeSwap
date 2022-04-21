@@ -10,7 +10,9 @@
 .coin, .BTC, .BNB {
     position: absolute;
     top: auto;
-    right: -100px;
+    right: 10px;
+    width: 428px;
+    height: 428px;
 }
 
 .coin  {
@@ -127,13 +129,4 @@
     .img-trade img {
         width: 75%;
     }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 1700px) {
-    .trade-top {
-        width: 95.4vw;
-      }
-  .main-trade {
-    gap: 15vw;
-  }
 }

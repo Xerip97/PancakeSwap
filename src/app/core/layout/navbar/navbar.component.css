@@ -239,3 +239,11 @@ header,
     display: none;
   }
 }
+
+@media screen and (max-width: 852px) {
+  .navbar_link_finance{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}

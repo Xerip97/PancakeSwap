@@ -1,0 +1,90 @@
+<div class="foreground-container" *ngIf="foregroundView; else winForeground">
+  <div class="trading-competiton">
+    <div class="details">
+      <h2 class="title h2-24">Trading Competition</h2>
+      <h2 class="description">$80,000 IN PRIZES</h2>
+      <a href="#"></a>
+      <button class="btn1">
+        <div class="btn-content">
+          <p class="button-text">Trade Now</p>
+          <img
+            src="/assets/svg/right_arrow.svg"
+            alt="right_arrow"
+            class="btn-img"
+          />
+        </div>
+      </button>
+    </div>
+    <div class="foreground-img">
+      <img
+        src="/assets/Logos/homepage-logos/mbox-tc-desktop.png"
+        class="competition-img"
+        alt="Angelo"
+      />
+    </div>
+  </div>
+</div>
+
+<ng-template #winForeground>
+  <div class="foreground-container">
+    <div class="win-lottery">
+      <div class="details">
+        <h2 class="title h2-24">
+          Win {{ lotteryInfo.jackpot | currency: "$":"symbol":"1.0-0" }} in
+          Lottery
+        </h2>
+        <div class="description">
+          <h2 class="timer h2-40" *ngIf="lotteryInfo.date.hours > 0">
+            {{ lotteryInfo.date.hours }}
+          </h2>
+          <h2 class="timer-letter h2-20">h</h2>
+          <h2
+            class="timer h2-40"
+            *ngIf="(lotteryInfo.date.hours || lotteryInfo.date.minutes) > 0"
+          >
+            {{ lotteryInfo.date.minutes }}
+          </h2>
+          <h2 class="timer-letter h2-20">m</h2>
+          <h2
+            class="timer h2-40"
+            *ngIf="
+              (lotteryInfo.date.hours ||
+                lotteryInfo.date.minutes ||
+                lotteryInfo.date.seconds) > 0
+            "
+          >
+            {{ lotteryInfo.date.seconds }}
+          </h2>
+          <h2 class="timer-letter h2-20">s</h2>
+        </div>
+        <button class="btn1">
+          <div class="btn-content">
+            <p class="button-text">Play Now</p>
+            <img
+              src="/assets/svg/right_arrow.svg"
+              alt="right_arrow"
+              class="btn-img"
+            />
+          </div>
+        </button>
+      </div>
+      <div class="foreground-img">
+        <picture>
+          <source
+            media="(max-width: 1000px)"
+            srcset="/assets/Logos/homepage-logos/lotteryMobile.webp"
+          />
+          <img
+            src="/assets/Logos/homepage-logos/lottery.png"
+            [ngClass]="{
+              'lottery-img': true,
+              'warning-banner-off': !luca,
+              'warning-banner-on': luca
+            }"
+            alt="Angelo"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</ng-template>
