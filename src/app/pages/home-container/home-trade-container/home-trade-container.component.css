@@ -1,0 +1,7 @@
+.home-trade-container {
+    display: flex;
+    justify-content: center;
+}
+.home-trade-inner{
+    width: 50%;
+}
