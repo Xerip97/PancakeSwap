@@ -19,9 +19,9 @@ const routes: Routes = [
   { path: 'teams/1', component: Team1Component },
   { path: 'teams/2', component: Team2Component },
   { path: 'teams/3', component: Team3Component },
-  {path :'liquidity', component: LiquidityContainerComponent}
-  {path:'design', component: DesignSystemComponent},
-  {path:'', component: HomeContainerComponent}
+  { path: 'liquidity', component: LiquidityContainerComponent },
+  { path: 'design', component: DesignSystemComponent },
+  { path: '', component: HomeContainerComponent },
 ];
 
 @NgModule({
