@@ -6,7 +6,7 @@
 
 .win-container {
     width: calc(100vw - 7px);
-    height: 85vh;
+    height: 100vh;
     background: linear-gradient(
     #70B7F1,
     #E9F1F6 );
@@ -73,7 +73,7 @@ color: var(--primary-color-violet);
     height: 150vh;
 }
     .win-main {
-        width: 95%;
+        width: 100%;
     
     }
 
@@ -86,12 +86,12 @@ color: var(--primary-color-violet);
     }
 }
 
-@media screen  and (min-width: 852px) and (max-width: 1332px)
+@media screen  and (min-width: 852px) and (max-width: 1440px)
 {  .win-container {
-    height: 100vh;
+    height: 150vh;
 }
     .win-main {
-        width: 95%;
+        width: 70vw;
     
     }
 
