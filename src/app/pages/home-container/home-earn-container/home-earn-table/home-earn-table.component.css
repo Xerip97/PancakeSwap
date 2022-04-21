@@ -1,0 +1,171 @@
+.table-earn {
+  margin-top: 10vh;
+}
+
+.top-earn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+
+.top-earn img {
+  z-index: 2;
+  width: 26px;
+  height: 40px;
+  filter: invert(46%) sepia(10%) saturate(1813%) hue-rotate(211deg) brightness(96%) contrast(86%);
+  cursor: pointer;
+}
+
+#change-top {
+  width: 48px;
+  outline: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.earn-show {
+position: absolute;
+top: auto;
+left: auto;
+}
+
+.top-earn img:hover {
+  opacity: 0.6;
+}
+
+.top-earn img:active {
+  transform: translate(0px, 2px);
+}
+
+.top-earn h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color-blue);
+}
+
+.top-earn .earn-type {
+  color: var(--primary-color-violet);
+}
+
+.currencies {
+  display: flex;
+  flex-direction: row;
+}
+
+.show {
+  opacity: 1;
+}
+
+.dont-show {
+  opacity: 0;
+}
+
+.in {
+  animation-name: animation-in;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+.out {
+  animation-name: animation-out;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+    width: 11vw;
+  height: 80px;
+  padding-left: 15px;
+}
+.two,
+.three,
+.four,
+.five {
+  border-left: 1px solid #7a6eaa54;
+}
+
+.column h6 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-color-violet);
+}
+
+.column h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color-blue);
+}
+.column p {
+    color: var(--secondary-color-violet1);
+}
+
+
+@keyframes animation-out {
+  0% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+  }
+  50% {
+      transform: translate(0px, 30px);
+      opacity: 0.5;
+  }
+  100% {
+    transform: translate(0px, 60px);
+      opacity: 0.0;
+  }
+}
+
+@keyframes animation-in {
+  0% {
+    transform: translate(0px, 60px);
+    opacity: 0.0;
+  }
+  50% {
+      transform: translate(0px, 30px);
+      opacity: 0.5;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 569px)
+{ 
+  
+.column {
+  width: 50vw;
+}
+  
+  .two,
+  .three,
+  .four,
+  .five {
+    border-left: 0px 
+  }
+    
+}
+
+@media screen and (min-width: 570px) and (max-width: 851px)
+{ .table-earn {
+  padding: 5px;
+  width: 100vw;
+}
+  
+.column {
+  width: 20vw;
+}
+  
+    
+}
