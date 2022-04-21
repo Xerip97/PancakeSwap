@@ -76,7 +76,11 @@
           />
           <img
             src="/assets/Logos/homepage-logos/lottery.png"
-            class="lottery-img"
+            [ngClass]="{
+              'lottery-img': true,
+              'warning-banner-off': !luca,
+              'warning-banner-on': luca
+            }"
             alt="Angelo"
           />
         </picture>

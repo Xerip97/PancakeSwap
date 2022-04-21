@@ -71,7 +71,14 @@
 .lottery-img, .competition-img {
      position: absolute;
      z-index: 1;
+}
+
+.warning-banner-on{
      top: 190px;
+}
+
+.warning-banner-off{
+     top: 120px;
 }
 
 .lottery-img{
