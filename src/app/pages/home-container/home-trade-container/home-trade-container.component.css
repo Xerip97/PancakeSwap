@@ -1,0 +1,42 @@
+.home-trade-container {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 43vh;
+}
+.home-trade-inner{
+    width: 50%;
+}
+.img {
+    display: flex;
+}
+.h2-40{
+    font-weight: 700;
+    color: var(--secondary-color-blue);
+}
+    span{
+    font-weight: 700;
+    color: var(--primary-color-violet);
+
+}
+.p{
+    margin-top:10px;
+    width: 50%;
+    color:  var(--secondary-color-violet1) ;
+}
+
+.text{
+width: 400px;}
+a, a:link,a:visited {
+color: var(--primary-color-cyan);
+font-weight: 700;
+}
+a:hover{
+    text-decoration: underline;
+}
+.btn1{
+    margin-top: 10px;
+    padding: 23px;
+    margin-right: 20px;
+}
+

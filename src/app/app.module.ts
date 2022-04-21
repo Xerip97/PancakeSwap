@@ -31,6 +31,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WarningBannerComponent } from './core/warning-banner/warning-banner.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
+import { HomePeopleStatisticContainerComponent } from './pages/home-container/home-people-statistic-container/home-people-statistic-container.component';
+import { HomeTradeContainerComponent } from './pages/home-container/home-trade-container/home-trade-container.component';
+
 import { HomeEarnContainerComponent } from './pages/home-container/home-earn-container/home-earn-container.component';
 import { HomeEarnAnimationComponent } from './pages/home-container/home-earn-container/home-earn-animation/home-earn-animation.component';
 import { HomeEarnDescComponent } from './pages/home-container/home-earn-container/home-earn-desc/home-earn-desc.component';
@@ -45,6 +48,7 @@ import { SmallBarComponent } from './pages/home-container/cake-container/small-b
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
 import { SettComponent } from './pages/liquidity-container/sett/sett.component';
 import { TradeUndernavbarDivComponent } from './pages/liquidity-container/trade-undernavbar-div/trade-undernavbar-div.component';
+import { TradeAnimComponent } from './pages/home-container/home-trade-container/trade-anim/trade-anim.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +80,10 @@ import { TradeUndernavbarDivComponent } from './pages/liquidity-container/trade-
     WarningBannerComponent,
     DesignSystemComponent,
     HomeContainerComponent,
+
+    HomePeopleStatisticContainerComponent,
+    HomeTradeContainerComponent,
+
     HomeEarnContainerComponent,
     HomeEarnAnimationComponent,
     HomeEarnDescComponent,
@@ -91,6 +99,8 @@ import { TradeUndernavbarDivComponent } from './pages/liquidity-container/trade-
     BtnTrisComponent,
     TradeUndernavbarDivComponent,
     SettComponent,
+    QuickStartComponent,
+    TradeAnimComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
