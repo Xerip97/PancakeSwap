@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 
 @Component({
   selector: 'pancakeswap-liquidity-container',
   templateUrl: './liquidity-container.component.html',
-  styleUrls: ['./liquidity-container.component.css']
+  styleUrls: ['./liquidity-container.component.css'],
 })
 export class LiquidityContainerComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  
+  ngOnInit(): void {}
 }

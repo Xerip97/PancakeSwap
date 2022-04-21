@@ -43,12 +43,13 @@ import { HomePredictionAnimationComponent } from './pages/home-container/home-wi
 import { CakeContainerComponent } from './pages/home-container/cake-container/cake-container.component';
 import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
-import { SettComponent } from './core/layout/sett/sett.component';
+import { SettComponent } from './pages/liquidity-container/sett/sett.component';
+import { TradeUndernavbarDivComponent } from './pages/liquidity-container/trade-undernavbar-div/trade-undernavbar-div.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    BtnTrisComponent,
     FormsContainerComponent,
     FormDropdownComponent,
     FormTextSearchComponent,
@@ -87,6 +88,9 @@ import { SettComponent } from './core/layout/sett/sett.component';
     CakeContainerComponent,
     SmallBarComponent,
     QuickStartComponent,
+    BtnTrisComponent,
+    TradeUndernavbarDivComponent,
+    SettComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
