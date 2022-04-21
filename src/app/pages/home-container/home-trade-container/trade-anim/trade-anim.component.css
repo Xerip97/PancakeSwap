@@ -1,0 +1,139 @@
+.img-trade .coin img {
+    width: 40%;
+}
+
+.img-trade img {
+    width: 40%;
+}
+
+
+.coin, .BTC, .BNB {
+    position: absolute;
+    top: auto;
+    right: -100px;
+}
+
+.coin  {
+    z-index: 80;
+    animation-name: animation-coin;
+    animation-duration: 2.8s, 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.BTC {
+    z-index: 1;
+    animation-name: animation-BTC;
+    animation-duration: 2.8s, 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.BNB {
+    z-index: 0;
+    animation-name: animation-BNB;
+    animation-duration: 2.8s, 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation-BNB {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(5px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes animation-BTC {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(3px, 24px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes animation-coin {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(8px, 9px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+
+  @media screen and (max-width: 638px)
+{ 
+    .img-trade .coin img {
+        width: 30%;
+    }
+    
+    .img-trade img {
+        width: 40%;
+    }
+    
+}
+
+
+@media screen and (min-width: 639px) and (max-width: 834px)
+{ 
+    .img-trade .coin img {
+        width: 20%;
+    }
+    
+    .img-trade img {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 834px) and (max-width: 886px)
+{ 
+    .img-trade .coin img {
+        width: 40%;
+    }
+    
+    .img-trade img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 887px) and (max-width: 1031px){
+    .img-trade .coin img {
+        width: 40%;
+    }
+    .img-trade img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1440px) {
+    .img-trade .coin img {
+        width: 55%;
+    }
+    .img-trade img {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1700px) {
+    .trade-top {
+        width: 95.4vw;
+      }
+  .main-trade {
+    gap: 15vw;
+  }
+}
