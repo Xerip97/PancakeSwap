@@ -46,9 +46,10 @@ import { HomePredictionAnimationComponent } from './pages/home-container/home-wi
 import { CakeContainerComponent } from './pages/home-container/cake-container/cake-container.component';
 import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
-import { SettComponent } from './pages/liquidity-container/sett/sett.component';
-import { TradeUndernavbarDivComponent } from './pages/liquidity-container/trade-undernavbar-div/trade-undernavbar-div.component';
 import { TradeAnimComponent } from './pages/home-container/home-trade-container/trade-anim/trade-anim.component';
+import { TradeUndernavbarDivComponent } from './core/trade-undernavbar-div/trade-undernavbar-div.component';
+import { LiquidityContainerComponent } from './pages/liquidity-container/liquidity-container.component';
+import { SettingComponent } from './core/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -97,10 +98,11 @@ import { TradeAnimComponent } from './pages/home-container/home-trade-container/
     SmallBarComponent,
     QuickStartComponent,
     BtnTrisComponent,
-    TradeUndernavbarDivComponent,
-    SettComponent,
     QuickStartComponent,
     TradeAnimComponent,
+    TradeUndernavbarDivComponent,
+    LiquidityContainerComponent,
+    SettingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

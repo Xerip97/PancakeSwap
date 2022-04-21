@@ -7,6 +7,7 @@
     data-bs-target="#exampleModal"
   >
     <img
+      class="setting-icon"
       src="/assets/svg/settings_icon_violet.svg"
       alt="img_setting"
       width="23px"
@@ -34,7 +35,8 @@
             style="
               color: var(--primary-color-cyan);
               border: none;
-              font-weight: 700;
+
+              font-size: 35px;
             "
           >
             <span aria-hidden="true">&times;</span>
@@ -51,7 +53,7 @@
             ></pancakeswap-form-slider>
           </div>
           <div class="transaction_speed_modal">
-            <p> Default Transaction Speed GWEI </p>
+            <p>Default Transaction Speed GWEI</p>
             <img
               src="/assets/svg/Farms_question_mark_violet.svg"
               alt="Question mark"
@@ -60,9 +62,9 @@
             />
           </div>
           <div class="slippage_btn">
-            <button class="btn3">Standard(5)</button>
-            <button class="btn3">Fast(6)</button>
-            <button class="btn3">Instant(7)</button>
+            <a href="">Standard(5)</a>
+            <a href="">Fast(6)</a>
+            <a href="">Instant(7)</a>
           </div>
           <div class="swaps_modal">
             <br />
@@ -100,7 +102,10 @@
                 height="20px"
               />
             </p>
-            <pancakeswap-form-slider></pancakeswap-form-slider>
+            <pancakeswap-form-text-trade
+              [textTrade]="{ width: 70 }"
+              style="width: 100px"
+            ></pancakeswap-form-text-trade>
           </div>
           <div class="expertMode">
             <p>

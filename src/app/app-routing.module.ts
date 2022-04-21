@@ -6,11 +6,10 @@ import { LeaderboardContainerComponent } from './pages/leaderboard-container/lea
 import { Team1Component } from './pages/leaderboard-container/team-container/team1/team1.component';
 import { Team2Component } from './pages/leaderboard-container/team-container/team2/team2.component';
 import { Team3Component } from './pages/leaderboard-container/team-container/team3/team3.component';
-import { LiquidityContainerComponent } from './pages/liquidity-container/liquidity-container.component';
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
-
+import {LiquidityContainerComponent} from './pages/liquidity-container/liquidity-container.component'
 const routes: Routes = [
   { path: 'farms', component: FarmsContainerComponent },
   { path: 'pools', component: PoolsContainerComponent },
@@ -19,8 +18,8 @@ const routes: Routes = [
   { path: 'teams/1', component: Team1Component },
   { path: 'teams/2', component: Team2Component },
   { path: 'teams/3', component: Team3Component },
-  { path: 'liquidity', component: LiquidityContainerComponent },
   { path: 'design', component: DesignSystemComponent },
+  {path:'liquidity', component: LiquidityContainerComponent},
   { path: '', component: HomeContainerComponent },
 ];
 

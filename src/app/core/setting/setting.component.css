@@ -1,14 +1,36 @@
+.modal-content{
+    display: flex;
+    border-radius: 20px;
+    width: 393.891px;
+    height: 732px;
+  transform: translate(10%,10%);
+    border: white;
+    box-shadow: 10px;
+}
+.setting-icon:hover{
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.modal{
+    transition: 0.3s;
+    
+   
+    background-color: rgba(120, 107, 160, 0.82) ;
+}
 .global p {
     text-transform: uppercase;
     color: var(--primary-color-violet);
     font-weight: 800;
-    font-size: 10px;
+    font-size: 15px;
 }
 .global-modal-body{
+    
     color: var(--secondary-color-blue);
     display: flex;
     justify-content: space-between;
     font-weight: 700;
+    height: 30%;
+    margin-bottom: -20px;
 }
 .transaction_speed_modal p{
     font-size: 15px;
@@ -19,8 +41,20 @@ color: var(--secondary-color-blue);
     display: flex;
 }
 .slippage_btn{
+    
     display: flex;
     justify-content: space-evenly;
+    color: var(--primary-color-cyan);
+}
+.slippage_btn a{
+    font-weight: 700;
+}
+.slippage_btn a:hover{
+    text-decoration: underline;
+    color: var(--primary-color-cyan);
+}
+.slippage_btn a:visited{
+    color: var(--primary-color-cyan);
 }
 .text-trade{
     display: flex;
@@ -30,8 +64,8 @@ color: var(--secondary-color-blue);
 .swap_p{
      text-transform: uppercase;
      color: var(--primary-color-violet);
-    font-weight: 800;
-    font-size: 10px;}
+    font-weight: 700;
+    font-size: 13px;}
  .slippage_tolerance_modal{
     display: flex;
     }
@@ -42,16 +76,19 @@ color: var(--secondary-color-blue);
     .modal_slippage{
         
         display: flex;
+        justify-content: center;
         align-items: center;
-       
+       padding-bottom: 1px;
     }
     .modal_slippage button{
         margin-right: 5px;
     }
     .slippage_span {
-        color:var(--primary-color-cyan); font-weight: 700; font-size: 15px;
+        color:var(--primary-color-cyan); font-weight: 700; font-size: 20px;
         display: flex;
-        align-items: flex-end;
+       align-items: baseline;
+       margin-top: 20px;
+       margin-left: -110px;
     }
     .modal_footer{
 
@@ -66,6 +103,11 @@ color: var(--secondary-color-blue);
      .modal_footer p {
          margin-bottom: 20px;
      }
+     .txDeadline {
+         justify-content: flex-end;
+         width:100%
+
+     }
  .txDeadline,
  .expertMode,
  .multiHops,
@@ -76,4 +118,8 @@ color: var(--secondary-color-blue);
     display: flex;
     justify-content: space-between;
 
+}
+.modal-title{
+    font-weight: 700;
+    color: var(--secondary-color-blue);
 }
