@@ -73,7 +73,7 @@ color: var(--primary-color-violet);
     height: 150vh;
 }
     .win-main {
-        width: 95%;
+        width: 100%;
     
     }
 
@@ -86,12 +86,12 @@ color: var(--primary-color-violet);
     }
 }
 
-@media screen  and (min-width: 852px) and (max-width: 1332px)
+@media screen  and (min-width: 852px) and (max-width: 1440px)
 {  .win-container {
-    height: 100vh;
+    height: 150vh;
 }
     .win-main {
-        width: 90%;
+        width: 70vw;
     
     }
 
