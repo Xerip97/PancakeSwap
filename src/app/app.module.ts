@@ -46,6 +46,7 @@ import {CakeContainerComponent} from './pages/home-container/cake-container/cake
 import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
 import { TradeAnimComponent } from './pages/home-container/home-trade-container/trade-anim/trade-anim.component';
+import { PoolsCardsComponent } from './pages/pools-container/pools-cards/pools-cards.component';
 
 
 @NgModule({
@@ -95,6 +96,7 @@ import { TradeAnimComponent } from './pages/home-container/home-trade-container/
     SmallBarComponent,
       QuickStartComponent,
     TradeAnimComponent,
+    PoolsCardsComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],

@@ -27,7 +27,6 @@ export class FarmsCardsComponent implements OnInit {
   }
 
   addBorder() {
-    console.log(this.farms_item.id)
     if(this.farms_item.id == 0) {
       let div = document.querySelector('.top-div')
       div?.classList.add('card-cake')
