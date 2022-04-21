@@ -14,7 +14,6 @@ export class FarmsCardsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.addBorder()
   }
   
   changeClick(e: any) {
@@ -23,13 +22,6 @@ export class FarmsCardsComponent implements OnInit {
     }
     else {
       return this.checked = false
-    }
-  }
-
-  addBorder() {
-    if(this.farms_item.id == 0) {
-      let div = document.querySelector('.top-div')
-      div?.classList.add('card-cake')
     }
   }
 }
