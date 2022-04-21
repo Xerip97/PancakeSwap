@@ -1,10 +1,9 @@
 .carino{
     width:calc(100vw-10px);
     height:calc(100vh-10px);
-background: #b9f2ff;
+background: rgb(238,234,244);
     padding:20px;
-    
-    
+      
 }
 
 .compoconatiner{
@@ -62,6 +61,7 @@ gap:10px;
     font: size 4px;
     font-family: Kanit, sans-serif;
     color: rgb(61, 59, 59);
+    
 }
 .logodesign{
 display:flex;

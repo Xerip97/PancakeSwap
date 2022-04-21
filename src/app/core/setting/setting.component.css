@@ -10,6 +10,7 @@
 .setting-icon:hover{
     transition: 0.3s;
     opacity: 0.5;
+    
 }
 .modal{
     transition: 0.3s;
@@ -45,6 +46,7 @@ color: var(--secondary-color-blue);
     display: flex;
     justify-content: space-evenly;
     color: var(--primary-color-cyan);
+ 
 }
 .slippage_btn a{
     font-weight: 700;

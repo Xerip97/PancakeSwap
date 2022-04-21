@@ -741,7 +741,7 @@
     }
   }
   
-  @media (min-width: 400px) and (max-width: 482px) {
+  @media (min-width: 100px) and (max-width: 482px) {
     .phishing {
       display: flex;
       width: calc(100vw-10px);

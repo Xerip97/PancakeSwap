@@ -14,7 +14,8 @@ position:relative
 
 
 .exchange_div_outer_padding {
-   padding: 0.75rem 1rem 0px;
+   padding: 16px;
+
 }
 .div_outer_input {
     display: flex;
