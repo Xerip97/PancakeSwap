@@ -34,11 +34,19 @@
 .top-div-card{
   border-radius: 26px;
   border: 1px solid rgba(0, 0, 0, 0.0)
+<<<<<<< HEAD
+=======
+  
+>>>>>>> develop
 }
 
 .top-div {
   border-radius: 24px 24px 0px 0px;
   border: 1px solid rgba(25, 19, 38, 0.15);
+<<<<<<< HEAD
+=======
+  border-bottom: 0px;
+>>>>>>> develop
 }
 
 .main-info {
@@ -153,6 +161,17 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.apr .number {
+  cursor: pointer;
+}
+
+.apr .number:hover {
+  opacity: 0.6;
+}
+
+>>>>>>> develop
 .property {
   font-size: 15.5px;
   color: var(--secondary-color-blue);
@@ -217,15 +236,30 @@
 }
 
 .details {
+<<<<<<< HEAD
   border-top: 2px solid rgba(0, 0, 0, 0.1);
+=======
+>>>>>>> develop
   display: flex;
   flex-direction: column;
   color: var(--primary-color-cyan);
   cursor: pointer;
   border-radius: 0px 0px 24px 24px;
   border: 1px solid rgba(25, 19, 38, 0.15);
+<<<<<<< HEAD
 }
 
+=======
+  border-top: 0px;
+  border-bottom: 4px solid var(--secondary-color-white3);
+}
+
+.details.cake {
+  border-bottom: 4px solid transparent;
+}
+
+
+>>>>>>> develop
 .title-details {
   padding: 25px;
   font-weight: 700;
@@ -233,6 +267,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+=======
+  border-top: 2px solid rgba(25, 19, 38, 0.15);
+>>>>>>> develop
 }
 
 .details img {

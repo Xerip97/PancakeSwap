@@ -28,11 +28,17 @@ export class FarmsCardsComponent implements OnInit {
 
   addBorder() {
     console.log(this.farms_item.id)
+<<<<<<< HEAD
     if(this.farms_item.id == 1) {
       let div = document.querySelector('.generic_div')
       div?.classList.add('card-cake')
       div?.classList.remove('top-div')
       div?.classList.add('top-div-card')
+=======
+    if(this.farms_item.id == 0) {
+      let div = document.querySelector('.top-div')
+      div?.classList.add('card-cake')
+>>>>>>> develop
     }
   }
 }
