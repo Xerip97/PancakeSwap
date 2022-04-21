@@ -110,17 +110,27 @@ color: var(--secondary-color-blue);
          width:100%
 
      }
+
+     .txDeadline pancakeswap-form-text-trade {
+         margin-top: -15px;
+     }
  .txDeadline,
  .expertMode,
  .multiHops,
  .healthIndicator,
  .flippy{
      width: 100%;
-    
     display: flex;
     justify-content: space-between;
-
 }
+
+.expertMode,
+ .multiHops,
+ .healthIndicator,
+ .flippy{
+    padding-right: 25px;
+}
+
 .modal-title{
     font-weight: 700;
     color: var(--secondary-color-blue);
