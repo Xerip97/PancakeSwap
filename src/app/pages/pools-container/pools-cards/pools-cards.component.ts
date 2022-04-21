@@ -24,11 +24,4 @@ export class PoolsCardsComponent implements OnInit {
     }
   }
 
-  addBorder() {
-    if(this.pools_item.name == 'CAKE') {
-      let div = document.querySelector('.top-div')
-      div?.classList.add('card-cake')
-    }
-  }
-
 }

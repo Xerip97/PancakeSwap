@@ -100,3 +100,11 @@ pancakeswap-bounty-info {
 .img-bottom.space {
   margin-bottom: 70vh;
 }
+
+.cards_view {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:30px 13px;
+}

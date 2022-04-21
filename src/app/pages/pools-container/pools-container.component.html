@@ -60,13 +60,17 @@
     <br />
   </div>
   <!--end of table view-->
+  <!--cards view-->
   <div *ngIf="!callView()">
+    <div class="cards_view">
     <div
       *ngFor="let item of callgetResult(callSortBy(pools, keyToUse), 'name')"
     >
       <pancakeswap-pools-cards [pools_item]="item"></pancakeswap-pools-cards>
-    </div>
+    </div></div>
+    <br>
   </div>
+  <!--cards view-->
 
   <div *ngIf="!callIfCheck()">
     <div class="img-bottom">

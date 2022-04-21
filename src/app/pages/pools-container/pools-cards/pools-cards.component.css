@@ -1,0 +1,314 @@
+.generic_div {
+    min-width: 380px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  
+  .card-cake {
+    animation-name: color-div;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 26px;
+    background: linear-gradient( var(--primary-color-white), var(--primary-color-white) ) padding-box, linear-gradient(var(--primary-color-cyan), var(--primary-color-violet)) 0% 0% / 500% 500%;
+    border: 1px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
+  
+  @keyframes color-div {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+  
+  .top-div-card{
+    border-radius: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.0)
+    
+  }
+  
+  .top-div {
+    border-radius: 24px 24px 0px 0px;
+    border: 1px solid rgba(25, 19, 38, 0.15);
+    border-bottom: 0px;
+  }
+  
+  .main-info {
+    padding: 18px;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  }
+  
+  .pools-ico {
+    width: 35px;
+    height: inherit;
+    position: relative;
+    inset: 20px 55px;
+    z-index: 2;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(95, 75, 3, 0.6);
+  }
+  
+  .pools-avatar {
+    position: relative;
+    inset: 0px -15px;
+    width: 55px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.373);
+  }
+
+  .cards-name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .cards-name h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color-violet);
+    line-height: 12px;
+  }
+
+  .cards-name p {
+    font-size: 13px;
+    color: var(--secondary-color-violet1);
+  }
+
+  
+  .info {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .apr {
+    display: flex;
+    margin-bottom: 6px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .apr .number:hover {
+    opacity: 0.6;
+  }
+  
+  .property {
+    font-size: 15.5px;
+    color: var(--secondary-color-blue);
+    text-transform: capitalize;
+    text-decoration: underline 2px dotted var(--secondary-color-violet1);
+  }
+  
+  .number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    color: var(--secondary-color-blue);
+    gap: 8px;
+  }
+  
+  .number img {
+    width: 20px;
+    filter: invert(47%) sepia(53%) saturate(375%) hue-rotate(211deg) brightness(86%) contrast(84%);
+  }
+  
+  .title-cake {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+  
+  .title-cake h6 {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--primary-color-violet);
+  }
+  
+  .title-cake h6:last-child {
+    color: var(--secondary-color-violet1);
+  }
+  
+  .info .btn1 {
+    text-transform: capitalize;
+    padding: 25px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color-cyan);
+    cursor: pointer;
+    border-radius: 0px 0px 24px 24px;
+    border: 1px solid rgba(25, 19, 38, 0.15);
+    border-top: 0px;
+    border-bottom: 4px solid var(--secondary-color-white3);
+  }
+  
+  .details.cake {
+    border-bottom: 4px solid transparent;
+  }
+  
+  
+  .title-details {
+    padding: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(25, 19, 38, 0.15);
+  }
+
+  .title-details label{
+    cursor: pointer;
+  }
+
+  .title-details label:hover {
+    opacity: 0.6;
+  }
+  
+  .title-details label:active {
+    transform: translate(0px, 1px);
+  }
+
+  .details img {
+    width: 20px;
+    filter: invert(75%) sepia(21%) saturate(1794%) hue-rotate(132deg)
+      brightness(91%) contrast(81%);
+  }
+  
+  .info-details {
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .hidden-details input {
+    display: none;
+  }
+  
+  .totalStaked, .endsIn, .performance{
+    display: flex;
+    color: var(--secondary-color-blue);
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+  }
+
+  .totalStaked p, .endsIn p, .performance p {
+    font-size: 14px;
+  }
+
+
+  .endsIn p:last-child {
+    color: var(--primary-color-cyan);
+  }
+
+  .endsIn img {
+    margin-left: 4px;
+  }
+
+  .performance p:first-child {
+    text-decoration: 1px underline dotted;
+  }
+
+  .link-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .link-details img {
+    width: 14px;
+    filter: invert(75%) sepia(21%) saturate(1794%) hue-rotate(132deg)
+      brightness(91%) contrast(81%);
+  }
+  
+  .link-details a,
+  a:link,
+  a:visited {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-color-cyan);
+    font-weight: 500;
+  }
+  
+  .link-details a:hover {
+    text-decoration: underline var(--primary-color-cyan);
+  }
+  
+
+  .manual, .auto {
+    margin-top: 0.5vh;
+    font-size: 13px;
+    width: fit-content;
+    padding: 2px 9px;
+    color: var(--primary-color-violet);
+    text-transform: capitalize;
+    border-radius: 25px;
+    gap: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .manual {
+    color: var(--primary-color-violet);
+    border: 2px solid var(--primary-color-violet);
+  }
+  
+  .auto {
+   color: rgb(49, 208, 170);
+   border: 2px solid rgb(49, 208, 170);;
+  }
+  
+  .manual img, .auto img {
+    width: 18px;
+    margin-top: -0.5px;
+    margin-left: -1px;
+  }
+  
+  .manual img {
+    filter: invert(27%) sepia(78%) saturate(2042%) hue-rotate(246deg)
+      brightness(90%) contrast(89%);
+  }
+  
+  .auto img {
+    filter: invert(68%) sepia(44%) saturate(664%) hue-rotate(115deg) brightness(95%) contrast(83%);
+  }
+
+  .under-link {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .under-link .hidden-mark {
+    width: 20px;
+    margin-top: 5px;
+    filter: invert(46%) sepia(15%) saturate(1111%) hue-rotate(211deg) brightness(96%) contrast(93%);
+    margin-left: 0.3vw;
+  }
