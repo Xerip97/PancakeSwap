@@ -76,12 +76,12 @@
   }
 }
 
-@media screen and (min-width: 852px) and (max-width: 1332px){
+@media screen and (min-width: 852px) and (max-width: 1440px){
   .card-home-win .btn-home {
     width: 100%;
   }
   .card-home-win {
-    width: max-content;
+    width: 90%;
   }
 .card-home-win .btn-home {
   width: 100%;

@@ -6,7 +6,7 @@
 
 .win-container {
     width: calc(100vw - 7px);
-    height: 85vh;
+    height: 100vh;
     background: linear-gradient(
     #70B7F1,
     #E9F1F6 );
@@ -91,7 +91,7 @@ color: var(--primary-color-violet);
     height: 100vh;
 }
     .win-main {
-        width: 95%;
+        width: 90%;
     
     }
 
