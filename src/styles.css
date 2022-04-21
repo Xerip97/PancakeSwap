@@ -24,6 +24,7 @@
       #e5fdff,
       #f1f0ff
     );
+    --secondary-color-nuanced-foreground-violet: linear-gradient(#7545D8, #452A7B);
     --secondary-color-nuanced-header: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%); 
     --secondary-color-nuanced-home: linear-gradient(#ffff,#DACEED);
   }

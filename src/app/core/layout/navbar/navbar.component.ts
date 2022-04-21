@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CakeValueService } from '@app/shared/services/pages/cake-value.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'pancakeswap-navbar',
@@ -6,13 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  tempValue: number;
-  constructor() {
-    this.tempValue = Math.floor(Math.random() * (10000 - 8000) + 8000);
-    setInterval(async () => {
-      this.tempValue = Math.floor(this.tempValue + (Math.random() * 100 - 50));
-    }, 6000);
-  }
+  constructor(private cakeValueService: CakeValueService) {}
 
-  ngOnInit(): void {}
+  cakeValueObs$!: Observable<number>;
+
+  ngOnInit(): void {
+    this.cakeValueObs$ = this.cakeValueService.getCakeValue();
+  }
 }
