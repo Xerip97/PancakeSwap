@@ -1,0 +1,127 @@
+.bunny-section-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+}
+
+.bunny-section-text{
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+     align-items: start;
+}
+
+.title{
+     color: var(--primary-color-violet);
+     margin: 0 0 24px 0;
+     font-size: 48px;
+}
+
+.description{
+     color: var(--secondary-color-blue);
+     margin: 0 0 24px 0;
+     font-size: 16px;
+}
+
+.buttons{
+     display: flex;
+     flex-direction: row;
+}
+
+.btn1, .btn3{
+     margin: 0px 10px 10px 0;
+     height: 48px;
+     padding: 0 24px;
+     border-radius: 16px;
+}
+
+.wallet-btn{
+     margin: 0;
+}
+
+.bunny-img-container{
+     position: relative;
+}
+
+.bunny-img{
+     width: calc((100vw - 48px)/2);
+     height: calc((100vw - 48px)/2);
+     animation: bunny 4s infinite;
+}
+
+@keyframes bunny{
+     0% {
+          transform: translate(0,0);
+     }
+
+     50% {
+          transform: translate(7px, 7px);
+     }
+
+     100% {
+          transform: translate(0, 0);
+     }
+}
+
+.star-img{
+     position: absolute;
+     width: calc((100vw - 48px)/2);
+     height: calc((100vw - 48px)/2);
+     left: 0;
+     animation: star 5s infinite;
+}
+
+@keyframes star {
+     0% {
+          opacity: 1;
+     }
+
+     50% {
+          opacity: 0;
+     }
+
+     100% {
+          opacity: 1;
+     }
+}
+
+@media screen and (min-width: 1200px) {
+     .bunny-img {
+          width: 576px;
+          height: 576px;
+     }
+}
+
+@media screen and (min-width: 1072px) {
+     .star-img {
+          width: 512px;
+          height: 512px;
+     }
+}
+
+@media screen and (max-width: 851px) {
+     .bunny-img, .star-img {
+          width: 191px;
+          height: 191px;
+     }
+
+     .bunny-img-container{
+          align-self: flex-end;
+          margin-bottom: 24px;
+     }
+     
+     .bunny-section-container{
+          flex-direction: column-reverse;
+     }
+}
+
+@media screen and (min-width: 968px) {
+     .title{
+          font-size: 64px;
+     }
+     .description {
+          font-size: 20px;
+     }
+}

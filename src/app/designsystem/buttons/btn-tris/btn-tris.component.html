@@ -1,0 +1,28 @@
+<div class="button_11_div1">
+  <div class="btn-group button_11_div2" role="group">
+    <button
+      type="button"
+      class="button11_1"
+      (click)="enableDisableRule(btn)"
+      [ngClass]="{ button11_1: toggle, button11_4: !toggle }"
+    >
+      <a class="button11_a">Overview</a>
+    </button>
+    <button
+      (click)="enableDisableRule(btn)"
+      [ngClass]="{ button11_2: toggle, button11_4: !toggle }"
+      type="button"
+      class="button11_2"
+    >
+      <a class="button11_a">Pools</a>
+    </button>
+    <button
+      (click)="enableDisableRule(btn)"
+      [ngClass]="{ button11_3: toggle, button11_4: !toggle }"
+      type="button"
+      class="button11_3"
+    >
+      <a class="button11_a">Tokens</a>
+    </button>
+  </div>
+</div>

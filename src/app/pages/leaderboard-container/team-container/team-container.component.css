@@ -1,0 +1,184 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color-white4);
+  min-height: calc(100vh - 64px);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.team {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.team-title {
+  margin-top: 4vh;
+  border-bottom: 2px solid var(--secondary-color-violet1);
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: var(--primary-color-violet);
+}
+
+h2 {
+  color: rgb(25, 19, 38);
+  font-size: 40px;
+}
+
+h6 {
+  font-weight: 600;
+  color: var(--secondary-color-blue);
+}
+
+.teams-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary-color-cyan);
+  margin-left: 10px;
+}
+
+.team-detail {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0px 3px var(--secondary-color-white1);
+  border-radius: 10px;
+}
+
+.team-detail-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  border-radius: 20px 20px 0 0;
+}
+
+.urlAvatar {
+  border: 2px solid var(--primary-color-white);
+  border-radius: 100%;
+  transform: translateY(-24px);
+}
+
+.h6-description {
+  margin-bottom: 24px;
+}
+
+.team-detail-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3fr 4fr;
+  border: 1px solid var(--secondary-color-white1);
+  box-shadow: 0px 3px var(--secondary-color-white1);
+  border-radius: 10px;
+}
+
+.members,
+.trophy {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 20px;
+  border: 2px solid var(--secondary-color-white1);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.members {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 10px;
+}
+
+.members > img,
+.trophy > img {
+  margin-right: 24px;
+}
+
+.members-number {
+  color: var(--secondary-color-blue);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.active-members {
+  color: var(--secondary-color-violet1);
+}
+
+.active-members,
+.trophy-points {
+  font-size: 11px;
+  font-weight: 800;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.trophy {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-left: 10px;
+}
+
+.trophy-title {
+  color: rgb(189, 194, 196);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.trophy-points {
+  color: rgb(189, 194, 196);
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.achievements-title {
+  font-size: 18px;
+  color: var(--secondary-color-blue);
+  font-weight: 800;
+}
+
+.achievements-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px;
+}
+
+.achievements-detail > img {
+  width: 72px;
+  height: 72px;
+}
+
+.achievements-coming-soon {
+  color: rgb(189, 194, 196);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 852px) {
+  .urlAvatar {
+    height: 64px;
+    margin-top: -12px;
+    width: 64px;
+    transform: translateY(0);
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

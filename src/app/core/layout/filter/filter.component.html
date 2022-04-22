@@ -1,0 +1,34 @@
+<div class="main">
+  <div class="filter">
+    <input (change)="activeButton($event)" type="radio" id="farms_cards" name="farms_view" value="cards" >
+    <label  class="farms_view view-card offline" for="farms_cards" >
+      <img src="../../../../assets/svg/Farms _graph_icon.svg" />
+    </label>
+    <input (change)="activeButton($event)" type="radio" id="farms_table" name="farms_view" value="table" checked>
+    <label class="farms_view view-table active" for="farms_table">
+      <img  src="../../../../assets/svg/Farms_graph_icon_2.svg" />
+    </label>
+    <div class="slider">
+      <pancakeswap-form-slider
+        [typeslider]="{ type: 'forms' }"
+        [ngStyle]="{ 'margin-top.px': 4 }"
+      ></pancakeswap-form-slider
+      ><label>Stacked only</label>
+    </div>
+    <pancakeswap-btn-double
+      [btnDouble]="{
+        link1: _filter.link1,
+        name1: 'Live',
+        link2: _filter.link2,
+        name2: 'Finished'
+      }"
+    ></pancakeswap-btn-double>
+  </div>
+  <div class="sorting">
+    <pancakeswap-form-dropdown [data]="_filter.arrayDropdown"  [firstKey]="'Hot'"> </pancakeswap-form-dropdown>
+    <div class="search">
+        <label>Search</label>
+      <pancakeswap-form-text-search [search]="_filter.searchPlaceholder"></pancakeswap-form-text-search>
+    </div>
+  </div>
+</div>

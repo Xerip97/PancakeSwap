@@ -1,0 +1,101 @@
+.win {
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.win-container {
+    width: calc(100vw - 7px);
+    height: 100vh;
+    background: linear-gradient(
+    #70B7F1,
+    #E9F1F6 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.win-main {
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px 30px;
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h2-40 {
+    color: var(--secondary-color-blue);
+}
+
+.h2-40 span {
+color: var(--primary-color-violet);
+}
+
+.win-main p {
+    color:  var(--secondary-color-violet1);
+}
+
+.cards-win {
+    width: 44vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+
+}
+
+.first-card {
+    border-radius: 25px;
+    outline: 1px solid #FFB237;
+    background-color: #FFB237;
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.second-card {
+    border-radius: 25px;
+    outline: 1px solid #3C1786;
+    background-color: #3C1786;
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+@media screen and (max-width: 851px)
+{  .win-container {
+    height: 150vh;
+}
+    .win-main {
+        width: 100%;
+    
+    }
+
+    .cards-win {
+        flex-direction: column;
+    }
+
+    .first-card , .second-card{
+        transform: rotate(0deg);
+    }
+}
+
+@media screen  and (min-width: 852px) and (max-width: 1440px)
+{  .win-container {
+    height: 150vh;
+}
+    .win-main {
+        width: 70vw;
+    
+    }
+
+    .cards-win {
+        flex-direction: row;
+    }
+}

@@ -15,9 +15,15 @@
     "@angular/compiler": "~13.2.0",
     "@angular/core": "~13.2.0",
     "@angular/forms": "~13.2.0",
+    "@angular/localize": "~13.2.0",
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
+    "@angular/platform-server": "^13.2.7",
     "@angular/router": "~13.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^12.0.2",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3",
+    "popper": "^1.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -35,5 +41,18 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.5.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xerip97/PancakeSwap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xerip97/PancakeSwap/issues"
+  },
+  "homepage": "https://github.com/Xerip97/PancakeSwap#readme"
 }

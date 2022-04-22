@@ -1,0 +1,76 @@
+.form_marco {
+    display: flex;
+    height: 60px;
+}
+.form_marco * {
+    height: 100%;
+}
+
+.exchange_div {
+display: flex;
+flex-flow: column nowrap;
+position:relative
+}
+
+
+.exchange_div_outer_padding {
+   padding: 0.75rem 1rem 0px;
+}
+.div_outer_input {
+    display: flex;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    border: 1px;
+}
+.input_area{
+  color: var(--secondary-color-blue);
+    position: relative;
+    font-weight: 500;
+    outline: none;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+   border:solid 1px rgb(238,234,244);
+      background-color: var(--secondary-color-white1);
+box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+border-radius: 16px;
+padding: 0px 16px;
+}
+.input_area::placeholder{
+    color: var(--secondary-color-violet1);
+}
+.farm_input_outer{
+    padding-top: 20px;
+}
+
+.farm_input{
+    padding: 0px 16px;
+   
+
+}
+.input_farm_area {
+   padding: 0px 16px;
+    height: 30px;
+    border-radius: 16px;
+    border:solid 1px;
+    border-color: #dbd5f8cc;
+    outline: none;
+    color: var(--secondary-color-blue);
+    font-size: 16px;
+    box-shadow: rgb(74 74 104 / 5%) 0px 2px 2px -1px inset;
+
+   background-color: var(--secondary-color-white1);
+}
+.input_farm_area::placeholder {
+   
+    color: var(--secondary-color-violet1);
+}
+.input_farm_area:focus{
+    box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+
+}
+
+

@@ -1,0 +1,87 @@
+.card-home-win {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 27px;
+  text-align: left;
+}
+
+.card-home-win h6 {
+  font-weight: 700;
+}
+
+.card-home-win img {
+  width: 40px;
+  align-self: flex-end;
+}
+
+.card-home-win .btn-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 12vw;
+  margin-top: 5vh;
+  padding: 25px;
+}
+
+#row-btn-win {
+  width: 20px;
+  filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(120deg) brightness(104%) contrast(102%);
+}
+
+.loading-number {
+  background-color: var(--secondary-color-white4);
+  height: 42px;
+  animation-name: animation-loading;
+  animation-duration: 1.5s, 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 5px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+@keyframes animation-loading {
+  0% {
+    background-color: var(--secondary-color-white4);
+  }
+  50% {
+    background-color: var(--secondary-color-gray);
+  }
+  100% {
+    background-color: var(--secondary-color-white4);
+  }
+}
+
+
+@media screen and (max-width: 638px)
+{ 
+  .card-home-win .btn-home {
+    width: 100%;
+  }
+
+  .card-home-win {
+    width: max-content;
+  }
+}
+
+
+@media screen and (min-width: 639px) and (max-width: 851px)
+{ 
+  .card-home-win .btn-home {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 852px) and (max-width: 1440px){
+  .card-home-win .btn-home {
+    width: 100%;
+  }
+  .card-home-win {
+    width: 300px;
+  }
+
+}

@@ -1,0 +1,42 @@
+.btn-double {
+    background-color: var(--secondary-color-white1);
+    border-radius: 16px;
+    display: inline-flex;
+    border: 1px solid rgb(215, 202, 236);
+    width: auto;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+}
+
+.btn-double input {
+    display: none;
+}
+
+.btn-double .btn4 {
+    height: inherit;
+    box-shadow: none;
+    padding: 0 12px;
+    font-weight: 600;
+}
+
+.not-checked {
+    padding: 12px;
+    color: var(--secondary-color-violet1);
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    background: none;
+}
+
+.not-checked:hover {
+    opacity: 0.65
+}
+
+.not-checked:active {
+    opacity: 0.85;
+    box-shadow: none;
+    transform: translateY(2%);
+  }

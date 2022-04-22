@@ -1,0 +1,30 @@
+.desc .h2-40 {
+    color: var(--secondary-color-blue);
+}
+
+.desc .earn {
+    color: var(--primary-color-violet);
+}
+
+.desc p {
+   color: var(--secondary-color-violet1)
+}
+.bottom-desc {
+display: flex;
+flex-direction: row;
+gap: 1vw;
+align-items: center;
+}
+
+.desc .btn1 {
+    padding: 25px;
+}
+
+.bottom-desc a,.bottom-desc a:link,.bottom-desc a:visited {
+color: var(--primary-color-cyan);
+font-weight: 700;
+}
+
+.bottom-desc a:hover {
+    text-decoration: underline;
+}

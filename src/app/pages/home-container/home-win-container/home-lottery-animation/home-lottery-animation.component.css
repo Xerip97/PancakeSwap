@@ -1,0 +1,88 @@
+.lott-anim{
+width: 100vw;
+overflow: hidden;
+}
+
+
+
+.b2,
+.b4,
+.b6,
+.b9,
+.b7  {  
+  margin-top: -15vh;
+  position: absolute;
+  top: inherit;
+  right: 0%;
+}
+
+.b2, .b3, .b4, .b6 {
+  animation-name: animation-balls;
+  animation-duration: 2s, 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+
+.b7 {
+  animation-name: animation-big-ball;
+  animation-duration: 2s, 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.b9{
+  animation-name: animation-little-ball;
+  animation-duration: 2s, 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animation-big-ball {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(15px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  
+}
+
+@keyframes animation-balls {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 6px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+@keyframes animation-little-ball {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(2px, 4px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 1280px)
+{ 
+  .lott-anim {
+    display: none;
+  }
+}

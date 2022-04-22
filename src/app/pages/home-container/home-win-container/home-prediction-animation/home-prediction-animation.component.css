@@ -1,0 +1,113 @@
+.pred-anim{
+    width: 100vw;
+    overflow: hidden;
+    }
+    
+    .c-bot-left, .c-green, .c-pink {
+        position: absolute;
+        top: inherit;
+        margin-top: 28vh;
+        left: 0%;
+    }
+
+    .c-top-right{
+        position: absolute;
+        top: inherit;
+        margin-top: 28vh;
+        left: 1%;
+    }
+
+    
+    .c-green {
+      animation-name: animation-big-card-1;
+      animation-duration: 2.5s, 0.7s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; 
+    }
+
+    .c-bot-left {
+        animation-name: animation-card-btm;
+        animation-duration: 2.5s, 0.7s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+      }
+  
+    .c-pink {
+        animation-name: animation-big-card-2;
+        animation-duration: 2.3s, 0.7s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+      }
+    
+      .c-top-right {
+        animation-name: animation-card-top;
+        animation-duration: 2.8s, 0.7s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+      }
+    
+    @keyframes animation-big-card-1 {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      50% {
+        transform: translate(8px, 10px);
+      }
+      100% {
+        transform: translate(0px, 0px);
+      }
+    
+      
+    }
+
+    @keyframes animation-card-btm {
+        0% {
+          transform: translate(0px, -10px);
+        }
+        50% {
+          transform: translate(0px, 15px);
+        }
+        100% {
+          transform: translate(0px, -10px);
+        }
+      
+        
+      }
+    
+    @keyframes animation-big-card-2 {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        50% {
+          transform: translate(8px, 10px);
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      
+        
+      }
+      @keyframes animation-card-top {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        50% {
+          transform: translate(0px, 14px);
+        }
+        100% {
+          transform: translate(0px, 0px);
+        }
+      
+        
+      }
+
+      @media screen and (max-width: 1280px)
+{ 
+  .pred-anim {
+    display: none;
+  }
+}
