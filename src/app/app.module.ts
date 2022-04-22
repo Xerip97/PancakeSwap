@@ -29,6 +29,7 @@ import { WarningBannerComponent } from './core/warning-banner/warning-banner.com
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { TeamDetailComponent } from './pages/leaderboard-container/team-container/team-detail/team-detail.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
+import { PoolsTableComponent } from './pages/pools-container/pools-table/pools-table.component';
 import { HomeSectionHeaderContainerComponent } from './pages/home-container/home-section-header-container/home-section-header-container.component';
 import { HomeForegroundComponent } from './pages/home-container/home-section-header-container/home-foreground/home-foreground.component';
 import { HomeBunnySectionComponent } from './pages/home-container/home-section-header-container/home-bunny-section/home-bunny-section.component';
@@ -47,6 +48,7 @@ import { CakeContainerComponent } from './pages/home-container/cake-container/ca
 import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
 import { TradeAnimComponent } from './pages/home-container/home-trade-container/trade-anim/trade-anim.component';
+import { PoolsCardsComponent } from './pages/pools-container/pools-cards/pools-cards.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +79,7 @@ import { TradeAnimComponent } from './pages/home-container/home-trade-container/
     DesignSystemComponent,
     TeamDetailComponent,
     HomeContainerComponent,
+    PoolsTableComponent,
     HomeSectionHeaderContainerComponent,
     HomeForegroundComponent,
     HomeBunnySectionComponent,
@@ -95,6 +98,8 @@ import { TradeAnimComponent } from './pages/home-container/home-trade-container/
     SmallBarComponent,
     QuickStartComponent,
     TradeAnimComponent,
+    PoolsCardsComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

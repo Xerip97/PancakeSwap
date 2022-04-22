@@ -186,3 +186,13 @@ gap: 0px  8px;
     opacity: 0.85;
     transform: translateY(4%);
   }
+
+  .cake_value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cake_value img {
+      margin-right: 7px;
+  }
