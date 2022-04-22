@@ -1,15 +1,16 @@
-
+/* .img-trade .coin img {
+    width: 100%;
+} */
 
 .img-trade img {
-   width:100%;
-  
+    width: 100%;
 }
 
 
 .coin, .BTC, .BNB {
     position: absolute;
     top: auto;
-   right: 55vh;
+    right: 55vh;
     width: 428px;
     height: 428px;
 }
@@ -123,9 +124,15 @@
 
 @media screen and (min-width: 1031px) and (max-width: 1440px) {
     .img-trade .coin img {
-        width: 55%;
+        width: 45%;
     }
     .img-trade img {
-        width: 75%;
+        width: 65%;
+    }
+
+    .coin,
+    .BTC,
+    .BNB {
+        right: 10px;
     }
 }
