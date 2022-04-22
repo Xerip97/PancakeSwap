@@ -29,6 +29,7 @@ import { WarningBannerComponent } from './core/warning-banner/warning-banner.com
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { TeamDetailComponent } from './pages/leaderboard-container/team-container/team-detail/team-detail.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
+import { PoolsTableComponent } from './pages/pools-container/pools-table/pools-table.component';
 import { HomeSectionHeaderContainerComponent } from './pages/home-container/home-section-header-container/home-section-header-container.component';
 import { HomeForegroundComponent } from './pages/home-container/home-section-header-container/home-foreground/home-foreground.component';
 import { HomeBunnySectionComponent } from './pages/home-container/home-section-header-container/home-bunny-section/home-bunny-section.component';
@@ -50,6 +51,7 @@ import { TradeAnimComponent } from './pages/home-container/home-trade-container/
 import { TradeUndernavbarDivComponent } from './core/trade-undernavbar-div/trade-undernavbar-div.component';
 import { LiquidityContainerComponent } from './pages/liquidity-container/liquidity-container.component';
 import { SettingComponent } from './core/setting/setting.component';
+import { PoolsCardsComponent } from './pages/pools-container/pools-cards/pools-cards.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +81,7 @@ import { SettingComponent } from './core/setting/setting.component';
     DesignSystemComponent,
     TeamDetailComponent,
     HomeContainerComponent,
+    PoolsTableComponent,
     HomeSectionHeaderContainerComponent,
     HomeForegroundComponent,
     HomeBunnySectionComponent,
@@ -103,6 +106,7 @@ import { SettingComponent } from './core/setting/setting.component';
     LiquidityContainerComponent,
     SettingComponent,
     TradeAnimComponent,
+    PoolsCardsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

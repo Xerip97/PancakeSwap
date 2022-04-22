@@ -13,7 +13,10 @@ export class FarmsCardsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+<<<<<<< HEAD
     this.addBorder();
+=======
+>>>>>>> develop
   }
 
   changeClick(e: any) {
@@ -23,6 +26,7 @@ export class FarmsCardsComponent implements OnInit {
       return (this.checked = false);
     }
   }
+<<<<<<< HEAD
 
   addBorder() {
     console.log(this.farms_item.id);
@@ -31,4 +35,6 @@ export class FarmsCardsComponent implements OnInit {
       div?.classList.add('card-cake');
     }
   }
+=======
+>>>>>>> develop
 }

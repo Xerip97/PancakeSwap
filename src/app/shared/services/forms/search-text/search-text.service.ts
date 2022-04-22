@@ -41,4 +41,20 @@ export class SearchTextService {
     }
     
   }
+
+  getResultv3(arr: any, key: any) {
+    let search = this.value.toLowerCase();
+    let keyUse = key;
+    if (this.value.length != 0)
+    return arr.filter(function (obj: any) {
+      return Object.keys(obj).some(function () {
+        let word = obj[keyUse]
+       return word.toString().toLowerCase().includes(search);
+      });
+    });
+    else {
+      return arr
+    }
+    
+  }
 }
