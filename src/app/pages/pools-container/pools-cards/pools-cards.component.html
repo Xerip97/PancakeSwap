@@ -1,0 +1,197 @@
+<div class="generic_div">
+  <div *ngIf="pools_item.name != 'CAKE'; else cakeTopDiv">
+  <div class="top-div">
+    <div class="main-info">
+      <div class="cards-name">
+        <h2>{{ pools_item.type }} {{ pools_item.name }}</h2>
+        <p>{{ pools_item.description }}</p>
+      </div>
+      <div class="cards-img">
+        <img src="{{ pools_item.urlIcon2 }}" class="pools-ico" />
+        <img src="{{ pools_item.urlIcon }}" class="pools-avatar" />
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="apr">
+        <span class="property">APR:</span
+        ><span class="number"
+          >{{ pools_item.apr }}% <img src="/assets/svg/Farms _calcolatrice.svg"
+        /></span>
+      </div>
+      <br />
+      <span class="title-cake"
+        ><h6></h6>
+        <h6>Start earning</h6></span
+      >
+      <button class="btn1">connect wallet</button>
+    </div>
+  </div></div>
+ <ng-template #cakeTopDiv>
+  <div class="top-div card-cake">
+    <div class="main-info">
+      <div class="cards-name">
+        <h2>{{ pools_item.type }} {{ pools_item.name }}</h2>
+        <p>{{ pools_item.description }}</p>
+      </div>
+      <div class="cards-img">
+        <img src="{{ pools_item.urlIcon2 }}" class="pools-ico" />
+        <img src="{{ pools_item.urlIcon }}" class="pools-avatar" />
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="apr">
+        <span class="property">APR:</span
+        ><span class="number"
+          >{{ pools_item.apr }}% <img src="/assets/svg/Farms _calcolatrice.svg"
+        /></span>
+      </div>
+      <br />
+      <span class="title-cake"
+        ><h6></h6>
+        <h6>Start earning</h6></span
+      >
+      <button class="btn1">connect wallet</button>
+    </div>
+  </div>
+ </ng-template>
+  <label
+    class="hidden-details"
+    *ngIf="pools_item.name != 'CAKE'; else cakeCard"
+    for="{{ pools_item.id }}"
+    ><input
+      type="checkbox"
+      (change)="changeClick($event)"
+      id="{{ pools_item.id }}" />
+    <div *ngIf="!checked; else notChecked" class="details">
+      <span class="title-details"
+        ><div class="under-link"><div class="manual">
+          <img src="/assets/svg/rotate_arrow.svg" />manual
+        </div> <img
+        placement="top"
+        triggers="mouseenter:mouseleave"
+        popoverClass="popoverClass"
+        [ngbPopover]="MultiplierPop"
+        src="/assets/svg/Farms_question_mark.svg"
+        class="hidden-mark"
+      />
+      <ng-template #MultiplierPop>
+        You must harvest and compound your earnings from this pool
+        manually.
+      </ng-template></div>  <label for="{{ pools_item.id }}">Details<img src="/assets/svg/Farms_PancakeSwap - $11.375-13.svg"/></label>
+      </span>
+    </div>
+    <ng-template #notChecked>
+      <div class="details">
+        <span class="title-details"
+          > <div class="under-link"><div class="manual">
+            <img src="/assets/svg/rotate_arrow.svg" />manual
+          </div> <img
+          placement="top"
+          triggers="mouseenter:mouseleave"
+          popoverClass="popoverClass"
+          [ngbPopover]="MultiplierPop"
+          src="/assets/svg/Farms_question_mark.svg"
+          class="hidden-mark"
+        />
+        <ng-template #MultiplierPop>
+          You must harvest and compound your earnings from this pool
+          manually.
+        </ng-template></div>
+          <label for="{{ pools_item.id }}">Hide<img src="/assets/svg/little_up_arrow.svg"
+        /></label></span>
+        <div class="info-details">
+          <span class="totalStaked"
+            ><p>Total staked:</p>
+
+            <p>{{ pools_item.totalStaked | number: "3." }} CAKE</p></span
+          >
+          <span class="endsIn"
+            ><p>Ends in:</p>
+
+            <p> {{ pools_item.endsIn | number: "3." }} blocks<img src="/assets/svg/timer.svg" class="endsIn-clock" /></p></span
+          >
+          <span class="link-details"
+            ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              >Get {{ pools_item.name }} LP
+              <img src="/assets/svg/graph_popup.svg"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              >View Contract <img src="/assets/svg/graph_popup.svg"
+            /></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              >See Pair Info <img src="/assets/svg/graph_popup.svg" /></a
+          ></span>
+        </div>
+      </div> </ng-template
+  ></label>
+  <ng-template #cakeCard>
+    <label class="hidden-details" for="{{ pools_item.id }}"
+      ><input
+        type="checkbox"
+        (change)="changeClick($event)"
+        id="{{ pools_item.id }}" />
+      <div *ngIf="!checked; else notChecked" class="details cake card-cake">
+        <span class="title-details"
+          ><div class="under-link"><div class="auto">
+            <img src="/assets/svg/double_rotate_arrow .svg" />auto
+          </div><img
+          placement="top"
+          triggers="mouseenter:mouseleave"
+          popoverClass="popoverClass"
+          [ngbPopover]="MultiplierPopCake"
+          src="/assets/svg/Farms_question_mark.svg"
+          class="hidden-mark"
+        />
+        <ng-template #MultiplierPopCake>
+          Rewards are distributed and included into your staking balance automatically. There’s no need to manually compound your rewards.
+        </ng-template></div>
+          <label for="{{ pools_item.id }}">Details<img src="/assets/svg/Farms_PancakeSwap - $11.375-13.svg"
+        /></label></span>
+      </div>
+      <ng-template #notChecked>
+        <div class="details cake card-cake">
+          <span class="title-details"
+            >  <div class="under-link"><div class="auto">
+              <img src="/assets/svg/double_rotate_arrow .svg" />auto
+            </div><img
+            placement="top"
+            triggers="mouseenter:mouseleave"
+            popoverClass="popoverClass"
+            [ngbPopover]="MultiplierPopCake"
+            src="/assets/svg/Farms_question_mark.svg"
+            class="hidden-mark"
+          />
+          <ng-template #MultiplierPopCake>
+            Rewards are distributed and included into your staking balance automatically. There’s no need to manually compound your rewards.
+          </ng-template></div>
+            <label for="{{ pools_item.id }}">Hide<img src="/assets/svg/little_up_arrow.svg"
+          /></label></span>
+          <div class="info-details">
+            <span class="totalStaked"
+            ><p>Total staked:</p>
+
+            <p>{{ pools_item.totalStaked | number: "3." }} CAKE</p></span
+          >
+          <span class="performance"
+            ><p>Performance:</p>
+
+            <p>0~2%</p></span
+          >
+            <span class="link-details"
+              ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                >Get {{ pools_item.name }} LP
+                <img src="/assets/svg/graph_popup.svg"
+              /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                >View Contract <img src="/assets/svg/graph_popup.svg"
+              /></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                >See Pair Info <img src="/assets/svg/graph_popup.svg" /></a
+            ></span>
+          </div>
+        </div> </ng-template
+    ></label>
+  </ng-template>
+</div>

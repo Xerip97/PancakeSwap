@@ -145,12 +145,16 @@
           <a href="" class="footer_finance_link">
             <div class="footer_row">
               <ul>
-                <li>
+                <li class="cake_value">
                   <img
-                    src="..\assets\svg\pancake_icon_colored.svg"
-                    class="footer_finance_svg"
-                  />
-                  <label class="footer_finance_label">$13.765</label>
+                  src="/assets/svg/bunny_icon_blue_wallpaper.svg"
+                  alt="pancake_icon_colored"
+                />
+                    <b class="cake_value">
+                      <ng-container *ngIf="cakeValueObs$ | async as cakeValue">
+                        {{ cakeValue | currency: "USD":"symbol":"1.0-0" }}
+                      </ng-container>
+                    </b>
                 </li>
                 <button class="btn1">
                   Buy CAKE
