@@ -1,0 +1,137 @@
+.modal-content{
+    display: flex;
+    border-radius: 20px;
+    width: 393.891px;
+    height: 732px;
+  transform: translate(10%,10%);
+    border: white;
+    box-shadow: 10px;
+}
+.setting-icon:hover{
+    transition: 0.3s;
+    opacity: 0.5;
+    
+}
+.modal{
+    transition: 0.3s;
+    
+   
+    background-color: rgba(120, 107, 160, 0.82) ;
+}
+.global p {
+    text-transform: uppercase;
+    color: var(--primary-color-violet);
+    font-weight: 800;
+    font-size: 15px;
+}
+.global-modal-body{
+    
+    color: var(--secondary-color-blue);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    height: 30%;
+    margin-bottom: -20px;
+}
+.transaction_speed_modal p{
+    font-size: 15px;
+font-weight: 600;
+color: var(--secondary-color-blue);
+}
+.transaction_speed_modal {
+    display: flex;
+}
+.slippage_btn{
+    
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--primary-color-cyan);
+ 
+}
+.slippage_btn a{
+    font-weight: 700;
+}
+.slippage_btn a:hover{
+    text-decoration: underline;
+    color: var(--primary-color-cyan);
+}
+.slippage_btn a:visited{
+    color: var(--primary-color-cyan);
+}
+.text-trade{
+    display: flex;
+    margin-bottom: 2px;
+}
+ 
+.swap_p{
+     text-transform: uppercase;
+     color: var(--primary-color-violet);
+    font-weight: 700;
+    font-size: 13px;}
+ .slippage_tolerance_modal{
+    display: flex;
+    }
+     .slippage_tolerance_modal p{
+   color: var(--secondary-color-blue);
+   font-weight: 700;
+    }
+    .modal_slippage{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       padding-bottom: 1px;
+    }
+    .modal_slippage button{
+        margin-right: 5px;
+    }
+    .slippage_span {
+        color:var(--primary-color-cyan); font-weight: 700; font-size: 20px;
+        display: flex;
+       align-items: baseline;
+       margin-top: 20px;
+       margin-left: -110px;
+    }
+    .modal_footer{
+
+        padding-left: 20px;
+        font-size: 8px;
+font-weight: 600;
+color: var(--secondary-color-blue);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+     .modal_footer p {
+         margin-bottom: 20px;
+     }
+     .txDeadline {
+         justify-content: flex-end;
+         width:100%
+
+     }
+
+     .txDeadline pancakeswap-form-text-trade {
+         margin-top: -15px;
+     }
+ .txDeadline,
+ .expertMode,
+ .multiHops,
+ .healthIndicator,
+ .flippy{
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expertMode,
+ .multiHops,
+ .healthIndicator,
+ .flippy{
+    padding-right: 25px;
+}
+
+.modal-title{
+    font-weight: 700;
+    color: var(--secondary-color-blue);
+}

@@ -4,24 +4,21 @@ import { Farms } from '@app/models/Farms';
 @Component({
   selector: 'pancakeswap-farms-cards',
   templateUrl: './farms-cards.component.html',
-  styleUrls: ['./farms-cards.component.css']
+  styleUrls: ['./farms-cards.component.css'],
 })
 export class FarmsCardsComponent implements OnInit {
-  @Input() farms_item!: Farms
-  checked: boolean = false
+  @Input() farms_item!: Farms;
+  checked: boolean = false;
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-  
+  ngOnInit(): void {}
+
   changeClick(e: any) {
     if (e.target.checked) {
-      return this.checked = true
-    }
-    else {
-      return this.checked = false
+      return (this.checked = true);
+    } else {
+      return (this.checked = false);
     }
   }
 }

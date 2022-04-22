@@ -48,13 +48,15 @@ import { CakeContainerComponent } from './pages/home-container/cake-container/ca
 import { SmallBarComponent } from './pages/home-container/cake-container/small-bar/small-bar.component';
 import { QuickStartComponent } from './pages/home-container/quick-start/quick-start.component';
 import { TradeAnimComponent } from './pages/home-container/home-trade-container/trade-anim/trade-anim.component';
+import { TradeUndernavbarDivComponent } from './core/trade-undernavbar-div/trade-undernavbar-div.component';
+import { LiquidityContainerComponent } from './pages/liquidity-container/liquidity-container.component';
+import { SettingComponent } from './core/setting/setting.component';
 import { PoolsCardsComponent } from './pages/pools-container/pools-cards/pools-cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    BtnTrisComponent,
     FormsContainerComponent,
     FormDropdownComponent,
     FormTextSearchComponent,
@@ -97,9 +99,14 @@ import { PoolsCardsComponent } from './pages/pools-container/pools-cards/pools-c
     CakeContainerComponent,
     SmallBarComponent,
     QuickStartComponent,
+    BtnTrisComponent,
+    QuickStartComponent,
+    TradeAnimComponent,
+    TradeUndernavbarDivComponent,
+    LiquidityContainerComponent,
+    SettingComponent,
     TradeAnimComponent,
     PoolsCardsComponent,
-
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

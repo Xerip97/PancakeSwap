@@ -50,6 +50,7 @@
   background-color: transparent;
   color: var(--primary-color-cyan);
   border: 2px solid var(--primary-color-cyan);
+   border-radius: 16px;
 }
 .btn3:disabled {
   background-color: var(--secondary-color-white3);

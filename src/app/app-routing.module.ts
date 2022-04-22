@@ -7,13 +7,14 @@ import { TeamDetailComponent } from './pages/leaderboard-container/team-containe
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { PoolsContainerComponent } from './pages/pools-container/pools-container.component';
 import { HomeContainerComponent } from './pages/home-container/home-container.component';
-
+import {LiquidityContainerComponent} from './pages/liquidity-container/liquidity-container.component'
 const routes: Routes = [
   { path: 'farms', component: FarmsContainerComponent },
   { path: 'pools', component: PoolsContainerComponent },
   { path: 'test', component: TestComponent },
   { path: 'teams/:id', component: TeamDetailComponent },
   { path: 'teams', component: LeaderboardContainerComponent },
+  {path:'liquidity', component: LiquidityContainerComponent},
   { path: 'design', component: DesignSystemComponent },
   { path: '', component: HomeContainerComponent },
 ];
